@@ -1,0 +1,66 @@
+{
+	"aHyjfh" : {
+		"class" : "RELIC",
+		"type" : [ "HERO" ],
+		"value" : 20000,
+		"graphics" : { 
+			"image": "artifacts/aHyjfhS.png",
+			"large": "artifacts/aHyjfhL.bmp",
+			"map": "artifacts/aHyjfhM.def"
+		},
+		"slot" : "RING",
+		"text" : {
+			"description" : "{Phantom Gale Ring}\r\n\r\nIncrease speed by 4 points.Grant creatures the ability to fly and the ability of charge attack. They are permanently in the state of attack acceleration. Heroes can fly and their movement on land and at sea is increased by 1800 points respectively.",
+			"event" : "As soon as you put on this ring, you instantly felt light and airy, and then you flew up into the air.",
+			"name" : "Phantom Gale Ring"
+		},
+		"components":
+		[
+			"capeOfVelocity",
+			"ringOfTheWayfarer",
+			"necklaceOfSwiftness",
+			"bootsOfSpeed",
+		    "equestriansGloves"
+		],
+		"bonuses" : [
+			{
+			//海上移动力增加900
+			"type" : "MOVEMENT",
+	    	"subtype" : "heroMovementSea",
+	       "val" : 900
+			},
+			{
+			//英雄陆地移动力900
+			"type" : "MOVEMENT",
+			"subtype" : "heroMovementLand",
+		    "val" : 900
+			},
+			{
+			//大地图飞行移动
+				"type" : "FLYING_MOVEMENT",
+				"val" : 0,
+				"valueType" : "INDEPENDENT_MIN"
+			},
+		    {
+			 //恶路减免100点
+			"type" : "ROUGH_TERRAIN_DISCOUNT",
+			"val" : 100
+			},
+			 {
+			 //飞行
+			 "type": "FLYING"
+			},
+			{
+			//永久处于攻击加速状态
+				"type" : "ENCHANTED",
+				"subtype" : "spell.haste",
+				"val" : 2
+			},			
+			{
+			//冲锋攻击8%
+			"type" : "JOUSTING",
+			"val" : 8
+			}
+		]
+	}
+}

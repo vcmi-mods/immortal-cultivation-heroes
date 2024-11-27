@@ -1,0 +1,95 @@
+﻿{
+	"hxy" :
+	{
+        		"class": "clxy",
+        		"female" : false,
+        		"images" :
+        		
+        {
+        			
+          "specialtySmall" : "xy/sxyS.bmp",
+          "specialtyLarge" : "xy/sxyL.bmp",
+          "large" : "xy/hxyL.bmp",
+          "small" : "xy/hxyS.bmp"
+        
+        },
+        
+        		"army" :
+        [			
+       { "creature" : "efreet","max" : 1,"min" : 1 },
+       { "creature" : "efreet","max" : 1,"min" : 1 }
+        ],
+        		
+        "skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			}
+		],
+		"spellbook" :
+		[
+			"inferno"
+		],
+	
+		"texts" :
+		{
+			"name" : "Xiao Yan",
+			"biography" : "Xiao Yan, a young hero full of legends. Since childhood, under the guidance of Yao Chen, he embarked on the path of cultivation. Despite going through numerous hardships, he never gave up. He has an open-minded personality and attaches great importance to friendship and loyalty. He fought side by side with his friends and grew up together. In the face of powerful enemies, he was fearless. Relying on his indomitable perseverance and outstanding combat skills, he defeated his opponents time and time again. Eventually, he achieved the title of Emperor Yan and became an immortal myth on the Dou Qi Continent, inspiring countless successors to move forward bravely.",
+		
+			"specialty" : {
+				"description" : "Revenge Strike. After the creatures are attacked, their attack and damage will be increased by 80% and will last until after they launch an attack. For every level the hero upgrades, the damage of fire magic and fire resistance will increase by 5%. For every level the hero upgrades, the Logistics skill will be strengthened by 3%, and the movement ability at sea will increase by 50 points for every level.",
+				"name" : "Burning Technique",
+				"tooltip" : "{Fortune}\r\n\r\nEnhance various abilities.)"
+			}
+		},
+		"specialty" : {
+			"bonuses" : {
+			    "revenger": {
+					"type": "SPELL_BEFORE_ATTACK",
+					"subtype": "spell.spfq",
+					"val": 100,
+					"addInfo": [3,0],
+					"limiters" : [ "OPPOSITE_SIDE" ],
+					"propagator": "BATTLE_WIDE",
+					"propagationUpdater" : "BONUS_OWNER_UPDATER"
+				    },		
+			    "fireMagic" : {
+					"type" : "SPELL_DAMAGE",
+					"subtype" : "spellSchool.fire",
+					"val" : 5,
+					"valueType" : "BASE_NUMBER",
+					"updater" : "TIMES_HERO_LEVEL"
+    				},
+    		    	"firereduction": {
+    				"type" : "SPELL_DAMAGE_REDUCTION",
+			    	"subtype" : "spellSchool.fire",
+			    	"val" : 5,
+    				"updater" : "TIMES_HERO_LEVEL"
+    		    	},
+    			"logistics" : {
+    				"targetSourceType" : "SECONDARY_SKILL",
+    				"subtype" : "heroMovementLand",
+    				"type" : "MOVEMENT",
+    				"updater" : "TIMES_HERO_LEVEL",
+    				"val" : 3,
+    				"valueType" : "PERCENT_TO_TARGET_TYPE"
+    				},
+    		     "navigationseaUpdater" : {
+    				"type" : "MOVEMENT",
+    				"subtype" : "heroMovementSea",
+    			    "val" : 50,
+    				"valueType" : "BASE_NUMBER",
+    				"updater" : "TIMES_HERO_LEVEL"
+				}
+			}
+		}
+	}
+}
+
+
+

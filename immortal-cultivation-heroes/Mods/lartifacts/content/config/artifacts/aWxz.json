@@ -1,0 +1,50 @@
+{
+	"aWxz" : {
+		"class" : "RELIC",
+		"type" : [ "HERO" ],
+		"value" : 15000,
+		"graphics" : { 
+			"image": "artifacts/aWxzS.png",
+			"large": "artifacts/aWxzL.bmp",
+			"map": "artifacts/aWxzM.def"
+		},
+		"slot" : "MISC",
+		"text" : {
+			"description" : "{Five - Element Beads}\r\n\r\nIncrease magic damage by 100%, and increase magic damage reduction, magic resistance and magic refraction by 50% respectively.",
+			"event" : "As you waved your hands, a flash of golden light shone. Four spirit orbs combined into one, and a pure stream of magical energy radiated from within it.",
+			"name" : "Five - Element Beads"
+		},
+		"components":
+		[
+			"orbOfTheFirmament",
+			"orbOfTempestuousFire",
+			"orbOfDrivingRain",
+			"orbOfSilt"
+		],
+		"bonuses" : [
+			 {
+			 //四系魔法伤害+50%
+			"type" : "SPELL_DAMAGE",
+			"subtype" : "spellSchool.any",
+			"val" : 50,
+			"valueType" : "BASE_NUMBER"
+			},
+			{
+			//魔法伤害减免50%
+			"type" : "SPELL_DAMAGE_REDUCTION",
+			"subtype" : "spellSchool.any",
+			"val" : 50
+			},			
+        	{ 
+        	//魔法折射+50%
+			    "type" : "MAGIC_MIRROR",		
+				"val" : 50	
+			},	
+			{
+			//魔法抗性+50%
+				"type" : "MAGIC_RESISTANCE",
+				"val" : 50
+			}
+		]
+	}
+}

@@ -1,0 +1,64 @@
+{
+	"name" : "Immortal Cultivation Heroes (Chapters of Zhu Xian, Xian Ni, and Ze Tian)",
+	"description": "Add a Tower hero named Lu Xueqi, a Stronghold hero named Zhang Xiaofan, a Hell hero named Bi Yao, a Rampart hero named Li Muwan, a Dungeon hero named Wang Lin, a Fortress hero named Ye Fan, and an Elemental City hero named Ji Ziyue.",
+	"author": "L",
+	"contact": "",
+	"version": "1.0.0",
+	"modType": "Heroes",
+	"compatibility": {
+		"min": "1.6.0"
+	},
+	"depends" : 
+	  [ "lmods" ],
+	"changelog": {
+		"1.0.0": [
+			"Add a Tower hero named Lu Xueqi, a Stronghold hero named Zhang Xiaofan, a Hell hero named Bi Yao, a Rampart hero named Li Muwan, a Dungeon hero named Wang Lin, a Fortress hero named Ye Fan, and an Elemental City hero named Ji Ziyue."
+		]
+	},
+		"chinese" : {
+		"name" : "修仙英雄（诛仙仙逆遮天篇）",
+		"description" : 	"添加一个塔楼英雄陆雪琪，一个据点英雄张小凡，，一个地狱英雄碧瑶，一个壁垒英雄李慕婉，一个地下城英雄王林，一个要塞英雄叶凡，一个元素城英雄姬紫月。"
+	},
+	    "conflicts" :
+	[
+	"xianHeroes2"
+	],
+		"creatures" :
+	[
+		"config/creatures/crby.json",
+		"config/creatures/crlxq.json",
+		"config/creatures/crlmw.json",
+		"config/creatures/crjzy.json",
+		"config/creatures/crwl.json",
+		"config/creatures/cryf.json",
+		"config/creatures/crzxf.json",
+		"config/creatures/crwl2.json"
+	],
+	
+	"heroClasses" :
+	[
+		"config/classes/clby.json",
+		"config/classes/cllxq.json",
+		"config/classes/cllmw.json",
+		"config/classes/cljzy.json",
+		"config/classes/clwl.json",
+		"config/classes/clzxf.json",
+		"config/classes/clyf.json"
+	],
+	
+		"heroes" :
+	[
+		"config/heroes/hby.json",
+		"config/heroes/hlxq.json",
+		"config/heroes/hlmw.json",
+		"config/heroes/hjzy.json",
+		"config/heroes/hzxf.json",
+		"config/heroes/hyf.json",
+		"config/heroes/hwl.json"
+	],
+	
+	"spells" : 
+	[
+		"config/spells/sjylzj.json"
+	]
+}

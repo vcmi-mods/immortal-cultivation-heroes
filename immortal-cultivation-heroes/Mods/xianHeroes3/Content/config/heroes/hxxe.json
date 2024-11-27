@@ -1,0 +1,94 @@
+﻿{
+	"hxxe" :
+	{
+        		"class": "clxxe",
+        		"female" : true,
+        		"images" :
+        		
+        {
+        			
+          "specialtySmall" : "xxe/sxxeS.bmp",
+          "specialtyLarge" : "xxe/sxxeL.bmp",
+          "large" : "xxe/hxxeL.bmp",
+          "small" : "xxe/hxxeS.bmp"
+        
+        },
+        
+                		"army" :
+        [			
+       { "creature" : "energyElemental","max" : 5,"min" : 3 },
+       { "creature" : "energyElemental","max" : 3,"min" : 2 },
+       { "creature" : "energyElemental","max" : 2,"min" : 1 }
+        ],
+        		
+        "skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			}
+		],
+		"spellbook" :
+		[
+			"fireWall","magicArrow"
+		],
+	
+		"texts" :
+		{
+			"name" : "Xun'er",
+			"biography" : "Xiao Xun'er, the daughter of the Ancient Clan, is an awakener of the most perfect Dou Di bloodline in nearly a thousand years and has extraordinary strength. She has an elegant, aloof and indifferent temperament. Dressed in a purple dress, she is like a lotus in the secular world. She is deeply in love with Xiao Yan, gentle and considerate, while appearing distant and cold towards others.",
+		
+			"specialty" : {
+				"description" : "When entering the battlefield, the attack power, damage and speed will be increased by 50% and last for 5 rounds. For every level the hero upgrades, the damage of fire and air magic will increase by 5%. For every level the hero upgrades, the Logistics skill will be strengthened by 3%, and the movement ability at sea will increase by 50 points for every level.",
+				"name" : "神品血脉",
+				"tooltip" : "{Fortune}\r\n\r\nEnhance various abilities.)"
+			}
+		},
+		"specialty" : {
+			"bonuses" : {
+		        "spendt" : {
+		            "subtype" : "spell.spsmjx",
+    				"type" : "OPENING_BATTLE_SPELL",
+    				"val" : 5,
+    				"valueType" : "BASE_NUMBER"
+			    	},
+			    "fireMagic" : {
+					"type" : "SPELL_DAMAGE",
+					"subtype" : "spellSchool.fire",
+					"val" : 5,
+					"valueType" : "BASE_NUMBER",
+					"updater" : "TIMES_HERO_LEVEL"
+    				},
+    		    "airMagic" : {
+					"type" : "SPELL_DAMAGE",
+					"subtype" : "spellSchool.air",
+					"val" : 5,
+					"valueType" : "BASE_NUMBER",
+					"updater" : "TIMES_HERO_LEVEL"
+    				},
+    			"logistics" : {
+    				"targetSourceType" : "SECONDARY_SKILL",
+    				"subtype" : "heroMovementLand",
+    				"type" : "MOVEMENT",
+    				"updater" : "TIMES_HERO_LEVEL",
+    				"val" : 3,
+    				"valueType" : "PERCENT_TO_TARGET_TYPE"
+    				},
+    		     "navigationseaUpdater" : {
+    				"type" : "MOVEMENT",
+    				"subtype" : "heroMovementSea",
+    			    "val" : 50,
+    				"valueType" : "BASE_NUMBER",
+    				"updater" : "TIMES_HERO_LEVEL"
+				}
+			}
+		}
+	}
+}
+
+
+

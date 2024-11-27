@@ -1,0 +1,95 @@
+{
+	"clby" :
+	{
+		"name" : "The Young Sect Master of the Ghost King Sect.",
+	"animation":
+		{
+			"battle" :
+			{
+				"male" : "CH03.DEF",
+				"female" : "CH03.DEF"
+			}
+		},
+		"mapObject" :
+		{
+			"templates" :
+			{
+				"default" :
+				{
+					"animation" : "AH03_.def",
+					"editorAnimation": "AH03_E.def"
+				}
+			}
+		},
+		"commander" : "crby",	
+		"faction" : "inferno",
+		"affinity" : "magic",
+		"primarySkills" :
+		{
+			"attack"     : 2,
+			"defence"    : 0,
+			"spellpower" : 2,
+			"knowledge"  : 2
+		},
+		"lowLevelChance" :
+		{
+			"attack"     : 25,
+			"defence"    : 15,
+			"spellpower" : 25,
+			"knowledge"  : 35
+		},
+		"highLevelChance" :
+		{
+			"attack"     : 30,
+			"defence"    : 20,
+			"spellpower" : 30,
+			"knowledge"  : 20
+		},
+		"secondarySkills" :
+		{
+			"pathfinding"  : 3,
+			"archery"      : 5,
+			"logistics"    : 5,
+			"scouting"     : 1,
+			"diplomacy"    : 5,
+			"navigation"   : 2,
+			"leadership"   : 5,
+			"wisdom"       : 7,
+			"mysticism"    : 1,
+			"luck"         : 5,
+			"ballistics"   : 1,
+			"eagleEye"     : 1,
+			"necromancy"   : 0,
+			"estates"      : 4,
+			"fireMagic"    : 0,
+			"airMagic"     : 0,
+			"waterMagic"   : 0,
+			"earthMagic"   : 0,
+			"scholar"      : 3,
+			"tactics"      : 4,
+			"artillery"    : 1,
+			"learning"     : 1,
+			"offence"      : 5,
+			"armorer"      : 3,
+			"intelligence" : 6,
+			"sorcery"      : 1,
+			"resistance"   : 0,
+			"firstAid"     : 1,
+			"allschools2"   : 15,
+			"paadFireResist2" : 5
+		},
+		"defaultTavern" : 0,
+		"tavern" :
+		{
+			"castle"     : 0,
+			"rampart"    : 0,
+			"tower"      : 0,
+			"inferno"    : 0,
+			"necropolis" : 0,
+			"dungeon"    : 0,
+			"stronghold" : 0,
+			"fortress"   : 0,
+			"conflux"    : 0
+		}
+	}
+}

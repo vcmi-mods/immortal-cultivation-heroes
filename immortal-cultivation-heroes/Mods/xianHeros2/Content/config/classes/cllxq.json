@@ -1,0 +1,95 @@
+{
+	"cllxq" :
+	{
+		"name" : "The successor of Tianya.",
+	"animation":
+		{
+			"battle" :
+			{
+				"male" : "CH00.DEF",
+				"female" : "CH00.DEF"
+			}
+		},
+		"mapObject" :
+		{
+			"templates" :
+			{
+				"default" :
+				{
+					"animation" : "AH00_.def",
+					"editorAnimation": "AH00_E.def"
+				}
+			}
+		},
+		"commander" : "crlxq",	
+		"faction" : "tower",
+		"affinity" : "magic",
+		"primarySkills" :
+		{
+			"attack"     : 3,
+			"defence"    : 0,
+			"spellpower" : 1,
+			"knowledge"  : 2
+		},
+		"lowLevelChance" :
+		{
+			"attack"     : 25,
+			"defence"    : 20,
+			"spellpower" : 25,
+			"knowledge"  : 30
+		},
+		"highLevelChance" :
+		{
+			"attack"     : 25,
+			"defence"    : 20,
+			"spellpower" : 35,
+			"knowledge"  : 20
+		},
+		"secondarySkills" :
+		{
+			"pathfinding"  : 3,
+			"archery"      : 5,
+			"logistics"    : 5,
+			"scouting"     : 1,
+			"diplomacy"    : 5,
+			"navigation"   : 2,
+			"leadership"   : 5,
+			"wisdom"       : 8,
+			"mysticism"    : 1,
+			"luck"         : 5,
+			"ballistics"   : 1,
+			"eagleEye"     : 1,
+			"necromancy"   : 0,
+			"estates"      : 4,
+			"fireMagic"    : 0,
+			"airMagic"     : 0,
+			"waterMagic"   : 0,
+			"earthMagic"   : 0,
+			"scholar"      : 3,
+			"tactics"      : 4,
+			"artillery"    : 1,
+			"learning"     : 1,
+			"offence"      : 4,
+			"armorer"      : 4,
+			"intelligence" : 6,
+			"sorcery"      : 1,
+			"resistance"   : 0,
+			"firstAid"     : 1,
+			"allschools2"   : 15,
+			"paadFireResist2" : 5
+		},
+		"defaultTavern" : 0,
+		"tavern" :
+		{
+			"castle"     : 0,
+			"rampart"    : 0,
+			"tower"      : 0,
+			"inferno"    : 0,
+			"necropolis" : 0,
+			"dungeon"    : 0,
+			"stronghold" : 0,
+			"fortress"   : 0,
+			"conflux"    : 0
+		}
+	}
+}

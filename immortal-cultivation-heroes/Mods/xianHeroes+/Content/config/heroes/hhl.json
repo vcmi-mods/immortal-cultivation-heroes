@@ -1,0 +1,383 @@
+﻿{
+	"hhl" :
+	{
+        		"class": "clhl",
+        		"female" : false,
+        		"images" :
+        		
+        {
+        			
+          "specialtySmall" : "hl/shl-s.bmp",
+          "specialtyLarge" : "hl/shl-l.bmp",
+          "large" : "hl/hl-l.bmp",
+          "small" : "hl/hl-s.bmp"
+        
+        },
+        
+        		"army" :
+        		
+        [
+        			
+       {
+    "creature" : "royalGriffin","max" : 5,"min" : 3
+    },
+    			
+    {"creature" : "royalGriffin",
+    "max" : 3,
+    "min" : 2
+    },
+    			
+    {
+    "creature" : "royalGriffin",
+    "max" : 3,"min" : 2
+    },
+        ],
+        		
+        "skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			}
+		],
+		"spellbook" :
+		[
+			"slow","haste"
+		],
+	
+		"texts" :
+		{
+			"name" : "Han Li",
+			"biography" : "Han Li was originally an ordinary poor boy from a mountain village. Because he possessed spiritual roots and was able to cultivate the Everlasting Spring Art, he was taken as a disciple by Doctor Mo. From then on, he embarked on the path of immortal cultivation.He had a firm will. He wouldn't take any action without potential benefits. He always kept a low profile, didn't care much about face-saving, and never tried to play the hero. He was good at escaping from danger. He was meticulous in his thoughts, had a tenacious mind, was resolute and decisive, could act according to circumstances, and knew when to advance and when to retreat. People called him “Old Devil Han”. Relying on his arduous cultivation all along the way, he finally ascended to the Immortal Realm.",
+		
+			"specialty" : {
+				"description" : "The enemy's morale and luck are each reduced by 1; the speed of all creatures is increased by 3, and their morale and luck are each increased by 1; attack, defense, and health are increased by 25%, damage is increased by 50%, life-stealing is increased by 10%, and physical damage reduction is 10%; and there is a 10% chance that the damage received will be reduced to 1 point. When using the defense skill, the defense value is increased by 10 points. The movement loss on bad terrains is reduced by 50 points; for every level up, the Logistics skill is strengthened by 10%, the naval movement ability is increased by 100 points per level, and the experience value is increased by 20%. For every level up, the double damage chance, the ignore defense rate, and the magic damage are each increased by 1%; death gaze, acid damage, aging, petrification, entanglement, disease, paralysis, and severe toxicity are each increased by 5%; there is a 5% chance to instantly kill 10% of the enemies. Common resources are increased by 2, rare resources are increased by 1, and gold coins are increased by 1,000 + 250 × level. The hostility of wild monsters is reduced by 2. It is possible to upgrade advanced pikemen and halberdiers to crossbowmen, swordsmen and crusaders to zealots, and cavalry, knights, and angels to archangels. At the beginning of the battle, the Xuantian Slashing Spirit Sword is cast, causing damage to all enemies, inflicting paralysis and entanglement effects, and reducing all attributes (the effects gradually fade away).",
+				"name" : "Ascend to immortality",
+				"tooltip" : "{Fortune}\r\n\r\nEnhance various abilities.)"
+			}
+		},
+		"specialty" : 
+		{
+			"bonuses" : 
+			{
+				"spbxslimmunity" :
+    			{
+    				"type" : "SPELL_IMMUNITY",
+    				"subtype" : "spell.spbxsl",
+    				"addInfo" : 0
+    			},			
+			    "spxtzlj" : 
+			    {
+		            "subtype" : "spell.spxtzlj",
+    				"type" : "OPENING_BATTLE_SPELL",
+    				"val" : 30,
+    				"valueType" : "BASE_NUMBER"
+			    },
+			    "spxtzlj2" : 
+			    {
+		            "subtype" : "spell.spxtzlj2",
+    				"type" : "OPENING_BATTLE_SPELL",
+    				"val" : 3,
+    				"valueType" : "BASE_NUMBER"
+			    },
+			    "spxtzlj3" : 
+			    {
+		            "subtype" : "spell.spxtzlj3",
+    				"type" : "OPENING_BATTLE_SPELL",
+    				"val" : 4,
+    				"valueType" : "BASE_NUMBER"
+			    },
+				"marksman" : 
+				{
+    				"type" : "SPECIAL_UPGRADE",
+    				"subtype" : "creature.pikeman",
+    				"addInfo" : "creature.marksman"
+		        },
+				"marksman2" : 
+				{
+    				"type" : "SPECIAL_UPGRADE",
+    				"subtype" : "creature.halberdier",
+    				"addInfo" : "creature.marksman"
+		        },
+				"zealot" : 
+				{
+    				"type" : "SPECIAL_UPGRADE",
+    				"subtype" : "creature.swordsman",
+    				"addInfo" : "creature.zealot"
+		        },
+				"zealot2" : 
+				{
+    				"type" : "SPECIAL_UPGRADE",
+    				"subtype" : "creature.crusader",
+    				"addInfo" : "creature.zealot"
+		        },
+				"archangel" : 
+				{
+    				"type" : "SPECIAL_UPGRADE",
+    				"subtype" : "creature.champion",
+    				"addInfo" : "creature.archangel"
+		        },
+				"archangel2" : 
+				{
+    				"type" : "SPECIAL_UPGRADE",
+    				"subtype" : "creature.cavalier",
+    				"addInfo" : "creature.archangel"
+		        },
+		        "archangel3" : 
+				{
+    				"type" : "SPECIAL_UPGRADE",
+    				"subtype" : "creature.angel",
+    				"addInfo" : "creature.archangel"
+		        },
+				"attack":
+				{
+					"type": "PRIMARY_SKILL",
+					"subtype" : "primarySkill.attack",
+					"val" : 25,
+					"valueType": "PERCENT_TO_BASE"
+				},
+		    	"defence":
+				{
+					"type": "PRIMARY_SKILL",
+					"subtype" : "primarySkill.defence",
+					"val" : 25,
+					"valueType": "PERCENT_TO_BASE"
+				},
+			    "moraleReduce" : 
+			    {
+					"type" : "MORALE",
+					"propagator": "BATTLE_WIDE",
+					"propagationUpdater" : "BONUS_OWNER_UPDATER",
+					"limiters" : [ "OPPOSITE_SIDE" ],
+					"val":-1
+				},
+				"luckReduce":
+				{
+					"type" : "LUCK",
+					"val" : -1,
+					"propagator": "BATTLE_WIDE",
+					"propagationUpdater" : "BONUS_OWNER_UPDATER",
+					"limiters" : [ "OPPOSITE_SIDE" ]
+				},
+    			"defenseStance" :
+    			{
+    				"type" : "DEFENSIVE_STANCE",
+    				"val": 10
+    			},
+    	        "decimation" :
+    			{
+    				"type" : "DESTRUCTION",
+                    "subtype" : "destructionKillPercentage",
+    				"val" : 5,
+    				"addInfo" : 10
+    			},
+                "deathStare" :	
+    			{
+    				"type" : "DEATH_STARE",
+                    "subtype" : "deathStareGorgon",
+    				"val" : 5
+    			},
+    			"morale" : 
+    			{
+    				"type" : "MORALE",
+    				"val" : 1
+			    },
+			    "lucky" : 
+			    {
+					"type" : "LUCK",
+					"valueType" : "BASE_NUMBER",
+				    "val" : 1
+				},
+                "drainsLife" :
+        		{
+        			"type" : "LIFE_DRAIN",
+        			"val" : 10
+        		},
+                "acidbreath" :
+        		{
+        			"type" : "ACID_BREATH",
+        			"val" : 50,
+        			"addInfo" : 5
+        		},	
+                "age" :
+        		{
+        			"type" : "SPELL_AFTER_ATTACK",
+        			"subtype" : "spell.age",
+        			"val" : 5
+        		},
+                "petrify" :
+    			   {
+    				"type" : "SPELL_AFTER_ATTACK",
+    				"subtype" : "spell.stoneGaze",
+    				"val" : 5,
+    				},
+        	    "bindattack" :
+        			{
+        				"type" : "SPELL_AFTER_ATTACK",
+        				"subtype" : "spell.bind",
+        				"val" : 5,
+        			},
+            	"disease":
+        			{
+        				"type" : "SPELL_BEFORE_ATTACK",
+        				"subtype" : "spell.disease",
+        				"val" : 5,
+        				"addInfo" : 1
+        			},
+        		"paralize" :
+        			{
+        				"type" : "SPELL_AFTER_ATTACK",
+        				"subtype" : "spell.paralyze",
+        				"val" : 5
+        			},
+                "poisonous" : 
+    			{
+    				"type" : "SPELL_AFTER_ATTACK",
+    				"subtype" : "spell.poison",
+    				"val" : 5,
+    				"addInfo" : 0
+    			},					
+    			"health2": 
+    			{
+    				"type" : "STACK_HEALTH",
+    				"val" : 25,
+    				"valueType" : "PERCENT_TO_BASE"
+    			},
+				"damage":
+				{
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageBoth",
+					"val" : 50,
+					"valueType" : "PERCENT_TO_BASE"
+				},
+				"damageReduction": 
+			    {
+				    "type": "GENERAL_DAMAGE_REDUCTION",
+				    "val": 10
+			    },
+		        "miss": 
+		        {
+					"type": "SPELL_BEFORE_ATTACK",
+					"subtype": "spell.dodge2",
+					"val": 10,
+					"addInfo": [3,0],
+					"limiters" : [ "OPPOSITE_SIDE" ],
+					"propagator": "BATTLE_WIDE",
+					"propagationUpdater" : "BONUS_OWNER_UPDATER"
+				},
+        		"doubledamage" : 
+        		{
+        			"type": "DOUBLE_DAMAGE_CHANCE",
+        			"val": 1,
+        			"updater" : "TIMES_HERO_LEVEL"
+        		},
+    			"reduceDefence" : 
+    			{
+    				"type" : "ENEMY_DEFENCE_REDUCTION",	
+    				"val" : 1,
+    				"updater" : "TIMES_HERO_LEVEL"
+    			},
+				"anyMagic" : 
+				{
+					"type" : "SPELL_DAMAGE",
+					"subtype" : "spellSchool.any",
+					"val" : 10,
+					"valueType" : "BASE_NUMBER",
+					"updater" : "TIMES_HERO_LEVEL"
+				},
+				"speed" : 
+				{
+					"type" : "STACKS_SPEED",
+					"valueType" : "ADDITIVE_VALUE",
+					"val" : 3
+				},
+		 	    "logistics" : 
+		 	    {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"subtype" : "heroMovementLand",
+					"type" : "MOVEMENT",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 10,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				},
+				 "navigationseaUpdater" : 
+				 {
+					"type" : "MOVEMENT",
+					"subtype" : "heroMovementSea",
+				    "val" : 100,
+					"valueType" : "BASE_NUMBER",
+					"updater" : "TIMES_HERO_LEVEL"
+				},
+				"experience" : 
+				{
+					"type" : "HERO_EXPERIENCE_GAIN_PERCENT",
+					"valueType" : "PERCENT_TO_BASE",
+				    "val" : 20,
+				    "updater" : "TIMES_HERO_LEVEL"
+				},
+				"terraindiscount" : 
+				{
+					"type" : "ROUGH_TERRAIN_DISCOUNT",
+					"val" : 50
+				},
+				"join": 
+				{
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "WANDERING_CREATURES_JOIN_BONUS",
+					"val" : 2,
+					"valueType" : "BASE_NUMBER"
+				},
+				"crystal" : 
+				{
+					"subtype" : "resource.crystal",
+					"type" : "GENERATE_RESOURCE",
+					"val" : 1
+				},
+				"gems" : {
+					"subtype" : "resource.gems",
+					"type" : "GENERATE_RESOURCE",
+					"val" : 1
+				},
+				"sulfur" : {
+					"subtype" : "resource.sulfur",
+					"type" : "GENERATE_RESOURCE",
+					"val" : 1
+				},
+				"mercury" : {
+					"subtype" : "resource.mercury",
+					"type" : "GENERATE_RESOURCE",
+					"val" : 1
+				},
+				"wood" : {
+					"subtype" : "resource.wood",
+					"type" : "GENERATE_RESOURCE",
+					"val" : 2
+				},
+				"ore" : {
+					"subtype" : "resource.ore",
+					"type" : "GENERATE_RESOURCE",
+					"val" : 2
+				},
+				"gold" : {
+					"subtype" : "resource.gold",
+					"type" : "GENERATE_RESOURCE",
+					"val" : 1000
+				},
+				"manaRegen" : 
+				{
+    				"type" : "GENERATE_RESOURCE",
+    				"subtype" : "resource.gold",
+    				"val" : 250,
+    				"updater" : "TIMES_HERO_LEVEL"
+				}
+			}
+		}
+	}
+}
+
+
+

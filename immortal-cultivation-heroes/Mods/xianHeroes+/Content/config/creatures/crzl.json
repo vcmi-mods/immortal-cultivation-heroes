@@ -1,0 +1,91 @@
+{
+	"crzl" :
+	{
+		"name" :
+		{
+			"singular" : "The body is filled with demonic energy",
+			"plural" : "The body is filled with demonic energy"
+		},
+		"description": "There is a 30% chance that the attack will petrify the enemy creatures, a 30% chance to cause double damage, and 30% life-stealing.",
+		"hasDoubleWeek": false,
+		"doubleWide" : false,
+     	"faction" : "inferno",
+		"special" : true,
+		"advMapAmount" :
+		{
+			 "min" : 2,
+			 "max" : 5
+		},
+		"level" : 0,
+		"attack" : 6,
+		"defense" : 8,
+		"damage" :
+		{
+			 "min" : 8,
+			 "max" : 15
+		},
+		"growth" : 9,
+		"hitPoints" : 40,
+		"speed" : 5,
+		"fightValue" : 130,
+		"aiValue" : 156,
+		"shots" : 24,
+		"cost" :
+		{
+			"gold" : 140
+		},
+		"abilities":
+		{
+		"petrify" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.stoneGaze",
+				"val" : 30,
+				"turns" : 2
+			},
+			"doubledamage" : {
+			"type": "DOUBLE_DAMAGE_CHANCE",
+				"val": 30
+			},
+			"lifedrain" : {
+			"type": "LIFE_DRAIN",
+				"val": 30
+			},
+			"FLYING_ARMY" :
+			{
+				"type" : "FLYING",
+				"subtype" : "movementTeleporting"
+			},
+			"canCast" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "stoneSkin",
+				"val" : 3
+			}
+		},
+		"graphics" :
+		{
+			"animation": "battle/zl.def",
+			"map" : "map/zl.def",
+			"iconSmall" : "iconsSmall/zl.bmp",
+			"iconLarge" : "iconsBig/zl.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"sound" :
+		{
+			"attack": "ADVLATTK.wav",
+			"defend": "ADVLDFND.wav",
+			"killed": "ADVLKILL.wav",
+			"move": "ADVLMOVE.wav",
+			"wince": "ADVLWNCE.wav",
+			"startMoving": "ADVLEXT1.wav",
+			"endMoving": "ADVLEXT2.wav"
+		}
+	}
+}

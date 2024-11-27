@@ -1,0 +1,49 @@
+{
+	"alwaysFirst2" : 
+	{
+		"type": "ability",
+		"targetType" : "CREATURE",
+		"name" : "First strike",
+		"school": {"air":false, "earth":false, "fire":false, "water":false},
+		"level": 1,
+		"power": 3,
+		"defaultGainChance": 0, 		
+		"gainChance":{},
+		"counters": {},		
+		"graphics":
+		{
+			"iconEffect": "spells/alwaysFirst/alwaysFirstEffect.png"
+		},
+		"levels" : 
+		{
+			
+			"base":{
+				"description": "Make creature always be the first one to take action.",
+				"cost": 0,
+				"power": 3,
+				"aiValue": 0,
+				"range" : "0",
+				"targetModifier":{"smart":false},
+				"effects" : {
+					"initiativeFlat" : {
+						"addInfo" : 0,
+						"val" : 999999,
+						"valueType" : "INDEPENDENT_MAX",
+						"type" : "STACKS_SPEED",
+						"duration" : "STACK_GETS_TURN"
+					}					
+				}
+			},	
+			"none": {},
+			"basic": {},
+			"advanced": {},
+			"expert": {},
+		},
+		"targetCondition" : {
+	},		
+		"flags" : {
+			"positive": true,
+			"special": true
+		}
+	}
+}

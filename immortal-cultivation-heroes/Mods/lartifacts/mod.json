@@ -1,0 +1,34 @@
+{
+	"name" : "Some combined artifacts",
+	"description" : "Add some combined artifacts.\r\nFour spirit orbs → Five-element beads;\r\nWarrior Token + Warrior Medal + Medal of Courage → Imperial Seal;\r\nLucky Bird + Lucky Clover + Prophecy Card → Dragon Ball;\r\nSpeed Cloak + Speed Necklace + Traveler's Ring → Phoenix Feather Ring;\r\nKnight's Gloves + Swift Boots → Cloud-treading Boots;\r\nSpeed Cloak + Speed Necklace + Traveler's Ring + Knight's Gloves + Swift Boots → Phantom Gale Ring；\r\nAdd the treasure Golden Thunder Bamboo, and there is a chance to cast the Divine Thunder for Exorcising Evil when attacking.",
+	"author" : "L",
+	"version" : "1.0.0",
+	"contact" : "",
+	"modType" : "Artifacts",
+	"language": "chinese",
+	"chinese": {
+		"name": "一些组合宝物",
+		"description": "新增一些组合宝物。\r\n四个灵球→五行珠；\r\n勇士令+勇士勋章+勇气勋章→传国玉玺；\r\n幸运鸟+幸运三叶草+预言卡→龙珠；\r\n极速披风+极速项链+旅行者之戒→凤翎指环；\r\n骑士手套+神行靴→踏云靴；\r\n极速披风+极速项链+旅行者之戒+骑士手套+神行靴→幻影疾风环；\r\n添加宝物金雷竹，攻击有机率施放辟邪神雷。"
+	},
+	    "conflicts" :
+	[
+	"L-artifacts"
+	],
+	"artifacts" :
+	[
+		"config/artifacts/aCgyx.json",
+		"config/artifacts/aLz.json",
+		"config/artifacts/aWxz.json",
+		"config/artifacts/aFlzh.json",
+		"config/artifacts/aTyx.json",
+		"config/artifacts/aDjkg.json",
+		"config/artifacts/aHyjfh.json",
+		"config/artifacts/aJlz.json"
+	],
+	
+	"changelog" :
+    {
+		"1.0.0" : ["Add some original combined treasures."],
+		"1.0.1" : ["Add the treasure Golden Thunder Bamboo. There is a chance to release the Exorcism Divine Thunder when attacking."],
+    }  
+}

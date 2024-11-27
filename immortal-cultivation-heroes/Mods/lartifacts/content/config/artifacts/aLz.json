@@ -1,0 +1,47 @@
+{
+	"aLz" : {
+		"class" : "RELIC",
+		"type" : [ "HERO" ],
+		"value" : 12000,
+		"graphics" : { 
+			"image": "artifacts/aLzS.png",
+			"large": "artifacts/aLzL.bmp",
+			"map": "artifacts/aLzM.def"
+		},
+		"slot" : "MISC",
+		"text" : {
+			"description" : "{Dragon Ball}\r\n\r\nIncrease luck by 3 points and reduce the enemy's luck by 3 points. Meanwhile, creatures acquire the breath attack ability, and the enemy is permanently in the state of being cursed.",
+			"event" : "A round bead was spat out from the dragon's mouth. The bead slowly floated towards you, containing the power of a divine dragon within it.",
+			"name" : "Dragon Ball"
+		},
+		"components":
+		[
+			"cardsOfProphecy",
+			"cloverOfFortune",
+			"ladybirdOfLuck"
+		],
+		"bonuses" : [
+			{
+			//敌方幸运-3
+			"type" : "LUCK",
+			"val" : -3,
+			"propagator": "BATTLE_WIDE",
+			"propagationUpdater" : "BONUS_OWNER_UPDATER",
+			"limiters" : [ "OPPOSITE_SIDE" ]
+			},
+			{
+			//敌方永久处于恶咒缠身状态
+			"type" : "ENCHANTED",
+			"subtype" : "spell.curse",
+			"val" : 2,
+			"propagator": "BATTLE_WIDE",
+			"propagationUpdater" : "BONUS_OWNER_UPDATER",
+			"limiters" : [ "OPPOSITE_SIDE" ]
+			},
+	    	{
+	    	//吐息攻击
+			"type" : "TWO_HEX_ATTACK_BREATH"
+			}
+		]
+	}
+}

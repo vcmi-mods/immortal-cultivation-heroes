@@ -1,0 +1,97 @@
+{
+	"crxy":
+	{
+		"name" : 
+		{
+			"plural" : "Emperor Yan",
+			"singular" : "Emperor Yan"
+		},
+		"description": "Use fireballs to attack. The Blazing Fire Shield reflects 50% of the damage, and fire-based magic damage is reduced by 100%.",
+		"hasDoubleWeek": false,
+		"doubleWide" : false,
+     	"faction" : "castle",
+		"special" : true,
+		"advMapAmount" :
+		{
+			 "min" : 16,
+			 "max" : 25
+		},
+		"level" : 0,
+		"attack" : 6,
+		"defense" : 8,
+		"damage" :
+		{
+			 "min" : 8,
+			 "max" : 15
+		},
+		"growth" : 9,
+		"hitPoints" : 40,
+		"speed" : 5,
+		"fightValue" : 130,
+		"aiValue" : 156,
+		"shots" : 24,
+		"cost" :
+		{
+			"gold" : 140
+		},
+		"graphics" :
+		{
+			"animation" : "creatures/crxyA.def",
+			"map" : "creatures/crxyM.def",
+			"iconSmall" : "creatures/crxyS.png",
+			"iconLarge" : "creatures/crxyL.png",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00
+			}
+		},
+		"sound" :
+		{
+			"attack": "ESULATTK.wav",
+			"defend": "ESULDFND.wav",
+			"killed": "ESULKILL.wav",
+			"move": "ESULMOVE.wav",
+			"shoot": "ESULSHOT.wav",
+			"wince": "ESULWNCE.wav"
+        },
+		"abilities" :
+		{
+			"fireShield" :	
+			{	
+			     "type" : "FIRE_SHIELD",		
+				 "val" : 50	
+			},
+				"castsAmount" :
+			{
+				    "type" : "CASTS",
+			    	"val" : 1
+			},
+			    "canShoot" :
+			{
+				"type" : "SHOOTER"			
+			},
+			"fireball" :
+			{	
+			    "type" : "SPELL_LIKE_ATTACK",
+				"subtype" : "spell.fireball"
+			},
+		
+					"firereduction": {
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"subtype" : "spellSchool.fire",
+				"val" : 100,
+				"valueType" : "BASE_NUMBER",
+			},
+				"canCast" :
+			{
+			    	"type" : "SPELLCASTER",
+			    	"subtype" : "spell.fireShield",
+				    "val" : 100
+			}
+		}	
+	}		
+}
+

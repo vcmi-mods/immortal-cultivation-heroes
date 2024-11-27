@@ -1,0 +1,140 @@
+{
+	"aZlb" : {
+		"fusedComponents" : true,
+		"class" : "RELIC",
+		"type" : [ "HERO" ],
+		"value" : 22000,
+		"graphics" : {
+			"image": "artifacts/aZlbS.png",
+			"large": "artifacts/aZlbL.bmp",
+			"map": "artifacts/aZlbM.def"
+		},
+		"slot" : "NECK",
+		"text" : {
+			"description" : "{LoongJade}\r\n\r\nHeroes add attack and defense by 5,and health points are increased by 25%,increase air-based magic damage by 50%.\r\nCreatures are immune to the “UndeadSlayer” & “Berserk”& “Hypnotize” & “Curse” & “Death Ripple” &  “Blind” & “forgetfulness” and immune lightning magic damage.\r\nThe “Bloodlust” & “Shield” & “Bless” & “Precision” & “airShield”spell is cast at the beginning",
+			"event" : "After going through numerous hardships, deep within this ancient mysterious realm, I encountered the legendary treasure—the Loong Jade. It emanated a faint dragon's breath, with faintly visible dragon shadows swirling around it. I approached slowly and gently touched the Dragon Jade with both hands, feeling a warm and powerful force surging into my body.",
+			"name" : "Imperial Seal"
+		},
+		"components":
+		[
+			"pendantOfDeath",
+			"pendantOfDispassion",
+			"pendantOfFreeWill",
+			"pendantOfHoliness",
+			"pendantOfLife",
+			"pendantOfNegativity",
+			"pendantOfSecondSight",
+			"pendantOfTotalRecall"
+		],
+		"bonuses" : [
+		{
+			"limiters" : ["IS_UNDEAD"],
+			"subtype" : "spell.destroyUndead",
+			"type" : "SPELL_IMMUNITY",
+			"val" : 0,
+			"valueType" : "BASE_NUMBER"
+		},
+		{
+		    "type": "PRIMARY_SKILL",
+			"subtype" : "primarySkill.attack",
+			"val" : 5,
+			"valueType": "BASE_NUMBER"
+		},
+	    {
+			"type": "PRIMARY_SKILL",
+			"subtype" : "primarySkill.defence",
+			"val" : 5,
+			"valueType": "BASE_NUMBER"
+	    },
+	    	{
+		"subtype" : "spell.berserk",
+		"type" : "SPELL_IMMUNITY",
+		"val" : 0,
+		"valueType" : "BASE_NUMBER"
+		},
+		{
+		"subtype": "spell.bloodlust",
+		"type" : "OPENING_BATTLE_SPELL",
+		"val" : 5,
+		"valueType" : "BASE_NUMBER"
+		},
+			{
+			"subtype" : "spell.hypnotize",
+			"type" : "SPELL_IMMUNITY",
+			"val" : 0,
+			"valueType" : "BASE_NUMBER"
+		},
+		{
+        "subtype": "spell.shield",
+		"type" : "OPENING_BATTLE_SPELL",
+		"val" : 5,
+		"valueType" : "BASE_NUMBER"
+		},
+			{
+			"subtype" : "spell.curse",
+			"type" : "SPELL_IMMUNITY",
+			"val" : 0,
+			"valueType" : "BASE_NUMBER"
+		},
+		{
+		"subtype": "spell.bless",
+		"type" : "OPENING_BATTLE_SPELL",
+		"val" : 5,
+		"valueType" : "BASE_NUMBER"
+		},
+			{
+			"subtype" : "spell.deathRipple",
+			"type" : "SPELL_IMMUNITY",
+			"val" : 0,
+			"valueType" : "BASE_NUMBER"
+		},
+		{
+			"type" : "STACK_HEALTH",
+			"val" : 25,
+			"valueType" : "PERCENT_TO_BASE"
+		},
+			{
+			"subtype" : "spell.lightningBolt",
+			"type" : "SPELL_IMMUNITY",
+			"val" : 0,
+			"valueType" : "BASE_NUMBER"
+			},
+		{
+			"subtype" : "spell.chainLightning",
+			"type" : "SPELL_IMMUNITY",
+			"val" : 0,
+			"valueType" : "BASE_NUMBER"
+		},
+		{
+			"type" : "SPELL_DAMAGE",
+			"subtype" : "spellSchool.air",
+			"val" : 50,
+			"valueType" : "BASE_NUMBER"
+		},
+			{
+			"subtype" : "spell.blind",
+			"type" : "SPELL_IMMUNITY",
+			"val" : 0,
+			"valueType" : "BASE_NUMBER"
+		},
+		{
+		"subtype": "spell.precision",
+		"type" : "OPENING_BATTLE_SPELL",
+		"val" : 5,
+		"valueType" : "BASE_NUMBER"
+		},
+			{
+			"subtype" : "spell.forgetfulness",
+				"type" : "SPELL_IMMUNITY",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER"
+		},
+		{
+		"subtype": "spell.airShield",
+		"type" : "OPENING_BATTLE_SPELL",
+		"val" : 5,
+		"valueType" : "BASE_NUMBER"
+		}
+		]
+	}
+}

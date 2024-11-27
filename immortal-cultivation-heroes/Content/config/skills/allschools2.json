@@ -1,0 +1,54 @@
+{
+	"allschools2" : {
+		"name" : "All-rounder in magic spells",
+		"gainChance" : {
+			"might" : 0,
+			"magic" : 0
+		},
+		"basic" : {
+			"images" : {
+				"small" : "skills/allschools/fourSchoolsBasicSmall",
+				"medium" : "skills/allschools/fourSchoolsBasicMedium",
+				"large" : "skills/allschools/fourSchoolsBasicLarge"
+			},
+			"description" : "{basic all-rounder in magic spells}\n\nPrimary all-rounders in magic can reduce the mana consumed by heroes when using four-element magic.",
+			"effects" : {
+				"magicSchoolSkill" : {
+					"type" : "MAGIC_SCHOOL_SKILL",
+					"subtype" : "any",
+					"val": 1
+				}
+			}
+		},
+		"advanced" : {
+			"images" : {
+				"small" : "skills/allschools/fourSchoolsAdvSmall",
+				"medium" : "skills/allschools/fourSchoolsAdvMedium",
+				"large" : "skills/allschools/fourSchoolsAdvLarge"
+			},
+			"description" : "{advanced all-rounder in magic spells}\n\nIntermediate four-element magic can reduce the mana consumed by heroes when using four-element magic and enhance the effects.",
+			"effects" : {
+				"magicSchoolSkill" : {
+					"type" : "MAGIC_SCHOOL_SKILL",
+					"subtype" : "any",
+					"val": 2
+				}
+			}
+		},
+		"expert" : {
+			"images" : {
+				"small" : "skills/allschools/fourSchoolsExpSmall",
+				"medium" : "skills/allschools/fourSchoolsExpMedium",
+				"large" : "skills/allschools/fourSchoolsExpLarge"
+			},
+			"description" : "{expert all-rounder in magic spells}\n\nAdvanced four-element magic can reduce the mana consumed by heroes when using four-element magic and optimize the effects.",
+			"effects" : {
+				"magicSchoolSkill" : {
+					"type" : "MAGIC_SCHOOL_SKILL",
+					"subtype" : "any",
+					"val": 3
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,213 @@
+{
+	"lmods.lartifacts:aCgyx" : {
+		"fusedComponents" : true,
+		"bonuses" : [
+			{
+				//敌方士气-3
+			"type" : "MORALE",
+			"propagator": "BATTLE_WIDE",
+			"propagationUpdater" : "BONUS_OWNER_UPDATER",
+			"limiters" : [ "OPPOSITE_SIDE" ],
+			"val":-3
+			},
+			{
+			//永久处于圣灵佑佐状态
+			"type" : "ENCHANTED",
+			"subtype" : "spell.bless",
+			"val" : 2
+			},
+			{
+			//接纳增益魔法
+		   "type" : "RECEPTIVE"
+			},
+			{
+				"type" : "MORALE",
+				"val" : 3,
+				"valueType" : "BASE_NUMBER"
+			},
+			{
+				"type" : "MIND_IMMUNITY",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER"
+			}
+		]
+	},
+	"lmods.lartifacts:aDjkg" : {
+		"fusedComponents" : true,
+		"bonuses" : [
+		    {
+			"subtype" : "resource.wood",
+			"type" : "GENERATE_RESOURCE",
+			"val" : 5
+		    },
+	    	 {
+			"subtype" : "resource.ore",
+			"type" : "GENERATE_RESOURCE",
+			"val" : 5
+			}
+		]
+	},
+	"lmods.lartifacts:aFlzh" : {
+		"fusedComponents" : true,
+		"bonuses" : [
+			{
+			//海上移动力增加1000
+			"type" : "MOVEMENT",
+	    	"subtype" : "heroMovementSea",
+	       "val" : 1000
+			},
+			{
+			//英雄陆地移动力1000
+			"type" : "MOVEMENT",
+			"subtype" : "heroMovementLand",
+		    "val" : 1000
+			},
+			 {
+			 //飞行
+			 "type": "FLYING"
+			},
+			{
+			//敌速-2
+			"type" : "STACKS_SPEED",
+			"propagator": "BATTLE_WIDE",
+			"propagationUpdater" : "BONUS_OWNER_UPDATER",
+			"limiters" : [ "OPPOSITE_SIDE" ],
+			"val":-2
+			},
+			{
+				"type" : "STACKS_SPEED",
+				"val" : 4,
+				"valueType" : "BASE_NUMBER"
+			}
+		]
+	},
+	"lmods.lartifacts:aHyjfh" : {
+		"fusedComponents" : true,
+		"bonuses" : [
+		{
+			//海上移动力增加1800
+			"type" : "MOVEMENT",
+	    	"subtype" : "heroMovementSea",
+	       "val" : 1800
+			},
+			{
+			//英雄陆地移动力1800
+			"type" : "MOVEMENT",
+			"subtype" : "heroMovementLand",
+		    "val" : 1800
+			},
+			{
+			//大地图飞行移动
+				"type" : "FLYING_MOVEMENT",
+				"val" : 0,
+				"valueType" : "INDEPENDENT_MIN"
+			},
+			 {
+			 //飞行
+			 "type": "FLYING"
+			},
+			{
+			//永久处于攻击加速状态
+				"type" : "ENCHANTED",
+				"subtype" : "spell.haste",
+				"val" : 2
+			},
+		    {
+			 //恶路减免100点
+			"type" : "ROUGH_TERRAIN_DISCOUNT",
+			"val" : 100
+			},			
+			{
+			//冲锋攻击8%
+			"type" : "JOUSTING",
+			"val" : 8
+			},
+			{
+				"type" : "STACKS_SPEED",
+				"val" : 4,
+				"valueType" : "BASE_NUMBER"
+			}
+		]
+	},
+	"lmods.lartifacts:aLz" : {
+		"fusedComponents" : true,
+		"bonuses" :[
+			{
+			//敌方幸运-3
+			"type" : "LUCK",
+			"val" : -3,
+			"propagator": "BATTLE_WIDE",
+			"propagationUpdater" : "BONUS_OWNER_UPDATER",
+			"limiters" : [ "OPPOSITE_SIDE" ]
+			},
+			{
+			//敌方永久处于恶咒缠身状态
+			"type" : "ENCHANTED",
+			"subtype" : "spell.curse",
+			"val" : 2,
+			"propagator": "BATTLE_WIDE",
+			"propagationUpdater" : "BONUS_OWNER_UPDATER",
+			"limiters" : [ "OPPOSITE_SIDE" ]
+			},
+	    	{
+	    	//吐息攻击
+			"type" : "TWO_HEX_ATTACK_BREATH"
+			},
+			{
+				"type" : "LUCK",
+				"val" : 3,
+				"valueType" : "BASE_NUMBER"
+			}
+		]
+	},
+	
+	"lmods.lartifacts:aTyx" : {
+		"fusedComponents" : true,
+		"bonuses" : [
+		    {
+			 //恶路减免100点
+			"type" : "ROUGH_TERRAIN_DISCOUNT",
+			"val" : 100
+			},
+			{
+			//冲锋攻击5%
+			"type" : "JOUSTING",
+			"val" : 5
+			},
+			{
+				"type" : "MOVEMENT",
+				"subtype" : "heroMovementLand",
+				"val" : 900,
+				"valueType" : "ADDITIVE_VALUE"
+			}
+		]
+	},
+	"lmods.lartifacts:aWxz" : {
+		"fusedComponents" : true,
+		"bonuses" : [
+			 {
+			 //四系魔法伤害+100%
+			"type" : "SPELL_DAMAGE",
+			"subtype" : "spellSchool.any",
+			"val" : 100,
+			"valueType" : "BASE_NUMBER"
+			},
+			{
+			//魔法伤害减免50%
+			"type" : "SPELL_DAMAGE_REDUCTION",
+			"subtype" : "spellSchool.any",
+			"val" : 50
+			},			
+        	{ 
+        	//魔法折射+50%
+			    "type" : "MAGIC_MIRROR",		
+				"val" : 50	
+			},	
+			{
+			//魔法抗性+50%
+				"type" : "MAGIC_RESISTANCE",
+				"val" : 50
+			}
+		]
+	}
+}

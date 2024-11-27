@@ -1,0 +1,97 @@
+{
+	"crby":
+	{
+		"name" : 
+		{
+			"plural" : "Ghost King",
+			"singular" : "Ghost King"
+		},
+		"description": "Resurrect once after death. Each attack reduces the enemy's luck by 3 points and has a 50% chance to make the enemy age.",
+		"hasDoubleWeek": false,
+		"doubleWide" : true,
+     	"faction" : "inferno",
+		"special" : true,
+		"advMapAmount" :
+		{
+			 "min" : 16,
+			 "max" : 25
+		},
+		"level" : 0,
+		"attack" : 6,
+		"defense" : 9,
+		"damage" :
+		{
+			 "min" : 8,
+			 "max" : 15
+		},
+		"growth" : 9,
+		"hitPoints" : 50,
+		"speed" : 6,
+		"fightValue" : 130,
+		"aiValue" : 156,
+		"shots" : 24,
+		"cost" :
+		{
+			"gold" : 140
+		},
+		"graphics" :
+		{ 
+		"animationTime" :
+		 { "attack" : 1, "idle" : 10, "walk" : 0.8
+		  },
+			"animation" : "battle/by.def",
+			"map" : "map/by.def",
+			"iconSmall" : "iconsSmall/by.png",
+			"iconLarge" : "iconsBig/by.bmp",
+			"timeBetweenFidgets" : 1
+		},
+		"sound" :
+		{
+			"attack" : "TempATTK.wav",
+			"defend" : "TempDFND.wav",
+			"killed" : "TempDEAD.wav",
+			"move" : "TempMOVE.wav",
+			"wince" : "TempWNCE.wav"
+        },
+		"abilities" :
+		{
+			"FLYING_ARMY" :
+			{
+				"type": "FLYING",
+				"subtype" : "movementTeleporting"
+			},			
+			"descreaseLuck" :
+			{
+				"type" : "LUCK",
+				"propagator": "BATTLE_WIDE",
+				"propagationUpdater" : "BONUS_OWNER_UPDATER",
+				"limiters" : [ "OPPOSITE_SIDE" ],
+				"val" : -3,
+				"stacking" : "Devils"
+			},
+				"age" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.age",
+				"val" : 50
+			},
+			"rebirthOnce" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			},
+			"rebirth" : 
+			{
+				"type" : "REBIRTH",
+				"val" : 100
+			},
+					"canCast" :
+			{
+			    	"type" : "SPELLCASTER",
+			    	"subtype" : "spell.frenzy",
+				    "val" : 100
+			}
+		}	
+	}		
+}
+

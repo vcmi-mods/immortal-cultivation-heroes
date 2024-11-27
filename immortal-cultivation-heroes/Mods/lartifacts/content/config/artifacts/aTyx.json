@@ -1,0 +1,35 @@
+{
+	"aTyx" : {
+		"class" : "RELIC",
+		"type" : [ "HERO" ],
+		"value" : 8000,
+		"graphics" : { 
+			"image": "artifacts/aTyxS.png",
+			"large": "artifacts/aTyxL.bmp",
+			"map": "artifacts/aTyxM.def"
+		},
+		"slot" : "FEET",
+		"text" : {
+			"description" : "{Cloud-treading Boots}\r\n\r\nTheir movement on land is increased by 900 points.No extra movement points are required when passing through difficult terrains, and creatures are granted the ability of charge attack.",
+			"event" : "A man with a scarred face blocked your way. After a fierce battle, with a clap of thunder, he was finally killed by you. Only a pair of shoes were left in this place.",
+			"name" : "Cloud-treading Boots"
+		},
+		"components":
+		[
+			"bootsOfSpeed",
+		    "equestriansGloves"
+		],
+		"bonuses" : [
+			 {
+			 //恶路减免100点
+			"type" : "ROUGH_TERRAIN_DISCOUNT",
+			"val" : 100
+			},
+			{
+			//冲锋攻击5%
+			"type" : "JOUSTING",
+			"val" : 5
+			}
+		]
+	}
+}

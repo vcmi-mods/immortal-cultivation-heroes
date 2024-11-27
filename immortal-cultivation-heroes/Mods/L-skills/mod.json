@@ -1,0 +1,29 @@
+{
+	"name" : "Some skills",
+	"description" : "Skills such as Resource Master, Combat Master, Vitality Regeneration and Vampiric were added.",
+	"modType" : "Skills",
+	"author" : "L",
+	"contact" : "",
+	"version" : "1.0.0",
+	"chinese" : {
+	"name" : "一些技能",
+	"description" : "添加了技能资源大师、搏击大师、活力再生、吸血。"
+    	},  
+    	"changelog": {
+		"1.0.0": [
+			"\r\nAdded the skill “Master of Skill Resources”: At the beginner level, it grants +1 wood and +1 stone per day; at the intermediate level, it grants +2 wood and +2 stone per day; at the advanced level, it grants +2 wood and +2 stone per day and also +1 rare resource."	],
+		"1.0.1": [
+		"\r\nAdded the skill “Master of Combat”: At the beginner level, it has a 20% chance to ignore attacks; at the intermediate level, it has a 20% chance to ignore attacks and a 20% chance to ignore defenses; at the advanced level, it has a 20% chance to ignore attacks, a 20% chance to ignore defenses and a 15% chance to deal double damage. \r\nSkill: Vitality Regeneration.At the beginner level, it restores 10 health points per turn.At the intermediate level, it restores 20 health points per turn.At the advanced level, it restores 30 health points per turn.\r\nSkill: Life Drain.At the beginner level, it drains 5% of the damage dealt as health.At the intermediate level, it drains 10% of the damage dealt as health.At the advanced level, it drains 15% of the damage dealt as health."	
+		]
+	},
+	"compatibility" :
+	    {
+		"min" : "1.4.0"
+    	},
+	"skills" : [
+		"config/skills/mresource.json",
+		"config/skills/skBjds.json",
+		"config/skills/skHlzs.json",
+		"config/skills/skXx.json"
+	    ]
+}

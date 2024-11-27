@@ -1,0 +1,35 @@
+{
+	"aDjkg" : {
+		"class" : "RELIC",
+		"type" : [ "HERO" ],
+		"value" : 12000,
+		"graphics" : {
+			"image": "artifacts/aDjkgS.png",
+			"large": "artifacts/aDjkgL.bmp",
+			"map": "artifacts/aDjkgM.def"
+		},
+		"slot" : "MISC",
+		"text" : {
+			"description" : "{Goblin Miner}\r\n\r\nGoblin Miners can produce 5 units of wood and stone for you every day.",
+			"event" : "You came to a mine, where a group of ugly creatures were busy at work. You caught one of them and heard that this kind of creature was really good at doing hard labor.",
+			"name" : "Goblin Miner"
+		},
+		"components":
+		[
+			"inexhaustibleCartOfLumber",
+			"inexhaustibleCartOfOre"
+		],
+		"bonuses" : [
+	        {
+			"subtype" : "resource.wood",
+			"type" : "GENERATE_RESOURCE",
+			"val" : 4
+		    },
+	    	 {
+			"subtype" : "resource.ore",
+			"type" : "GENERATE_RESOURCE",
+			"val" : 4
+			}
+		]
+	}
+}

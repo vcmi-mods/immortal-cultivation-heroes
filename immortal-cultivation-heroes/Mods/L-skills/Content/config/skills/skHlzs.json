@@ -1,0 +1,49 @@
+{	
+	"skHlzs" : {
+		"name" : "Vitality Regeneration",
+		"gainChance" : {
+			"might" : 4,
+			"magic" : 4
+		},
+		"base" : {
+			"effects" : {
+				"main" : {
+					"type" : "HP_REGENERATION"
+				}
+			}
+		},
+		"basic" : {
+			"images" : {
+				"small": "skills/skHlzs/skHlzsS1.png",
+				"medium": "skills/skHlzs/skHlzsM1.png",
+				"large": "skills/skHlzs/skHlzsL1.png"
+			},
+			"description" : "{Junior Vitality Regeneration}\n\nCreatures recover 10 hit points per turn.",
+			"effects" : {
+				"main" : { "val" : 10}
+			}
+		},
+		"advanced" : {
+			"images" : {
+				"small": "skills/skHlzs/skHlzsS2.png",
+				"medium": "skills/skHlzs/skHlzsM2.png",
+				"large": "skills/skHlzs/skHlzsL2.png"
+			},
+			"description" : "{Intermediate Vitality Regeneratio}\n\nCreatures recover 20 hit points per turn.",
+			"effects" : {
+				"main" : { "val" : 20}
+			}
+		},
+		"expert" : {
+			"images" : {
+			"small": "skills/skHlzs/skHlzsS3.png",
+				"medium": "skills/skHlzs/skHlzsM3.png",
+				"large": "skills/skHlzs/skHlzsL3.png"
+			},
+			"description" : "{Advanced Vitality Regeneration}\n\nCreatures recover 30 hit points per turn.",
+			"effects" : {
+				"main" : { "val" : 30}
+			}
+		}
+	}
+}

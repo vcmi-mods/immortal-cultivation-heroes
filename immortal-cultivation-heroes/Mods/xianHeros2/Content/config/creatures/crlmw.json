@@ -1,0 +1,83 @@
+{
+	"crlmw":
+	{
+		"name" : 
+		{
+			"plural" : "Lotus Fairy",
+			"singular" : "Lotus Fairy"
+		},
+		"description": "Cast disease magic before attacking. There is no distance penalty for shooting.",
+		"hasDoubleWeek": false,
+		"doubleWide" : true,
+     	"faction" : "rampart",
+		"special" : true,
+		"advMapAmount" :
+		{
+			 "min" : 16,
+			 "max" : 25
+		},
+		"level" : 0,
+		"attack" : 8,
+		"defense" : 6,
+		"damage" :
+		{
+			 "min" : 9,
+			 "max" : 16
+		},
+		"growth" : 9,
+		"hitPoints" : 40,
+		"speed" : 5,
+		"fightValue" : 130,
+		"aiValue" : 156,
+		"shots" : 24,
+		"cost" :
+		{
+			"gold" : 140
+		},
+		"graphics" :
+		{ 
+		"animationTime" :
+		 { "attack" : 1, "idle" : 10, "walk" : 0.8
+		  },
+			"animation" : "battle/lmw.def",
+			"map" : "map/lmw.def",
+			"iconSmall" : "iconsSmall/lmw.bmp",
+			"iconLarge" : "iconsBig/lmw.bmp",
+			"timeBetweenFidgets" : 1
+		},
+		"sound" :
+		{
+			"attack" : "TempATTK.wav",
+			"defend" : "TempDFND.wav",
+			"killed" : "TempDEAD.wav",
+			"move" : "TempMOVE.wav",
+			"wince" : "TempWNCE.wav"
+        },
+		"abilities" :
+		{
+		"disease"	:
+			{
+				"type" : "SPELL_BEFORE_ATTACK",
+				"subtype" : "spell.disease",
+				"val" : 100,
+				"addInfo" : 3
+			},		
+			"noDistancePenalty" :	
+			{	
+			    "type" : "NO_DISTANCE_PENALTY"	
+			},
+			"rebirthOnce" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			},
+					"canCast" :
+			{
+			    	"type" : "SPELLCASTER",
+			    	"subtype" : "spell.resurrection",
+				    "val" : 100
+			}
+		}	
+	}		
+}
+

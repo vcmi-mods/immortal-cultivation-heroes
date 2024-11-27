@@ -1,0 +1,100 @@
+{
+	"cryy":
+	{
+		"name" :
+		{
+			"plural" : "Yanli",
+			"singular" : "Yanli"
+		},
+    		"description": "The attack comes with the effects of the Fog of Death and the Light of Destruction.",
+		"advMapAmount" :
+		{
+			 "max" : 16,
+			 "min" : 10
+		},
+		"faction" : "necropolis",
+		"aiValue" : 562,
+		"shots" : 24,
+		"attack" : 8,
+		"cost" :
+		{
+			"gold" : 500
+		},
+		"damage" :
+		{
+			 "max" : 6,
+			 "min" : 4
+		},
+		"defense" : 6,
+		"fightValue" : 526,
+		"graphics" :
+		{
+				"animation": "battle/yy.def",
+			"map" : "map/yy.def",
+			"iconSmall" : "iconsSmall/yy.bmp",
+			"iconLarge" : "iconsBig/yy.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.2,
+				"idle" : 10.00,
+				"attack" : 1
+			}
+		},
+		"growth" : 4,
+		"hitPoints" : 40,
+		"level" : 4,
+		"sound" :
+		{
+			"attack": "1.wav",
+			"defend": "6.wav",
+			"killed": "3.wav",
+			"move": "4.wav",
+			"wince": "SPRTWNCE.wav"
+		},
+		"speed" : 6,
+		"abilities" :
+		{
+			"ability1":	{
+				"type" : "UNDEAD"
+			},
+		"petrify" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.disruptingRay",
+				"val" : 100,
+				"turns" : 3
+			},
+			"canShoot" :
+			{
+				"type" : "SHOOTER"
+			},
+			"deathCloud" :
+			{
+				"type" : "SPELL_LIKE_ATTACK",
+				"subtype" : "spell.deathCloud"
+			},
+			"castsAmount" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			},
+			"enchant" :
+			{
+				"type" : "CREATURE_ENCHANT_POWER",
+				"val" : 1
+			},
+			"spellpower" :
+			{
+				"type" : "CREATURE_SPELL_POWER",
+				"val" : 100
+			},
+			"canCast" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.animateDead",
+				"val" : 100
+			}
+		}
+	}
+}

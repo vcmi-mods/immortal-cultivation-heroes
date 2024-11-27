@@ -1,0 +1,106 @@
+{
+	"crlxq":
+	{
+		"name" : 
+		{
+			"plural" : "Thunder Spirit Incarnation",
+			"singular" : "Thunder Spirit Incarnation"
+		},
+		"description": "There is a 50% chance to cast the “True Art of Divine Sword Controlling Thunder” after attacking, causing magic damage and coming with a paralyzing effect. The damage of air-based magic is increased by 100%.",
+		"hasDoubleWeek": false,
+		"doubleWide" : false,
+     	"faction" : "tower",
+		"special" : true,
+		"advMapAmount" :
+		{
+			 "min" : 16,
+			 "max" : 25
+		},
+		"level" : 0,
+		"attack" : 7,
+		"defense" : 7,
+		"damage" :
+		{
+			 "min" : 8,
+			 "max" : 15
+		},
+		"growth" : 9,
+		"hitPoints" : 40,
+		"speed" : 5,
+		"fightValue" : 130,
+		"aiValue" : 156,
+		"shots" : 24,
+		"cost" :
+		{
+			"gold" : 140
+		},
+		"graphics" :
+		{ 
+			"animation" : "battle/lxq.def",
+			"map" : "map/lxq.def",
+			"iconSmall" : "iconsSmall/lxq.png",
+			"iconLarge" : "iconsBig/lxq.png",
+			"timeBetweenFidgets" : 1,
+				"animationTime" :
+			{
+				"walk" : 1.38,
+				"attack" : 1,
+				"idle" : 10
+			},
+			"missile" :
+			{
+				"projectile": "CPRGTIX",
+				"attackClimaxFrame" : 6,
+				"offset" :
+				{
+					"upperX" : 11,
+					"upperY" : -131,
+					"middleX" : 76,
+					"middleY" : -87,
+					"lowerX" : 19,
+					"lowerY" : -1
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}
+		},
+		"sound" :
+		{
+		    "attack": "GTITATTK.wav",
+			"defend": "GTITDFND.wav",
+			"killed": "GTITKILL.wav",
+			"move": "GTITMOVE.wav",
+			"shoot": "GTITSHOT.wav",
+			"wince": "GTITWNCE.wav"
+        },
+		"abilities" :
+		{
+		        "castsAmount" :
+		    	{
+				    "type" : "CASTS",
+			    	"val" : 1
+		    	},
+				"canCast" :
+		    	{
+			    	"type" : "SPELLCASTER",
+			    	"subtype" : "spell.counterstrike",
+				    "val" : 100
+		    	},
+		"lightningbolt": {
+					"type": "SPELL_AFTER_ATTACK",
+					"subtype": "spell.sjylzj",
+					"val": 50,
+					"addInfo": [3,0],
+					"limiters" : ["noneOf", "OPPOSITE_SIDE"],
+					"propagationUpdater" : "BONUS_OWNER_UPDATER"
+				    },
+				    "airMagic" : {
+					"type" : "SPELL_DAMAGE",
+					"subtype" : "spellSchool.air",
+					"val" : 100,
+					"valueType" : "BASE_NUMBER"
+				}
+				    
+		}	
+	}		
+}
+

@@ -1,0 +1,112 @@
+﻿    {
+    	"hjx" :
+    	{
+    		"class" : "cljx",
+    		"female" : false,
+    		"images" :
+    		
+       {
+    			
+        "specialtySmall" : "jx/sjx-s.bmp",
+      "specialtyLarge" : "jx/sjx-l.bmp",
+      "large" : "jx/jx-l.bmp",
+      "small" : "jx/jx-s.bmp"
+    
+       },
+    
+    		"army" :
+    		
+    [
+    			
+    {
+    "creature" : "silverPegasus","max" : 3,"min" : 2
+    },
+    			
+    {"creature" : "silverPegasus",
+    "max" : 2,
+    "min" : 1
+    },
+    			
+    {
+    "creature" : "silverPegasus",
+    "max" : 2,"min" : 1
+    },
+    ],
+		
+    "skills" :
+
+    [
+
+    {
+
+    "level" : "basic",
+
+    "skill" : "wisdom"
+
+    },
+
+    {
+
+    "level" : "basic",
+
+    "skill" : "logistics"
+
+    }
+
+    ],
+		
+    "spellbook" :
+    ["chainLightning",
+    "lightningBolt"
+    ],
+	
+		"texts" :
+		{
+			"name" : "Jiu Xiao",
+			"biography" : "Jiu Xiao，A true dragon that had taken human form showed extraordinary perception and manipulation abilities of the spiritual power between heaven and earth since childhood. On the path of cultivation in the Ninth Heaven, he was accompanied by thunder and befriended lightning. He tempered himself in countless thunder tribulations, integrating the power of divine thunder into his blood and making it his own.",
+		
+			"specialty" : {
+				"description" : "Cast Chain Lightning at the beginning of the battle, and reduce the air-element damage received by 100%. The damage caused by air-element magic is increased by 30%, and it increases by 10% for every level that the hero's level is raised. For every level that the hero levels up, the Logistics skill is increased by 3%, and the naval movement ability is increased by 50 points per level.",
+				"name" : "Control thunder",
+				"tooltip" : "{Fortune}\r\n\r\nEnhance various abilities.)"
+			}
+		},
+		"specialty" : {
+			"bonuses": {
+		"lightning" : {
+		        "subtype": "spell.chainLightning",
+				"type" : "OPENING_BATTLE_SPELL",
+				"val" : 100,
+				"valueType" : "BASE_NUMBER",
+					},
+				"logistics" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"subtype" : "heroMovementLand",
+					"type" : "MOVEMENT",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+					},
+				"immumityc" : {
+				"type": "SPELL_DAMAGE_REDUCTION",
+				"subtype" : "air",
+				"val": 100
+					},
+				"airdamage" : {
+	            "type": "SPELL_DAMAGE",
+				"subtype": "air",
+				"val": 30
+					},
+				"airMagic" : {
+					"type" : "SPELL_DAMAGE",
+					"subtype" : "spellSchool.air",
+					"val" : 10,
+					"valueType" : "BASE_NUMBER",
+					"updater" : "TIMES_HERO_LEVEL"
+				}
+			}
+		}
+	}
+}
+
+

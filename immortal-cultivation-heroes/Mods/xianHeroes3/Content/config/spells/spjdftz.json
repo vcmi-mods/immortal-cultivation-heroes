@@ -1,0 +1,95 @@
+{
+	"spjdftz":
+	{
+		"type": "ability", 
+		"name": "Golden Emperor's Heaven-Burning Slash",
+		"school":
+		{
+			"air": false,
+			"earth": false,
+			"fire": true,
+			"water": false
+		},
+		"level": 3,
+		"power": 135,
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+		},
+ 
+		"flags" :
+		{
+			"offensive": true,
+			"damage": true,
+			"negative": true
+		},
+ 
+
+		"targetCondition" : {
+			"allOf" : {},
+			"anyOf" : {}
+	},   
+		"graphics":
+		{
+			"iconBook": "spells/spjdftz/spjdftzB.png",
+			"iconScroll": "spells/spjdftz/spjdftzSl.png",
+			"iconScenarioBonus": "spells/spjdftz/spjdftzSb.png",
+			"iconEffect": "spells/spjdftz/spjdftzE.png",
+			"iconImmune": "spells/spjdftz/spjdftzL.png"
+		},
+		
+	    "animation":{
+			"affect":[{"defName":"C10SPW", "verticalPosition":"bottom"}]
+		},
+		"sounds": {
+			"cast": "PRAYER"
+		},
+		"targetType": "CREATURE",
+ 
+		"levels":
+		{
+			"base":
+			{
+				"aiValue": 15,
+				"range": "0",
+				"targetModifier":
+				{
+					"smart": true
+				}
+			},
+			"none":
+			{
+				"description": "{Golden Emperor's Heaven-Burning Slash}\n\nThoroughly activate the different fire of the Golden Emperor's Heaven-Burning Flame and transform it into a thousand-zhang-long golden light beam to slash down. It will cause 80 points of damage to the enemy.\n",
+	 
+				"cost": 15,
+				"power": 80,
+	 
+			},
+			"basic":
+			{
+				"description": "{basic Golden Emperor's Heaven-Burning Slash}\n\nThoroughly activate the different fire of the Golden Emperor's Heaven-Burning Flame and transform it into a thousand-zhang-long golden light beam to slash down. It will cause 80 points of damage to the enemy.\n",
+				
+				"cost": 12,
+				"power": 80,
+	 
+			},
+			"advanced":
+			{
+				"description": "{advanced Golden Emperor's Heaven-Burning Slash}\n\nThoroughly activate the different fire of the Golden Emperor's Heaven-Burning Flame and transform it into a thousand-zhang-long golden light beam to slash down. It will cause 120 points of damage to the enemy.\n",
+	 
+				"cost": 12,
+				"power": 120,
+	 
+			},
+			"expert":
+			{
+				"description": "{expert Golden Emperor's Heaven-Burning Slash}\n\nThoroughly activate the different fire of the Golden Emperor's Heaven-Burning Flame and transform it into a thousand-zhang-long golden light beam to slash down. It will cause 180 points of damage to the enemy.\n",
+	 
+				"cost": 12,
+				"power": 180,
+	 
+			}
+		}
+	}
+ 
+}

@@ -1,0 +1,42 @@
+{
+	"aJlz":
+	{
+		"type": ["HERO"],
+		"slot" : "RIGHT_HAND",
+		"class": "RELIC",
+		"value": 30000,	
+		"text":
+		{
+			"name": "Golden Thunder Bamboo",
+			"description": "The hero's attack increases by 5, and there is a 50% chance for the troops to cast the Divine Thunder for Exorcising Evil after attacking, causing spell damage to 6 creatures of the enemy side.",
+			"event": "Ziling took out a box from her storage ring and sent it to in front of you. When the lid was opened, there was a section of glittering golden bamboo inside, with faint electric lights flickering all over it."
+		},
+		"graphics" : { 
+			"image": "artifacts/aJlzS.png",
+			"large": "artifacts/aJlzL.png",
+			"map": "artifacts/aJlzM.def"
+		},
+		"bonuses":
+		[	
+			{
+				"type": "PRIMARY_SKILL",
+				"subtype": "primarySkill.attack",
+				"val": 5
+			},
+			
+			{
+				"type": "SPELL_AFTER_ATTACK",
+				"subtype": "spell.spbxsl",
+				"val": 50,
+				"addInfo": [3,0],
+				"limiters" : ["noneOf", "OPPOSITE_SIDE"],
+				"propagationUpdater" : "BONUS_OWNER_UPDATER"
+		    },
+		    {
+    			"type" : "SPELL_IMMUNITY",
+    			"subtype" : "spell.spbxsl",
+    			"addInfo" : 0
+    		}			
+		]
+	}
+}

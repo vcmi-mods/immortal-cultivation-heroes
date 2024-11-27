@@ -1,0 +1,105 @@
+{
+	"crwl":
+	{
+		"name" : 
+		{
+			"plural" : "Mosquito Beast",
+			"singular" : "Mosquito Beast"
+		},
+		"description": "After attacking, entangle the enemy creatures, launch a breath attack, and suck 20% of their blood.",
+		"hasDoubleWeek": false,
+		"doubleWide" : true,
+     	"faction" : "dungeon",
+		"special" : true,
+		"advMapAmount" :
+		{
+			 "min" : 16,
+			 "max" : 25
+		},
+		"level" : 0,
+		"attack" : 7,
+		"defense" : 7,
+		"damage" :
+		{
+			 "min" : 8,
+			 "max" : 15
+		},
+		"growth" : 9,
+		"hitPoints" : 40,
+		"speed" : 5,
+		"fightValue" : 130,
+		"aiValue" : 156,
+		"shots" : 24,
+		"cost" :
+		{
+			"gold" : 140
+		},
+		"graphics" :
+		{ 
+			"animation" : "battle/wl.def",
+			"map" : "map/wl.def",
+			"iconSmall" : "iconsSmall/wl.bmp",
+			"iconLarge" : "iconsBig/wl.bmp",
+			"timeBetweenFidgets" : 1,
+				"animationTime" :
+			{
+				"walk" : 0.6,
+				"attack" : 1,
+				"idle" : 10
+			},
+			"missile" :
+			{
+				"projectile": "CPRGTIX",
+				"attackClimaxFrame" : 6,
+				"offset" :
+				{
+					"upperX" : 11,
+					"upperY" : -131,
+					"middleX" : 76,
+					"middleY" : -87,
+					"lowerX" : 19,
+					"lowerY" : -1
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}
+		},
+		"sound" :
+		{
+		   "attack": "BKDRATTK.wav",
+			"defend": "BKDRDFND.wav",
+			"killed": "BKDRKILL.wav",
+			"move": "BKDRMOVE.wav",
+			"wince": "BKDRWNCE.wav"
+        },
+		"abilities" :
+		{
+		"fireBreath" :	
+			{
+				"type" : "TWO_HEX_ATTACK_BREATH"
+			},
+		        "castsAmount" :
+		    	{
+				    "type" : "CASTS",
+			    	"val" : 1
+		    	},
+				"canCast" :
+		    	{
+			    	"type" : "SPELLCASTER",
+			    	"subtype" : "spell.counterstrike",
+				    "val" : 100
+		    	},
+		    	"drainsLife" :
+			{
+				"type" : "LIFE_DRAIN",
+				"val" : 20
+			},		
+		"bindattack" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.bind",
+				"val" : 100,
+			}
+		}	
+	}		
+}
+

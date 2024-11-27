@@ -1,0 +1,22 @@
+{
+	"core:pendantOfHoliness" : {
+		"bonuses" : [
+		{
+			"subtype" : "spell.curse",
+			"type" : "SPELL_IMMUNITY",
+			"val" : 0,
+			"valueType" : "BASE_NUMBER"
+		},
+		{
+		"subtype": "spell.bless",
+		"type" : "OPENING_BATTLE_SPELL",
+		"val" : 5,
+		"valueType" : "BASE_NUMBER"
+		}
+	],
+		"text" : {
+			"description" : "{Pendant Of Holiness+}\r\n\r\nCreatures are immune to the effect of “Curse”, and the spell of “Bless” is cast at the beginning.",
+			"name" : "Pendant Of Holiness+"
+		}
+	}
+}

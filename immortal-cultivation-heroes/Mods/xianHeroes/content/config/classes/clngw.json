@@ -1,0 +1,95 @@
+{
+	"clngw" :
+	{
+		"name" : "Wan'er",
+		"animation":
+		{
+			"battle" :
+			{
+				"male" : "CH16.DEF",
+				"female" : "CH16.DEF"
+			}
+		},
+		"mapObject" :
+		{
+			"templates" :
+			{
+				"default" :
+				{
+					"animation" : "AH16_.def",
+					"editorAnimation": "AH16_E.def"
+				}
+			}
+		},
+		"commander" : "crngw",		
+		"faction" : "conflux",
+		"affinity" : "magic",
+		"primarySkills" :
+		{
+			"attack"     : 0,
+			"defence"    : 1,
+			"spellpower" : 2,
+			"knowledge"  : 3
+		},
+		"lowLevelChance" :
+		{
+			"attack"     : 15,
+			"defence"    : 20,
+			"spellpower" : 35,
+			"knowledge"  : 30
+		},
+		"highLevelChance" :
+		{
+			"attack"     : 20,
+			"defence"    : 20,
+			"spellpower" : 30,
+			"knowledge"  : 30
+		},
+		"secondarySkills" :
+		{
+			"pathfinding"  : 3,
+			"archery"      : 5,
+			"logistics"    : 6,
+			"scouting"     : 1,
+			"diplomacy"    : 4,
+			"navigation"   : 2,
+			"leadership"   : 4,
+			"wisdom"       : 8,
+			"mysticism"    : 1,
+			"luck"         : 4,
+			"ballistics"   : 1,
+			"eagleEye"     : 1,
+			"necromancy"   : 0,
+			"estates"      : 6,
+			"fireMagic"    : 0,
+			"airMagic"     : 0,
+			"waterMagic"   : 0,
+			"earthMagic"   : 0,
+			"scholar"      : 4,
+			"tactics"      : 4,
+			"artillery"    : 1,
+			"learning"     : 1,
+			"offence"      : 4,
+			"armorer"      : 4,
+			"intelligence" : 6,
+			"sorcery"      : 1,
+			"resistance"   : 0,
+			"firstAid"     : 1,
+			"allschools2"   : 15,
+			"paadFireResist2" : 5
+		},
+		"defaultTavern" : 0,
+		"tavern" :
+		{
+			"castle"     : 0,
+			"rampart"    : 0,
+			"tower"      : 0,
+			"inferno"    : 0,
+			"necropolis" : 0,
+			"dungeon"    : 0,
+			"stronghold" : 0,
+			"fortress"   : 0,
+			"conflux"    : 0
+		}
+	}
+}

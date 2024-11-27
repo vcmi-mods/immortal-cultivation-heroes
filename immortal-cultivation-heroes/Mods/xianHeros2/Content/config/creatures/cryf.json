@@ -1,0 +1,77 @@
+{
+	"cryf":
+	{
+		"name" : 
+		{
+			"plural" : "Ancient Sacred Body",
+			"singular" : "Ancient Sacred Body"
+		},
+		"description": "The Ancient Sacred Body is physically powerful and can be in a state of prayer permanently.",
+		"hasDoubleWeek": false,
+		"doubleWide" : false,
+     	"faction" : "fortress",
+		"special" : true,
+		"advMapAmount" :
+		{
+			 "min" : 16,
+			 "max" : 25
+		},
+		"level" : 0,
+		"attack" : 6,
+		"defense" : 8,
+		"damage" :
+		{
+			 "min" : 7,
+			 "max" : 14
+		},
+		"growth" : 9,
+		"hitPoints" : 50,
+		"speed" : 5,
+		"fightValue" : 130,
+		"aiValue" : 156,
+		"shots" : 24,
+		"cost" :
+		{
+			"gold" : 140
+		},
+		"graphics" :
+		{ 
+			"animation" : "battle/yf.def",
+			"map" : "map/yf.def",
+			"iconSmall" : "iconsSmall/yf.png",
+			"iconLarge" : "iconsBig/yf.bmp",
+			"timeBetweenFidgets" : 1,
+				"animationTime" :
+			{
+				"walk" : 1,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"sound" :
+		{
+		   "attack" : "UXatack.wav",
+			"defend" : "UXdefend.wav",
+			"killed" : "UXkill.wav",
+			"move"   : "UXmove.wav",
+			"wince"  : "UXwince.wav"
+        },
+		"abilities" :
+		{
+		"enchanted" :
+			{
+				"type" : "ENCHANTED",
+				"subtype" : "spell.prayer",
+				"val" : 2
+			},
+				    "airMagic" : {
+					"type" : "SPELL_DAMAGE",
+					"subtype" : "spellSchool.air",
+					"val" : 100,
+					"valueType" : "BASE_NUMBER"
+				}
+	
+		}	
+	}		
+}
+

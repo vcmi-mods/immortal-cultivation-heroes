@@ -1,0 +1,95 @@
+{
+	"clyc" :
+	{
+		"name" : "The top alchemist",
+	"animation":
+		{
+			"battle" :
+			{
+				"male" : "CH05.DEF",
+				"female" : "CH05.DEF"
+			}
+		},
+		"mapObject" :
+		{
+			"templates" :
+			{
+				"default" :
+				{
+					"animation" : "AH05_.def",
+					"editorAnimation": "AH05_E.def"
+				}
+			}
+		},
+		"commander" : "cryc",	
+		"faction" : "tower",
+		"affinity" : "might",
+		"primarySkills" :
+		{
+			"attack"     : 2,
+			"defence"    : 2,
+			"spellpower" : 1,
+			"knowledge"  : 1
+		},
+		"lowLevelChance" :
+		{
+			"attack"     : 20,
+			"defence"    : 20,
+			"spellpower" : 25,
+			"knowledge"  : 35
+		},
+		"highLevelChance" :
+		{
+			"attack"     : 20,
+			"defence"    : 20,
+			"spellpower" : 35,
+			"knowledge"  : 25
+		},
+		"secondarySkills" :
+		{
+			"pathfinding"  : 3,
+			"archery"      : 7,
+			"logistics"    : 5,
+			"scouting"     : 1,
+			"diplomacy"    : 3,
+			"navigation"   : 3,
+			"leadership"   : 4,
+			"wisdom"       : 5,
+			"mysticism"    : 1,
+			"luck"         : 5,
+			"ballistics"   : 1,
+			"eagleEye"     : 1,
+			"necromancy"   : 0,
+			"estates"      : 3,
+			"fireMagic"    : 0,
+			"airMagic"     : 0,
+			"waterMagic"   : 0,
+			"earthMagic"   : 0,
+			"scholar"      : 2,
+			"tactics"      : 6,
+			"artillery"    : 1,
+			"learning"     : 1,
+			"offence"      : 7,
+			"armorer"      : 7,
+			"intelligence" : 3,
+			"sorcery"      : 1,
+			"resistance"   : 0,
+			"firstAid"     : 1,
+			"allschools2"   : 20,
+			"paadFireResist2" : 0
+		},
+		"defaultTavern" : 0,
+		"tavern" :
+		{
+			"castle"     : 0,
+			"rampart"    : 0,
+			"tower"      : 0,
+			"inferno"    : 0,
+			"necropolis" : 0,
+			"dungeon"    : 0,
+			"stronghold" : 0,
+			"fortress"   : 0,
+			"conflux"    : 0
+		}
+	}
+}

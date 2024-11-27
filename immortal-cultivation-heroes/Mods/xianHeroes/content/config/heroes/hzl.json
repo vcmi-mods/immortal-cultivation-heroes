@@ -1,0 +1,95 @@
+﻿{
+	"hzl" :
+	{
+		"class": "clzl",
+		"female" : true,
+		"images" :
+		
+{
+			
+  "specialtySmall" : "zl/szl-s.bmp",
+  "specialtyLarge" : "zl/szl-l.bmp",
+  "large" : "zl/zl-l.bmp",
+  "small" : "zl/zl-s.bmp"
+
+},
+
+		"army" :
+		
+[
+			
+{
+    "creature" : "cerberus","max" : 5,"min" : 3
+    },
+    			
+    {"creature" : "cerberus",
+    "max" : 3,
+    "min" : 2
+    },
+    			
+    {
+    "creature" : "cerberus",
+    "max" : 3,"min" : 2
+    },
+],
+		
+"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			}
+		],
+		"spellbook" :
+		[
+			"prayer"
+		],
+	
+		"texts" :
+		{
+			"name" : "Zi Ling",
+			"biography" : "Zi Ling's original name was Wang Ning. She was the daughter of the sect master of the Wonderful Sound Sect in the Chaotic Star Sea. She had an extremely beautiful appearance and was known as the most beautiful woman in the Star Sea. Because her parents were killed, she changed her name to Zi Ling. Zi Ling had a tough and unyielding character and a firm determination in the pursuit of the Dao. She was unwilling to be a concubine, had an independent mind, and was very filial. She practiced hard, hoping to take control of her own destiny and have the right to choose her own fate. Zi Ling had the physique of the Pure Yin Body of a Beautiful Maiden, which was most suitable for cultivating the skills of the Demon Race.",
+		
+			"specialty" : {
+				"description" : "Wild monsters intentionally have a reduction of 3. Creature morale increases by 2. For every level the hero gains, there will be a 10% increase in water-element damage. For every level the hero's Logistics skill increases by 3%, and the naval movement points increase by 50 per level.",
+				"name" : "The most beautiful woman in the Star Sea.",
+				"tooltip" : "{Fortune}\r\n\r\nEnhance various abilities.)"
+			}
+		},
+		"specialty" : {
+			"bonuses" : {
+				"logistics" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"subtype" : "heroMovementLand",
+					"type" : "MOVEMENT",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+					},
+					"waterMagic" : {
+					"type" : "SPELL_DAMAGE",
+					"subtype" : "spellSchool.water",
+					"val" : 10,
+					"valueType" : "BASE_NUMBER",
+					"updater" : "TIMES_HERO_LEVEL"
+				},
+				"join": {
+					"targetSourceType" : "SECONDARY_SKILL",
+						"type" : "WANDERING_CREATURES_JOIN_BONUS",
+						"val" : 3,
+						"valueType" : "BASE_NUMBER"
+				},
+					"morale" : {
+					"type" : "MORALE",
+					"val" : 2,
+			    }
+			}
+		}
+	}
+}
+
+

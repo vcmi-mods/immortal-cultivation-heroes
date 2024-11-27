@@ -1,0 +1,50 @@
+{
+	"aFlzh" : {
+		"class" : "RELIC",
+		"type" : [ "HERO" ],
+		"value" : 12000,
+		"graphics" : { 
+			"image": "artifacts/aFlzhS.png",
+			"large": "artifacts/aFlzhL.bmp",
+			"map": "artifacts/aFlzhM.def"
+		},
+		"slot" : "RING",
+		"text" : {
+			"description" : "{Phoenix Feather Ring}\r\n\r\nIncrease speed by 4 points.Grant creatures the ability to fly and reduce the enemy's speed by 2. Increase the movement on land and at sea by 1000 points respectively.",
+			"event" : "A phoenix feather drifted down from the sky in front of you. You reached out your hand to catch it, and the feather transformed into a ring.",
+			"name" : "Phoenix Feather Ring"
+		},
+		"components":
+		[
+			"capeOfVelocity",
+			"ringOfTheWayfarer",
+			"necklaceOfSwiftness"
+		],
+		"bonuses" : [
+	    	{
+			//海上移动力增加1000
+			"type" : "MOVEMENT",
+	    	"subtype" : "heroMovementSea",
+	       "val" : 1000
+			},
+			{
+			//英雄陆地移动力1000
+			"type" : "MOVEMENT",
+			"subtype" : "heroMovementLand",
+		    "val" : 1000
+			},
+			 {
+			 //飞行
+			 "type": "FLYING"
+			},
+			{
+			//敌速-2
+			"type" : "STACKS_SPEED",
+			"propagator": "BATTLE_WIDE",
+			"propagationUpdater" : "BONUS_OWNER_UPDATER",
+			"limiters" : [ "OPPOSITE_SIDE" ],
+			"val":-2
+			}
+		]
+	}
+}

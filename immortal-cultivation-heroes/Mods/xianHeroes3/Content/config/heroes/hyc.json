@@ -1,0 +1,95 @@
+﻿{
+	"hyc" :
+	{
+        		"class": "clyc",
+        		"female" : false,
+        		"images" :
+        		
+        {
+        			
+          "specialtySmall" : "yc/sycS.png",
+          "specialtyLarge" : "yc/sycL.png",
+          "large" : "yc/hycL.bmp",
+          "small" : "yc/hycS.bmp"
+        
+        },
+        
+        		"army" :
+        [			
+       { "creature" : "masterGenie","max" : 3,"min" : 2 },
+       { "creature" : "masterGenie","max" : 2,"min" : 1 }
+        ],
+        		
+        "skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			}
+		],
+		"spellbook" :
+		[
+			"resurrection"
+		],
+	
+		"texts" :
+		{
+			"name" : "Yao Chen",
+			"biography" : "Yao Chen,He was Xiao Yan's mentor. He was once a member of the Medicine Clan, one of the eight ancient races in ancient times. Because he was framed, he was expelled from the Medicine Clan. Through his own efforts, Yao Chen became the number one alchemist in the Central Region and possessed the strength at the peak of the Nine-Star Dou Zun. He loved freedom and was unwilling to attach himself to any organization, so he was targeted by the Soul Palace. Yao Chen fell due to the betrayal of his disciple Han Feng, but fortunately, he managed to preserve his soul. Later, he fell into a slumber in the ring until he met Xiao Yan. He helped Xiao Yan with his cultivation and taught him knowledge and cultivation methods. He was an extremely important guide on Xiao Yan's growth path.",
+		
+			"specialty" : {
+				"description" : "After the entire troop dies, 50% of them will be reborn. For every level the hero upgrades, the damage of water magic and earth magic will each increase by 5%. For every level the hero upgrades, the Logistics skill will be strengthened by 3%, and the movement ability at sea will increase by 50 points for every level.",
+				"name" : "Revive and Prolong Life",
+				"tooltip" : "{Fortune}\r\n\r\nEnhance various abilities.)"
+			}
+		},
+		"specialty" : {
+			"bonuses" : {
+				"rebirth" : {
+				"type" : "REBIRTH",
+				"val" : 50
+		        	},
+				"castsAmount" : {
+			        "type" : "CASTS",
+			    	"val" : 1
+		        	},
+				"waterMagic" : {
+				    "type" : "SPELL_DAMAGE",
+				    "subtype" : "spellSchool.water",
+				    "val" : 5,
+				    "valueType" : "BASE_NUMBER",
+					"updater" : "TIMES_HERO_LEVEL"
+			    	},
+			    	"earthMagic" : {
+				    "type" : "SPELL_DAMAGE",
+				    "subtype" : "spellSchool.earth",
+				    "val" : 5,
+				    "valueType" : "BASE_NUMBER",
+					"updater" : "TIMES_HERO_LEVEL"
+			    	},
+    			"logistics" : {
+    				"targetSourceType" : "SECONDARY_SKILL",
+    				"subtype" : "heroMovementLand",
+    				"type" : "MOVEMENT",
+    				"updater" : "TIMES_HERO_LEVEL",
+    				"val" : 3,
+    				"valueType" : "PERCENT_TO_TARGET_TYPE"
+    				},
+    		     "navigationseaUpdater" : {
+    				"type" : "MOVEMENT",
+    				"subtype" : "heroMovementSea",
+    			    "val" : 50,
+    				"valueType" : "BASE_NUMBER",
+    				"updater" : "TIMES_HERO_LEVEL"
+				}
+			}
+		}
+	}
+}
+
+
+

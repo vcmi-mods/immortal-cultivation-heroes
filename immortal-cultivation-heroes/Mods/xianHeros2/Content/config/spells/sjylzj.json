@@ -1,0 +1,151 @@
+{
+	"sjylzj":
+	{
+		"type": "ability", 
+		"name": "True Lightning-Controlling Sword Art",
+		"school":
+		{
+			"air": true,
+			"earth": false,
+			"fire": false,
+			"water": false
+		},
+		"level": 5,
+		"power": 50,
+		"defaultGainChance": 0, 
+		"gainChance":
+		{
+		
+		},
+ 
+		"flags" :
+		{
+			"offensive": true,
+			"damage": true,
+			"negative": true
+		},
+ 
+
+		"targetCondition" : {
+			"allOf" : {},
+			"anyOf" : {}
+	},  
+		"graphics":
+		{
+			"iconBook": "spells/sjylzj/lightningForce1.bmp",
+			"iconScroll": "spells/sjylzj/lightningForce2.bmp",
+			"iconScenarioBonus": "spells/sjylzj/lightningForce3.bmp",
+			"iconEffect": "spells/sjylzj/lightningForce4.bmp"
+		},
+		
+		"animation":
+		{
+			"hit":["C03SPA0"] //C07SPW0 ???
+		},
+
+		"sounds":
+		{
+			"cast": "lightningForce.wav"
+		},
+		"targetType": "CREATURE",
+ 
+		"levels":
+		{
+			"base":
+			{
+				"aiValue": 25,
+				"range": "0,0",
+
+				"targetModifier":
+				{
+					"smart": true
+				}
+			},
+			"none":
+			{
+				"description": "{True Lightning-Controlling Sword Art}\n\nLaunch lightning to attack the enemy troops. Meanwhile, the targeted enemy troops will be paralyzed and unable to take actions for one round.\n",
+	 
+				"cost": 14,
+				"power": 20,
+				"effects":
+				{
+					"notActive":
+					{
+						"val" : 0,
+						"type" : "NOT_ACTIVE",
+						"subtype" : "spell.paralyze",
+						"duration" : [
+							"N_TURNS"
+						],
+						"turns":1
+					}
+				}
+	 
+			},
+			"basic":
+			{
+				"description": "{basic True Lightning-Controlling Sword Art}\n\nLaunch lightning to attack the enemy troops. Meanwhile, the targeted enemy troops will be paralyzed and unable to take any actions for one round.\n",
+	 
+				"cost": 11,
+				"power": 20,
+	 
+				"effects":
+				{
+					"notActive":
+					{
+						"val" : 0,
+						"type" : "NOT_ACTIVE",
+						"subtype" : "spell.paralyze",
+						"duration" : [
+							"N_TURNS"
+						],
+						"turns":1
+					}
+				}
+			},
+			"advanced":
+			{
+				"description": "{advanced True Lightning-Controlling Sword Art}\n\nLaunch lightning to attack the enemy troops. Meanwhile, the targeted enemy troops will be paralyzed and unable to take any actions for two rounds.\n",
+	 
+				"cost": 11,
+				"power": 40,
+	 
+				"effects":
+				{
+					"notActive":
+					{
+						"val" : 0,
+						"type" : "NOT_ACTIVE",
+						"subtype" : "spell.paralyze",
+						"duration" : [
+							"N_TURNS"
+						],
+						"turns":2
+					}
+				}
+			},
+			"expert":
+			{
+				"description": "{expert True Lightning-Controlling Sword Art}\n\nLaunch lightning to attack the enemy troops. Meanwhile, the targeted enemy troops will be paralyzed and unable to take actions for two rounds.\n",
+	 
+				"cost": 11,
+				"power": 100,
+	 
+				"effects":
+				{
+					"notActive":
+					{
+						"val" : 0,
+						"type" : "NOT_ACTIVE",
+						"subtype" : "spell.paralyze",
+						"duration" : [
+							"N_TURNS"
+						],
+						"turns":2
+					}
+				}
+			}
+		}
+	}
+
+}

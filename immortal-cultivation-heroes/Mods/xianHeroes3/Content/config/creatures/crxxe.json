@@ -1,0 +1,95 @@
+{
+	"crxxe":
+	{
+		"name" : 
+		{
+			"plural" : "Divine Vein Awakening",
+			"singular" : "Divine Vein Awakening"
+		},
+		"description": "There is a 60% chance to cast the Golden Emperor's Heaven-Burning Slash when attacking, dealing additional spell damage. The Blazing Fire Shield reflects 30% of the damage.",
+		"hasDoubleWeek": false,
+		"doubleWide" : false,
+     	"faction" : "conflux",
+		"special" : true,
+		"advMapAmount" :
+		{
+			 "min" : 16,
+			 "max" : 25
+		},
+		"level" : 0,
+		"attack" : 6,
+		"defense" : 8,
+		"damage" :
+		{
+			 "min" : 8,
+			 "max" : 15
+		},
+		"growth" : 9,
+		"hitPoints" : 40,
+		"speed" : 5,
+		"fightValue" : 130,
+		"aiValue" : 156,
+		"shots" : 24,
+		"cost" :
+		{
+			"gold" : 140
+		},
+		"graphics" :
+		{
+			"animation" : "creatures/crxxeA.def",
+			"map" : "creatures/crxxeM.def",
+			"iconSmall" : "creatures/crxxeS.bmp",
+			"iconLarge" : "creatures/crxxeL.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"sound" :
+		{
+			"attack": "crxxeA.wav",
+			"defend": "crxxeD.wav",
+			"killed": "crxxeK.wav",
+			"move": "crxxeM.wav",
+			"wince": "crxxeW.wav",
+			"startMoving": "VAMPEXT1.wav",
+			"endMoving": "VAMPEXT2.wav"
+        },
+		"abilities" :
+		
+		{
+		    "petrify" : 
+		    {
+    			"type" : "SPELL_AFTER_ATTACK",
+    			"subtype" : "spell.spjdftz",
+    			"addInfo": [3,0],
+    			"val" :60
+    		},  
+    			"fireShield" :	
+			{	
+			     "type" : "FIRE_SHIELD",		
+				 "val" : 30	
+			}, 		
+			"canFly" :
+			{
+				"type" : "FLYING",
+				"subtype" : "movementTeleporting"
+			},
+			"castsAmount" :
+			{
+				"type" : "CASTS",
+			    "val" : 1
+			},
+			"canCast" :
+			{
+			    "type" : "SPELLCASTER",
+			    "subtype" : "spell.fireball",
+				"val" : 100
+			}
+		}	
+	}		
+}
+

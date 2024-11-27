@@ -1,0 +1,21 @@
+{
+	"artifact.core.pendantOfDeath.description" : "{死神挂件+}\r\n\r\n生物免疫亡灵杀手，并且攻击和防御+5点。",
+	"artifact.core.pendantOfDeath.name" : "死神挂件+",
+	"artifact.core.pendantOfDispassion.description" : "{冷静挂件+}\r\n\r\n生物免疫丧心病狂效果，开场施放嗜血奇术。",
+	"artifact.core.pendantOfDispassion.name" : "冷静挂件+",
+	"artifact.core.pendantOfFreeWill.description" : "{自由挂件+}\r\n\r\n生物免疫蛊惑人心，并且开场施放护体神盾。",
+	"artifact.core.pendantOfFreeWill.name" : "自由挂件+",
+	"artifact.core.pendantOfHoliness.description" : "{神圣挂件+}\r\n\r\n生物免疫恶咒附身效果，开场施放圣灵佑佐。",
+	"artifact.core.pendantOfHoliness.name" : "冷静挂件+",
+	"artifact.core.pendantOfLife.description" : "{生命挂件+}\r\n\r\n生物免疫死亡波纹效果，并增加25%生命值。",
+	"artifact.core.pendantOfLife.name" : "生命挂件+",
+	"artifact.core.pendantOfNegativity.description" : "{闪电挂件+}\r\n\r\n免疫闪电魔法伤害，并且增加50%气法系魔法伤害。",
+	"artifact.core.pendantOfNegativity.name" : "闪电挂件+",
+	"artifact.core.pendantOfSecondSight.description" : "{光明挂件+}\r\n\r\n生物免疫失明效果，开场施百发百中。",
+	"artifact.core.pendantOfSecondSight.name" : "光明挂件+",
+	"artifact.core.pendantOfTotalRecall.description" : "{清醒挂件+}\r\n\r\n生物免疫失忆大法，并且开场施放大气神盾。",
+	"artifact.core.pendantOfTotalRecall.name" : "清醒挂件+",
+	"artifact.lmods.artifactsplus.fused.aZlb.name" : "真龙璧",
+	"artifact.lmods.artifactsplus.fused.aZlb.description" : "{真龙璧}\r\n\r\n英雄攻击和防御+5点、增加25%生命值、增加50%气法系魔法伤害。\r\n生物免疫亡灵杀手、丧心病狂、蛊惑人心、恶咒附身、死亡波纹、闪电魔法、失明、失忆大法效果。\r\n进入战场施放嗜血奇术、护体神盾、圣灵佑佐、百发百中、大气神盾。",
+	"artifact.lmods.artifactsplus.fused.aZlb.event" : "历经艰险，在这个个古老秘境深处寻我见到了传说中的法宝——真龙璧。它散发着淡淡的龙息，周围盘旋着若隐若现的龙影。我缓缓上前，双手轻轻触碰真龙璧，感受到一股温暖而强大的力量涌入体内。"
+}

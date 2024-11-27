@@ -1,0 +1,115 @@
+﻿{
+	"hhl" :
+	{
+        		"class": "clhl",
+        		"female" : false,
+        		"images" :
+        		
+        {
+        			
+          "specialtySmall" : "hl/shl-s.bmp",
+          "specialtyLarge" : "hl/shl-l.bmp",
+          "large" : "hl/hl-l.bmp",
+          "small" : "hl/hl-s.bmp"
+        
+        },
+        
+        		"army" :
+        		
+        [
+        			
+       {
+    "creature" : "royalGriffin","max" : 5,"min" : 3
+    },
+    			
+    {"creature" : "royalGriffin",
+    "max" : 3,
+    "min" : 2
+    },
+    			
+    {
+    "creature" : "royalGriffin",
+    "max" : 3,"min" : 2
+    },
+        ],
+        		
+        "skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			}
+		],
+		"spellbook" :
+		[
+			"slow","haste"
+		],
+	
+		"texts" :
+		{
+			"name" : "Han Li",
+			"biography" : "Han Li was originally an ordinary poor boy from a mountain village. Because he had spiritual roots and could cultivate the Everlasting Spring Art, he was taken as a disciple by Doctor Mo. Since then, he embarked on the path of cultivating immortality.He was firm-willed. He wouldn't take any action without potential benefits. He always kept a low profile, didn't care much about saving face, and wouldn't play the hero. He was good at escaping from danger. He was meticulous in his thoughts, tough-minded, resolute and ruthless. He could act according to circumstances and knew when to advance and when to retreat. People called him “Old Demon Han”. Relying on his arduous cultivation all the way, he finally ascended to the Immortal Realm.",
+		
+			"specialty" : {
+				"description" : "All creatures' speed is increased by 2, and their luck is increased by 2. There is a 20% probability that the damage they receive will be reduced to 1 point. For heroes, the Logistics skill is strengthened by 6% for each level up, the sea movement points are increased by 50 points per level, the experience points obtained are increased by 10%, and the movement loss on bad terrains is reduced by 50 points.",
+				"name" : "Ascend",
+				"tooltip" : "{Fortune}\r\n\r\nEnhance various abilities.)"
+			}
+		},
+		"specialty" : {
+			"bonuses" : {
+			"miss": {
+					"type": "SPELL_BEFORE_ATTACK",
+					"subtype": "spell.dodge2",
+					"val": 20,
+					"addInfo": [3,0],
+					"limiters" : [ "OPPOSITE_SIDE" ],
+					"propagator": "BATTLE_WIDE",
+					"propagationUpdater" : "BONUS_OWNER_UPDATER"
+				    },
+				  "speed" : {
+					"type" : "STACKS_SPEED",
+					"valueType" : "ADDITIVE_VALUE",
+					"val" : 2
+				},
+				"lucky" : {
+					"type" : "LUCK",
+					"valueType" : "BASE_NUMBER",
+				    "val" : 2 
+				    },
+		 	"logistics" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"subtype" : "heroMovementLand",
+					"type" : "MOVEMENT",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 6,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+					},
+				 "navigationseaUpdater" : {
+					"type" : "MOVEMENT",
+					"subtype" : "heroMovementSea",
+				    "val" : 50,
+					"valueType" : "BASE_NUMBER",
+					"updater" : "TIMES_HERO_LEVEL"
+					},
+				"experience" : {
+					"type" : "HERO_EXPERIENCE_GAIN_PERCENT",
+					"valueType" : "PERCENT_TO_BASE",
+				    "val" : 10,
+				    "updater" : "TIMES_HERO_LEVEL"
+				    },
+					"terraindiscount" : {
+					"type" : "ROUGH_TERRAIN_DISCOUNT",
+					"val" : 50
+				}
+				}
+			}
+		}
+	}
+
+
+

@@ -1,0 +1,137 @@
+{
+	"crhl":
+	{
+		"name" : 
+		{
+			"plural" : "The Golden Body of Buddhist Saint",
+			"singular" : "The Golden Body of Buddhist Saint"
+		},
+		"description": "The True Demon Art of Buddhist Saint cultivated by Han Li can condense the Dharma Appearance Golden Body. It increases attack, defense, damage, and health by 30% respectively. It can counterattack first, increasing physical damage by 20% and reducing physical damage received by 20%, and can pursue once. After attacking, there is a 50% chance to cast the Divine Thunder for Exorcising Evil, causing damage to 6 creatures.",
+		"hasDoubleWeek": false,
+		"doubleWide" : false,
+     	"faction" : "castle",
+		"special" : true,
+		"advMapAmount" :
+		{
+			 "min" : 16,
+			 "max" : 25
+		},
+		"level" : 0,
+		"attack" : 6,
+		"defense" : 8,
+		"damage" :
+		{
+			 "min" : 8,
+			 "max" : 15
+		},
+		"growth" : 9,
+		"hitPoints" : 40,
+		"speed" : 5,
+		"fightValue" : 130,
+		"aiValue" : 156,
+		"shots" : 24,
+		"cost" :
+		{
+			"gold" : 140
+		},
+		"graphics" :
+		{
+			"animation" : "battle/hl.def",
+			"map" : "map/hl.def",
+			"iconSmall" : "iconsSmall/hl.bmp",
+			"iconLarge" : "iconsBig/hl.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 0.8,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"sound" :
+		{
+			"attack": "ENERATTK.wav",
+			"defend": "ENERDFND.wav",
+			"killed": "ENERKILL.wav",
+			"move": "ENERMOVE.wav",
+			"wince": "ENERWNCE.wav"
+        },
+		"abilities" :
+		{
+				"lightningbolt": {
+					"type": "SPELL_AFTER_ATTACK",
+					"subtype": "spell.spbxsl",
+					"val": 50,
+					"addInfo": [3,0],
+					"limiters" : ["noneOf", "OPPOSITE_SIDE"],
+					"propagationUpdater" : "BONUS_OWNER_UPDATER"
+				    },
+			"attack":
+				{
+					"type": "PRIMARY_SKILL",
+					"subtype" : "primarySkill.attack",
+					"val" : 30,
+					"valueType": "PERCENT_TO_BASE"
+				},
+			"defence":
+				{
+					"type": "PRIMARY_SKILL",
+					"subtype" : "primarySkill.defence",
+					"val" : 30,
+					"valueType": "PERCENT_TO_BASE"
+				},
+			"health2":
+			     {
+					"type" : "STACK_HEALTH",
+					"val" : 30,
+					"valueType" : "PERCENT_TO_BASE"
+				},
+			"damage":
+				{
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageBoth",
+					"val" : 30,
+					"valueType" : "PERCENT_TO_BASE"
+					},
+			"moredamage" :
+			{
+				"type" : "GENERAL_DAMAGE_PREMY",
+				"val" : 20
+			},
+			"damageReduction": 
+			{
+				"type": "GENERAL_DAMAGE_REDUCTION",
+				"val": 20
+			},
+			"doubleAttack" : 
+			{
+				"type" : "FEROCITY",
+				"val" : 1
+			},
+			"hpregeneration" : {
+					"type" : "HP_REGENERATION",
+				    "val" : 10
+				    },
+			"vinesFirstStrike" : {
+			    	"type" : "FIRST_STRIKE",
+				},
+				"FLYING_ARMY" :
+			{
+				"type" : "FLYING",
+				    "subtype" : "movementTeleporting"
+			},
+				"castsAmount" :
+			{
+				    "type" : "CASTS",
+			    	"val" : 1
+			},
+				"canCast" :
+			{
+			    	"type" : "SPELLCASTER",
+			    	"subtype" : "spell.resurrection",
+				    "val" : 100
+			}
+		}	
+	}		
+}
+

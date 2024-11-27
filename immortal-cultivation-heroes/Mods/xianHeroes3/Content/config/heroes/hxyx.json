@@ -1,0 +1,91 @@
+﻿{
+	"hxyx" :
+	{
+        		"class": "clxyx",
+        		"female" : true,
+        		"images" :
+        		
+        {
+        			
+          "specialtySmall" : "xyx/sxyxS.bmp",
+          "specialtyLarge" : "xyx/sxyxL.bmp",
+          "large" : "xyx/hxyxL.bmp",
+          "small" : "xyx/hxyxS.bmp"
+        
+        },
+        
+        		"army" :
+        		
+        [			
+       { "creature" : "wyvern","max" : 1,"min" : 1 },
+       { "creature" : "wyvern","max" : 1,"min" : 1 }
+        ],
+        		
+        "skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			}
+    	],
+    	"spellbook" :
+    	[
+    	    "stoneSkin","slow"
+    	],
+    	
+    	"texts" : {
+    		"name" : "Little Medical Fairy",
+			"biography" : "Little Medical Fairy,She was born with the Calamity Poison Body. She practiced by consuming poisons and was immune to all poisons. However, because of this, she was regarded as a jinx. Little Medical Fairy has a gentle and kind personality, but she has gone through many hardships due to her special physique. With the help of Xiao Yan, she learned to control her poison body and became Xiao Yan's female confidant. She is highly skilled in medicine and also excellent at poison techniques, and has provided help to Xiao Yan on many occasions.",		
+			"specialty" : {
+				"description" : "At the beginning of the game, the Calamity Poison Force will be automatically cast, suppressing the enemy creatures' health points and speed by 50% for 5 rounds, and enhancing the abilities of the friendly commander. For every level the hero upgrades, the damage of earth magic increases by 10%. For every level the hero upgrades, the Logistics skill is strengthened by 3%, and the movement ability at sea increases by 50 points for every level.",
+				"name" : "Calamity Poison Force",
+				"tooltip" : "{Fortune}\r\n\r\nEnhance various abilities.)"
+			}
+		},
+		"specialty" : {
+			"bonuses" : {
+			    "spendt" : {
+		            "subtype" : "spell.spendt",
+    				"type" : "OPENING_BATTLE_SPELL",
+    				"val" : 5,
+    				"valueType" : "BASE_NUMBER"
+			    	},
+		        "spendj" : {
+		            "subtype" : "spell.spendj",
+    				"type" : "OPENING_BATTLE_SPELL",
+    				"val" : 5,
+    				"valueType" : "BASE_NUMBER"
+			    	},
+    			"earthMagic" : {
+    				"type" : "SPELL_DAMAGE",
+    				"subtype" : "spellSchool.earth",
+    				"val" : 10,
+    				"valueType" : "BASE_NUMBER",
+    				"updater" : "TIMES_HERO_LEVEL"
+    				},
+		 	"logistics" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"subtype" : "heroMovementLand",
+					"type" : "MOVEMENT",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+					},
+				 "navigationseaUpdater" : {
+					"type" : "MOVEMENT",
+					"subtype" : "heroMovementSea",
+				    "val" : 50,
+					"valueType" : "BASE_NUMBER",
+					"updater" : "TIMES_HERO_LEVEL"
+					}
+				}
+			}
+		}
+	}
+
+
+

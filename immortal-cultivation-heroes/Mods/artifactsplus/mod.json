@@ -1,0 +1,32 @@
+{
+	"name" : "Enhancement of the original treasures.",
+	"description" : "Strengthen some of the original pendant treasures, including: the Sober Pendant, the Light Pendant, the Lightning Pendant, the Life Pendant, the Holy Pendant, the Freedom Pendant, the Calm Pendant and the Death Pendant.",
+	"author" : "L",
+	"version" : "1.0.0",
+	"contact" : "",
+	"modType" : "Artifacts",
+	"language": "chinese",
+	"chinese": {
+		"name": "原版宝物加强",
+		"description": "加强原版一些吊坠宝物，包括：清醒挂件、光明挂件、闪电挂件、生命挂件、神圣挂件、自由挂件、冷静挂件、死神挂件。",
+		"translations" : [
+			"translation/enhancement/chinese.json"
+			]
+	},
+	"artifacts" :
+	[
+	"config/artifacts/pendantOfDispassion.json",
+	"config/artifacts/pendantOfSecondSight.json",
+	"config/artifacts/pendantOfHoliness.json",
+	"config/artifacts/pendantOfLife.json",
+	"config/artifacts/pendantOfDeath.json",
+	"config/artifacts/pendantOfFreeWill.json",	
+	"config/artifacts/pendantOfNegativity.json",	
+	"config/artifacts/pendantOfTotalRecall.json"	
+	],
+	
+	"changelog" :
+    {
+		"1.0.0" : ["Strengthen some of the original pendant treasures."],
+    }  
+}

@@ -1,0 +1,145 @@
+{
+	"spxtzlj" : 
+	{
+		"type": "ability",
+		"targetType" : "NO_TARGET",
+		"name" : "Xuantian Slashing Spirit Sword",
+		"school": 
+		{
+    		"air":false, 
+    		"earth":true, 
+    		"fire":false, 
+    		"water":false
+		},
+		"level": 5,
+		"power": 30,
+		"defaultGainChance": 0, 		
+		"gainChance":
+		{},
+	    "graphics":
+		{
+			"iconBook": "spells/spxtzlj/spxtzljB.bmp",
+			"iconScroll": "spells/spxtzlj/spxtzljSl.bmp",
+			"iconScenarioBonus": "spells/spxtzlj/spxtzljSb.bmp",
+			"iconEffect": "spells/spxtzlj/spxtzljE.bmp"
+		},
+		"animation":
+		{
+			"affect":[ "spells/spxtzlj/spxtzljA.def" ]
+		},
+
+		"sounds": 
+		{
+			"cast": "spxtzljS.wav"
+		},
+		"levels" : 
+		{			
+			"base": 
+			{
+				"description": "Cause a large amount of damage to all enemies. Within 2 rounds, the attack, damage, health, defense and speed of creatures will be reduced by 20%, and they will also be paralyzed.",
+				"cost": 0,
+				"power": 50,
+				"aiValue": 0,
+				"range" : "0",
+				"targetModifier":{"smart":true},
+    			"effects" : 
+    			{
+    				"damage":
+					{
+						"type": "CREATURE_DAMAGE",
+						"subtype": "creatureDamageBoth",
+            			"valueType" : "PERCENT_TO_BASE",
+            			"val" : -20,
+            			"duration" : 
+    					[
+							"N_TURNS"
+						],
+						"turns":2
+            		},
+            		"attack":
+				    {
+					    "type": "PRIMARY_SKILL",
+					    "subtype" : "primarySkill.attack",
+            			"valueType" : "PERCENT_TO_BASE",
+            			"val" : -20,
+            			"duration" : 
+    					[
+							"N_TURNS"
+						],
+						"turns":2
+            		},
+        			"health": 	
+        			{
+            			"type" : "STACK_HEALTH",
+            			"valueType" : "PERCENT_TO_BASE",
+            			"val" : -20,
+            			"duration" : 
+    					[
+							"N_TURNS"
+						],
+						"turns":2
+            		},
+            		"defence": 	
+        			{
+            			"type": "PRIMARY_SKILL",
+        				"subtype" : "primarySkill.defence",
+            			"valueType" : "PERCENT_TO_BASE",
+            			"val" : -20,
+            			"duration" : 
+    					[
+							"N_TURNS"
+						],
+						"turns":2
+            		},
+            		"speedReduce":
+        			{
+        				"type" : "STACKS_SPEED",
+        				"valueType" : "PERCENT_TO_BASE",
+        				"val":-20,
+        				"duration" : 
+    					[
+							"N_TURNS"
+						],
+						"turns":2
+        		    },
+    		        "notActive":
+    				{
+    					"val" : 0,
+    					"type" : "NOT_ACTIVE",
+    					"subtype" : "spell.paralyze",
+    					"duration" : 
+    					[
+							"N_TURNS"
+						],
+						"turns":2
+    				}     	
+        		}
+        	},
+				"none":
+				{},
+				"basic":
+				{
+				},
+				"advanced":
+				{
+				},
+				"expert":
+				{
+				}
+			},
+			"targetCondition" : {
+				"allOf" : {},
+				"anyOf" : {},			
+				"noneOf" : {
+					"bonus.SIEGE_WEAPON" : "absolute"
+				}
+		},	
+		"counters": {},
+		"flags" : 
+		{	"offensive": true,
+			"damage": true,
+			"negative": true, 
+			"special": true 
+		}
+	}
+}

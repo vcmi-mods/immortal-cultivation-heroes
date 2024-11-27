@@ -1,0 +1,113 @@
+﻿{
+	"hyf" :
+	{
+        		"class": "clyf",
+        		"female" : false,
+        		"images" :
+        		
+        {
+        			
+          "specialtySmall" : "yf/syf-s.bmp",
+          "specialtyLarge" : "yf/syf-l.bmp",
+          "large" : "yf/yf-l.bmp",
+          "small" : "yf/yf-s.bmp"
+        
+        },
+        
+        		"army" :
+        		
+        [
+        			
+       {
+    "creature" : "fireDragonFly","max" : 5,"min" : 3
+    },
+    			
+    {"creature" : "fireDragonFly",
+    "max" : 3,
+    "min" : 2
+    },
+    			
+    {
+    "creature" : "fireDragonFly",
+    "max" : 3,"min" : 2
+    },
+        ],
+        		
+        "skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "armorer"
+			},
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			}
+		],
+		"spellbook" :
+		[
+			"visions"
+		],
+	
+		"texts" :
+		{
+			"name" : "Ye Fan",
+			"biography" : "Ye Fan was originally an ordinary human on Earth. After being taken to the Beidou Star Region by the Coffin Pulled by Nine Dragons, he embarked on the path of attaining the Dao. He possessed the Ancient Desolate Saint Physique. Through numerous adventures and challenges, he finally achieved the position of the Heavenly Emperor and led the Heavenly Court to ascend to immortality as a whole. He had a resolute and unyielding personality. In order to suppress the Dark Turmoil and protect all the races in the universe, he didn't hesitate to fight at the cost of his own life.",
+		
+			"specialty" : {
+				"description" : "In the battlefield, heroes are unable to cast spells. However, for every level the hero upgrades, the defense increases by 1; the morale of creatures increases by 2, the speed of all enemy creatures decreases by 1, and when being attacked, 20% of the enemy's attacks will be ignored. For every level the hero upgrades, the Logistics skill increases by 3% and the sea movement increases by 50 points.",
+				"name" : "Ancient Desolate Saint Physique",
+				"tooltip" : "{Fortune}\r\n\r\nEnhance various abilities.)"
+			}
+		},
+		"specialty" : {
+			"bonuses" : {
+				   "blockmagic" : {
+					"type" : "BLOCK_ALL_MAGIC",
+					"limiters" : ["noneOf", "OPPOSITE_SIDE"],
+				},
+					"defence":
+				{
+					"type": "PRIMARY_SKILL",
+					"subtype" : "primarySkill.defence",
+					"val" : 1,
+					"valueType": "BASE_NUMBER",
+					"updater" : "TIMES_HERO_LEVEL",
+				},
+				"reduceattack" : {
+					"type" : "ENEMY_ATTACK_REDUCTION",	
+					"val" : 20,
+				},
+					"speed" : {
+					"type" : "STACKS_SPEED",
+					"propagator": "BATTLE_WIDE",
+					"propagationUpdater" : "BONUS_OWNER_UPDATER",
+					"limiters" : [ "OPPOSITE_SIDE" ],
+					"val":-1
+				},
+				"morale" : {
+					"type" : "MORALE",
+					"val" : 2,
+			    },
+		 	"logistics" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"subtype" : "heroMovementLand",
+					"type" : "MOVEMENT",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+					},
+				 "navigationseaUpdater" : {
+					"type" : "MOVEMENT",
+					"subtype" : "heroMovementSea",
+				    "val" : 50,
+					"valueType" : "BASE_NUMBER",
+					"updater" : "TIMES_HERO_LEVEL"
+					}
+				}
+			}
+		}
+	}
+
+
+

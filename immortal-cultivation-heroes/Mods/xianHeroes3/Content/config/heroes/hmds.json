@@ -1,0 +1,99 @@
+﻿{
+	"hmds" :
+	{
+        		"class": "clmds",
+        		"female" : true,
+        		"images" :
+        		
+        {
+        			
+          "specialtySmall" : "mds/smdsS.bmp",
+          "specialtyLarge" : "mds/smdsL.bmp",
+          "large" : "mds/hmdsL.bmp",
+          "small" : "mds/hmdsS.bmp"
+        
+        },
+        
+                		"army" :
+        [			
+        { "creature" : "medusaQueen","max" : 8,"min" : 5 },
+        { "creature" : "medusaQueen","max" : 5,"min" : 3 },
+        { "creature" : "medusaQueen","max" : 3,"min" : 2 }
+        ],
+        		
+        "skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			}
+		],
+		"spellbook" :
+		[
+			"meteorShower"
+		],
+	
+		"texts" :
+		{
+			"name" : "Cai Lin",
+			"biography" : "Cai Lin, also known as Queen Medusa, was originally the queen of the snake-human tribe in the Tagore Desert of the Jia Ma Empire. She is famous for her glamorous and stunning temperament as well as her breathtaking beauty. She has a cold and proud personality, yet also retains tenderness and strength. After being tempered by the “Fallen Heart Flame” at the bottom of the Tianfen Qi Refining Tower, Queen Medusa's soul merged with that of the Seven-colored Heaven Swallowing Python. Later, due to the aftereffects of Xiao Yan's swallowing of the “Fallen Heart Flame”, she lost her virginity to him. Although she was hostile to Xiao Yan at first, as time went by, the two gradually developed deep feelings for each other and finally became husband and wife. Queen Medusa is extremely powerful and later evolved into the Nine-colored Heaven Swallowing Python, becoming one of the matriarchs of the Endless Fire Region.",
+		
+			"specialty" : {
+				"description" : "The creatures led by the hero have triple attacks, and there is a 20% chance to petrify the enemy. Meanwhile, there is a 5% chance to cast the Death Gaze. For every level the hero upgrades, the damage of earth magic increases by 10%. For every level the hero upgrades, the Logistics skill is strengthened by 3%, and the movement ability at sea increases by 50 points for every level.",
+				"name" : "Snake-human bloodline",
+				"tooltip" : "{Fortune}\r\n\r\nEnhance various abilities.)"
+			}
+		},
+		"specialty" : {
+			"bonuses" : {
+			    "deathstare" : {
+    				"type" : "DEATH_STARE",
+    				"subtype" : "deathStareGorgon",
+    				"val" : 5
+    				},  
+    			"deathstare2" : {
+    				"type" : "DEATH_STARE",
+    				"subtype" : "deathStareRangePenalty",
+    				"val" : 5
+    				},   			 			
+			    "threeHeads" : {	
+			        "type" : "THREE_HEADED_ATTACK"	
+			        },
+			    "petrify" : {
+    				"type" : "SPELL_AFTER_ATTACK",
+    				"subtype" : "spell.stoneGaze",
+    				"val" : 20
+    				},   			
+				"earthMagic" : {
+    				"type" : "SPELL_DAMAGE",
+    				"subtype" : "spellSchool.earth",
+    				"val" : 10,
+    				"valueType" : "BASE_NUMBER",
+    				"updater" : "TIMES_HERO_LEVEL"
+    				},
+    			"logistics" : {
+    				"targetSourceType" : "SECONDARY_SKILL",
+    				"subtype" : "heroMovementLand",
+    				"type" : "MOVEMENT",
+    				"updater" : "TIMES_HERO_LEVEL",
+    				"val" : 3,
+    				"valueType" : "PERCENT_TO_TARGET_TYPE"
+    				},
+    		     "navigationseaUpdater" : {
+    				"type" : "MOVEMENT",
+    				"subtype" : "heroMovementSea",
+    			    "val" : 50,
+    				"valueType" : "BASE_NUMBER",
+    				"updater" : "TIMES_HERO_LEVEL"
+				}
+			}
+		}
+	}
+}
+
+
+

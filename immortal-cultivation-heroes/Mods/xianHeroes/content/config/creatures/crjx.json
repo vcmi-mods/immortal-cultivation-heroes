@@ -1,0 +1,95 @@
+{
+	"crjx":
+	{
+		"name" : 
+		{
+			"plural" : "The incarnation of the True Dragon",
+			"singular" : "The incarnation of the True Dragon"
+		},
+		"description": "Transforming through the Nine Heavens to return to the body of the True Dragon, with dragon's breath attacks. There is a 50% probability of additionally killing one unit, and it can attack one more time.",
+		"hasDoubleWeek": false,
+		"doubleWide" : true,
+     	"faction" : "rampart",
+		"special" : true,
+		"advMapAmount" :
+		{
+			 "min" : 16,
+			 "max" : 25
+		},
+		"level" : 0,
+		"attack" : 8,
+		"defense" : 6,
+		"damage" :
+		{
+			 "min" : 8,
+			 "max" : 15
+		},
+		"growth" : 9,
+		"hitPoints" : 60,
+		"speed" : 6,
+		"fightValue" : 130,
+		"aiValue" : 156,
+		"shots" : 24,
+		"cost" :
+		{
+			"gold" : 140
+		},
+		"graphics" :
+		{
+			"animation" : "battle/jx.def",
+			"map" : "map/jx.def",
+			"iconSmall" : "iconsSmall/jx.bmp",
+			"iconLarge" : "iconsBig/jx.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+				{
+				"walk" : 0.6,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"sound" :
+		{
+			"attack": "GODRATTK.wav",
+			"defend": "GODRDFND.wav",
+			"killed": "GODRKILL.wav",
+			"move": "GODRMOVE.wav",
+			"wince": "GODRWNCE.wav"
+		},
+		"abilities" :
+		{
+			"destructionKill" :
+			{
+				"type" : "DESTRUCTION",
+				"subtype" : "destructionKillAmount",
+				"val" : 50,
+				"addInfo" : 1
+			},
+			"dragon" :
+			{
+				"type" : "DRAGON_NATURE"
+			},
+				"fireBreath" :
+			{
+				"type" : "TWO_HEX_ATTACK_BREATH"
+			},
+				"attacks":
+					{
+						"type": "ADDITIONAL_ATTACK",
+						"val": 1
+			},
+				"castsAmount" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			},
+				"canCast" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.haste",
+				"val" : 100
+			}
+			}	
+	}		
+}
+

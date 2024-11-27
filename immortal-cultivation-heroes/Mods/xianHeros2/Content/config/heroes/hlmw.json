@@ -1,0 +1,114 @@
+﻿{
+	"hlmw" :
+	{
+        		"class": "cllmw",
+        		"female" : true,
+        		"images" :
+        		
+        {
+        			
+          "specialtySmall" : "lmw/slmw-s.bmp",
+          "specialtyLarge" : "lmw/slmw-l.bmp",
+          "large" : "lmw/lmw-l.bmp",
+          "small" : "lmw/lmw-s.bmp"
+        
+        },
+        
+        		"army" :
+        		
+        [
+        			
+       {
+    "creature" : "grandElf","max" : 5,"min" : 3
+    },
+    			
+    {"creature" : "grandElf",
+    "max" : 3,
+    "min" : 2
+    },
+    			
+    {
+    "creature" : "grandElf",
+    "max" : 3,"min" : 2
+    },
+        ],
+        		
+        "skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			}
+		],
+		"spellbook" :
+		[
+			"iceBolt","cure"
+		],
+	
+		"texts" :
+		{
+			"name" : "Li Muwan",
+			"biography" : "Li Muwan is Wang Lin's wife. She is gentle and intelligent, and is good at alchemy and formation arrays. After being rescued by Wang Lin in the Fire-burning Country, she followed him into the Demon-cultivating Sea and fell deeply in love with Wang Lin. Although she died due to her lifespan coming to an end, she was finally resurrected with the help of Wang Lin. In the end, the two of them stepped into the Heavenly Realm together and had a perfect ending.",
+		
+			"specialty" : {
+				"description" : "The health maximum of the creatures led will increase by 30% plus 2 points, and they will recover health points equal to the hero's level multiplied by 2 every turn. The hero recovers magic points equal to the hero's level multiplied by 1 every day. For every level the hero upgrades, the water-based damage increases by 10%, the Logistics skill is strengthened by 3%, and the sea movement ability increases by 50 per level.",
+				"name" : "Alchemy",
+				"tooltip" : "{Fortune}\r\n\r\nEnhance various abilities.)"
+			}
+		},
+		"specialty" : {
+			"bonuses" : {
+				"waterMagic" : {
+					"type" : "SPELL_DAMAGE",
+					"subtype" : "spellSchool.water",
+					"val" : 10,
+					"valueType" : "BASE_NUMBER",
+					"updater" : "TIMES_HERO_LEVEL"
+				},
+				  	"health2": {
+					"type" : "STACK_HEALTH",
+					"val" : 30,
+					"valueType" : "PERCENT_TO_BASE"
+				},
+				"health1": {
+					"type" : "STACK_HEALTH",
+					"val" : 2,
+					"valueType" : "BASE_NUMBER"
+				},
+				"manarance" : { 
+				    "duration": "PERMANENT", 
+					"type": "MANA_REGENERATION", 
+					"val": 1,
+					"updater" : "TIMES_HERO_LEVEL"
+				},
+		 	"logistics" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"subtype" : "heroMovementLand",
+					"type" : "MOVEMENT",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+					},
+				 "navigationseaUpdater" : {
+					"type" : "MOVEMENT",
+					"subtype" : "heroMovementSea",
+				    "val" : 50,
+					"valueType" : "BASE_NUMBER",
+					"updater" : "TIMES_HERO_LEVEL"
+					},
+				"hpregeneration" : {
+					"type" : "HP_REGENERATION",
+				    "val" : 2,
+				    "updater" : "TIMES_HERO_LEVEL"
+				    }
+				}
+			}
+		}
+	}
+
+
+

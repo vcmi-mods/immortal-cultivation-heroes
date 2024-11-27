@@ -1,0 +1,95 @@
+{
+	"clzl" :
+	{
+		"name" : "The Fair Maiden's Pure - Yin Constitution",
+		"animation":
+		{
+			"battle" :
+			{
+				"male" : "CH11.DEF",
+				"female" : "CH11.DEF"
+			}
+		},
+		"mapObject" :
+		{
+			"templates" :
+			{
+				"default" :
+				{
+					"animation" : "AH11_.def",
+					"editorAnimation": "AH11_E.def"
+				}
+			}
+		},
+		"commander" : "crzl",	
+		"faction" : "inferno",
+		"affinity" : "magic",
+		"primarySkills" :
+		{
+			"attack"     : 1,
+			"defence"    : 0,
+			"spellpower" : 2,
+			"knowledge"  : 3
+		},
+		"lowLevelChance" :
+		{
+			"attack"     : 15,
+			"defence"    : 20,
+			"spellpower" : 35,
+			"knowledge"  : 30
+		},
+		"highLevelChance" :
+		{
+			"attack"     : 20,
+			"defence"    : 20,
+			"spellpower" : 30,
+			"knowledge"  : 30
+		},
+		"secondarySkills" :
+		{
+			"pathfinding"  : 4,
+			"archery"      : 4,
+			"logistics"    : 6,
+			"scouting"     : 1,
+			"diplomacy"    : 6,
+			"navigation"   : 2,
+			"leadership"   : 3,
+			"wisdom"       : 8,
+			"mysticism"    : 1,
+			"luck"         : 3,
+			"ballistics"   : 1,
+			"eagleEye"     : 1,
+			"necromancy"   : 0,
+			"estates"      : 1,
+			"fireMagic"    : 0,
+			"airMagic"     : 0,
+			"waterMagic"   : 0,
+			"earthMagic"   : 0,
+			"scholar"      : 4,
+			"tactics"      : 4,
+			"artillery"    : 1,
+			"learning"     : 1,
+			"offence"      : 4,
+			"armorer"      : 3,
+			"intelligence" : 3,
+			"sorcery"      : 1,
+			"resistance"   : 0,
+			"firstAid"     : 1,
+			"allschools2"   : 15,
+			"paadFireResist2" : 5
+		},
+		"defaultTavern" : 0,
+		"tavern" :
+		{
+			"castle"     : 0,
+			"rampart"    : 0,
+			"tower"      : 0,
+			"inferno"    : 0,
+			"necropolis" : 0,
+			"dungeon"    : 0,
+			"stronghold" : 0,
+			"fortress"   : 0,
+			"conflux"    : 0
+		}
+	}
+}

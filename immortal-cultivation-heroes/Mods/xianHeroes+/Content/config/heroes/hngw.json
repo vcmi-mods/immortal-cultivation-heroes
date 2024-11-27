@@ -1,0 +1,360 @@
+﻿{
+	"hngw" :
+	{
+		"class" : "clngw",
+		"female" : true,
+		"images" :
+		
+{
+			
+  "specialtySmall" : "ngw/sngw-s.bmp",
+  "specialtyLarge" : "ngw/sngw-l.bmp",
+ "large" : "ngw/ngw-l.bmp",
+  "small" : "ngw/ngw-s.bmp"
+
+},
+
+		"army" :
+		
+[
+			
+{
+    "creature" : "energyElemental","max" : 3,"min" : 2
+    },
+    			
+    {"creature" : "energyElemental",
+    "max" : 2,
+    "min" : 1
+    },
+    			
+    {
+    "creature" : "energyElemental",
+    "max" : 2,"min" : 1
+    },
+],
+		
+"skills" :
+
+[
+
+{
+
+"level" : "basic",
+
+"skill" : "wisdom"
+
+},
+
+{
+
+"level" : "basic",
+
+"skill" : "logistics"
+
+}
+
+],
+		
+"spellbook" :
+["fireElemental"
+],
+	
+		"texts" :
+		{
+			"name" : "Nangong Wan",
+			"biography" : "Nangong Wan is a Core Formation cultivator of the Moon-covering Sect, one of the seven major sects in the Yue Kingdom. She has a gentle and lively personality, an elegant and noble temperament, and is breathtakingly beautiful. She is wholeheartedly devoted to the path of cultivation. She got to know Han Li during the Blood-colored Trial and later became Han Li's wife. Nangong Wan had a tremendous influence on Han Li's path of immortal cultivation and is the most important person in Han Li's heart.",
+		
+			"specialty" : {
+				"description" : "The speed of all creatures is increased by 3, morale and luck are each increased by 1, attack, defense and health are each increased by 25%, physical damage is increased by 50%, life-stealing is increased by 10%, and physical damage reduction is 10%. And there is a 10% chance that the damage received will be reduced to 1 point. When using the defense skill, the defense value is increased by 10 points. The movement loss on bad terrains is reduced by 50 points. For every level that the hero levels up, the Logistics skill is strengthened by 10%, the naval movement ability is increased by 100 points per level, the experience value is increased by 20%, the double damage chance, the ignore defense rate and the magic damage are each increased by 1%. Death gaze, acid damage, aging, petrification, entanglement, disease, paralysis and severe toxicity are each increased by 5%. There is a 5% chance to instantly kill 10% of the enemies. Common resources are increased by 2, rare resources are increased by 1, and gold coins are increased by 1000 + 250 × level. The hostility of wild monsters is reduced by 2. Upgrading can enhance the spell power of the commander, and fire elements, blazing fire elements and firebirds can be upgraded into phoenixes.",
+				"name" : "Reincarnation Skill of the Su Nu",
+				"tooltip" : "{Fortune}\r\n\r\nEnhance various abilities.)"
+			}
+		},
+		"specialty" : {
+			"bonuses": {
+				"attack":
+				{
+					"type": "PRIMARY_SKILL",
+					"subtype" : "primarySkill.attack",
+					"val" : 25,
+					"valueType": "PERCENT_TO_BASE"
+				},
+			"defence":
+				{
+					"type": "PRIMARY_SKILL",
+					"subtype" : "primarySkill.defence",
+					"val" : 25,
+					"valueType": "PERCENT_TO_BASE"
+				},
+			"defenseStance" :
+			{
+				"type" : "DEFENSIVE_STANCE",
+				"val": 10
+			},
+	    "decimation" :
+			{
+				"type" : "DESTRUCTION",
+                "subtype" : "destructionKillPercentage",
+				"val" : 5,
+				"addInfo" : 10
+			},
+        "deathStare" :	
+			{
+				"type" : "DEATH_STARE",
+                "subtype" : "deathStareGorgon",
+				"val" : 5
+			},
+				"morale" : {
+					"type" : "MORALE",
+					"val" : 1
+			    },
+			    "lucky" : {
+					"type" : "LUCK",
+					"valueType" : "BASE_NUMBER",
+				    "val" : 1
+				    },
+			        "drainsLife" :
+			{
+				"type" : "LIFE_DRAIN",
+				"val" : 10
+			},
+            "acidbreath" :
+			{
+				"type" : "ACID_BREATH",
+				"val" : 50,
+				"addInfo" : 5
+			},	
+        	"age" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.age",
+				"val" : 5
+			},
+            "petrify" :
+			   {
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.stoneGaze",
+				"val" : 5,
+				},
+	    "bindattack" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.bind",
+				"val" : 5,
+			},
+    	"disease":
+			{
+				"type" : "SPELL_BEFORE_ATTACK",
+				"subtype" : "spell.disease",
+				"val" : 5,
+				"addInfo" : 1
+			},
+		"paralize" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.paralyze",
+				"val" : 5
+			},
+            "poisonous" : 
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.poison",
+				"val" : 5,
+				"addInfo" : 0
+			},					
+			"health2": {
+					"type" : "STACK_HEALTH",
+					"val" : 25,
+					"valueType" : "PERCENT_TO_BASE"
+				},
+			"damage":
+					{
+						"type": "CREATURE_DAMAGE",
+						"subtype": "creatureDamageBoth",
+						"val" : 50,
+						"valueType" : "PERCENT_TO_BASE"
+					},
+			"damageReduction": 
+			{
+				"type": "GENERAL_DAMAGE_REDUCTION",
+				"val": 10
+			},
+			"commanderPowerBasePercent":
+				{
+					"type" : "CREATURE_SPELL_POWER",
+					"val": 30,
+					"updater" : "TIMES_HERO_LEVEL",
+					"valueType" : "BASE_NUMBER",
+				    "limiters" : 
+					[
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"parameters" : [
+								"crngw", 
+								false
+							]
+						}
+					]
+				},
+				"commanderPowerAllPercent":
+				{
+					"type" : "CREATURE_SPELL_POWER",
+					"val": 30,
+					"updater" : "TIMES_HERO_LEVEL",
+					"valueType" : "PERCENT_TO_ALL",
+				    "limiters" : 
+					[
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"parameters" : [
+								"crngw", 
+								false
+							]
+						}
+					]
+				},
+				"commanderPowerMin":
+				{
+					"type" : "CREATURE_SPELL_POWER",
+					"val": 35,
+					"updater" : "TIMES_HERO_LEVEL",
+					"valueType" : "INDEPENDENT_MAX",
+				    "limiters" : 
+					[
+						{
+							"type" : "CREATURE_TYPE_LIMITER",
+							"parameters" : [
+								"crngw", 
+								false
+							]
+						}
+					]
+				},
+			"phoenix" : 
+			{
+				"addInfo" : "creature.phoenix",
+				"type" : "SPECIAL_UPGRADE",
+		        "subtype" : "creature.fireElemental" 
+		    },
+		    "phoenix2" : 
+			{
+				"addInfo" : "creature.phoenix",
+				"type" : "SPECIAL_UPGRADE",
+		        "subtype" : "creature.energyElemental" 
+		    },
+		    "phoenix3" : 
+			{
+				"addInfo" : "creature.phoenix",
+				"type" : "SPECIAL_UPGRADE",
+		        "subtype" : "creature.firebird" 
+		    },
+		"miss": {
+					"type": "SPELL_BEFORE_ATTACK",
+					"subtype": "spell.dodge2",
+					"val": 10,
+					"addInfo": [3,0],
+					"limiters" : [ "OPPOSITE_SIDE" ],
+					"propagator": "BATTLE_WIDE",
+					"propagationUpdater" : "BONUS_OWNER_UPDATER"
+				    },
+		"doubledamage" : {
+			"type": "DOUBLE_DAMAGE_CHANCE",
+				"val": 1,
+				"updater" : "TIMES_HERO_LEVEL"
+			},
+			"reduceDefence" : {
+				"type" : "ENEMY_DEFENCE_REDUCTION",	
+				"val" : 1,
+				"updater" : "TIMES_HERO_LEVEL"
+				},
+					"anyMagic" : {
+					"type" : "SPELL_DAMAGE",
+					"subtype" : "spellSchool.any",
+					"val" : 10,
+					"valueType" : "BASE_NUMBER",
+					"updater" : "TIMES_HERO_LEVEL"
+				},
+				  "speed" : {
+					"type" : "STACKS_SPEED",
+					"valueType" : "ADDITIVE_VALUE",
+					"val" : 3
+				},
+		 	"logistics" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"subtype" : "heroMovementLand",
+					"type" : "MOVEMENT",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 10,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+					},
+				 "navigationseaUpdater" : {
+					"type" : "MOVEMENT",
+					"subtype" : "heroMovementSea",
+				    "val" : 100,
+					"valueType" : "BASE_NUMBER",
+					"updater" : "TIMES_HERO_LEVEL"
+					},
+				"experience" : {
+					"type" : "HERO_EXPERIENCE_GAIN_PERCENT",
+					"valueType" : "PERCENT_TO_BASE",
+				    "val" : 20,
+				    "updater" : "TIMES_HERO_LEVEL"
+				    },
+					"terraindiscount" : {
+					"type" : "ROUGH_TERRAIN_DISCOUNT",
+					"val" : 50
+				},
+						"join": {
+					"targetSourceType" : "SECONDARY_SKILL",
+						"type" : "WANDERING_CREATURES_JOIN_BONUS",
+						"val" : 2,
+						"valueType" : "BASE_NUMBER"
+				},
+				"crystal" : {
+					"subtype" : "resource.crystal",
+					"type" : "GENERATE_RESOURCE",
+					"val" : 1
+				},
+				"gems" : {
+					"subtype" : "resource.gems",
+					"type" : "GENERATE_RESOURCE",
+					"val" : 1
+				},
+				"sulfur" : {
+					"subtype" : "resource.sulfur",
+					"type" : "GENERATE_RESOURCE",
+					"val" : 1
+				},
+				"mercury" : {
+					"subtype" : "resource.mercury",
+					"type" : "GENERATE_RESOURCE",
+					"val" : 1
+				},
+				"wood" : {
+					"subtype" : "resource.wood",
+					"type" : "GENERATE_RESOURCE",
+					"val" : 2
+				},
+				"ore" : {
+					"subtype" : "resource.ore",
+					"type" : "GENERATE_RESOURCE",
+					"val" : 2
+				},
+				"gold" : {
+					"subtype" : "resource.gold",
+					"type" : "GENERATE_RESOURCE",
+					"val" : 1000
+				},
+				"manaRegen" : {
+				"type" : "GENERATE_RESOURCE",
+				"subtype" : "resource.gold",
+				"val" : 250,
+				"updater" : "TIMES_HERO_LEVEL"
+				}
+				}
+			}
+		}
+	}
+
+
+

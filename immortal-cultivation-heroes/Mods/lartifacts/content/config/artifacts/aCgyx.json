@@ -1,0 +1,44 @@
+{
+	"aCgyx" : {
+		"class" : "RELIC",
+		"type" : [ "HERO" ],
+		"value" : 12000,
+		"graphics" : {
+			"image": "artifacts/aCgyxS.png",
+			"large": "artifacts/aCgyxL.bmp",
+			"map": "artifacts/aCgyxM.def"
+		},
+		"slot" : "MISC",
+		"text" : {
+			"description" : "{Imperial Seal}\r\n\r\nIncrease morale by 3 points and reduce the enemy's morale by 3 points. Meanwhile, it is not immune to beneficial magic and is permanently in the state of Holy Spirit Blessing.",
+			"event" : "It's a seal. You picked it up and saw the inscription on it which read, “By the mandate of Heaven, may you live long and prosper.” At that moment, you understood who the truly chosen one by Heaven was.",
+			"name" : "Imperial Seal"
+		},
+		"components":
+		[
+			"badgeOfCourage",
+			"crestOfValor",
+			"glyphOfGallantry"
+		],
+		"bonuses" : [
+			{
+				//敌方士气-3
+			"type" : "MORALE",
+			"propagator": "BATTLE_WIDE",
+			"propagationUpdater" : "BONUS_OWNER_UPDATER",
+			"limiters" : [ "OPPOSITE_SIDE" ],
+			"val":-3
+			},
+			{
+			//永久处于圣灵佑佐状态
+			"type" : "ENCHANTED",
+			"subtype" : "spell.bless",
+			"val" : 2
+			},
+			{
+			//接纳增益魔法
+		   "type" : "RECEPTIVE"
+			}
+		]
+	}
+}

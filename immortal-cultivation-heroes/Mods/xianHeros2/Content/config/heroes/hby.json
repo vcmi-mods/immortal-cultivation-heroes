@@ -1,0 +1,108 @@
+﻿{
+	"hby" :
+	{
+        		"class": "clby",
+        		"female" : true,
+        		"images" :
+        		
+        {
+        			
+          "specialtySmall" : "by/sby-s.bmp",
+          "specialtyLarge" : "by/sby-l.bmp",
+          "large" : "by/by-l.bmp",
+          "small" : "by/by-s.bmp"
+        
+        },
+        
+        		"army" :
+        		
+        [
+        			
+       {
+    "creature" : "cerberus","max" : 5,"min" : 3
+    },
+    			
+    {"creature" : "cerberus",
+    "max" : 3,
+    "min" : 2
+    },
+    			
+    {
+    "creature" : "cerberus",
+    "max" : 3,"min" : 2
+    },
+        ],
+        		
+        "skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			}
+		],
+		"spellbook" :
+		[
+			"blind"
+		],
+	
+		"texts" :
+		{
+			"name" : "Bi Yao",
+			"biography" : "Bi Yao is the young master of the Ghost King Sect, one of the four major sects of the Demonic Cult. She is the apple of the Ghost King's eye. With a profound family heritage, her cultivation skills are exquisite and peerless. She holds a high and powerful position within the Demonic Cult.She is extremely beautiful, with a clear and charming appearance that is truly captivating. Dressed in green clothes, with golden bells around her waist and white flowers on her fingertips, she is full of an ethereal charm.She has a bright and straightforward personality, free and easygoing. She is frank and magnanimous, daring to love and hate. She is passionate, coquettish yet cute, and kind-hearted.",
+		
+			"specialty" : {
+				"description" : "Automatically cast the Evil Curse Attachment and the Bloodthirsty Magic. For every level the hero upgrades, the damage of fire-based magic increases by 10%, and for every square that creatures move, the damage they cause increases by 5%. Moreover, for every level the hero upgrades, the Logistics skill is strengthened by 3%, and the movement ability at sea increases by 50 per level.",
+				"name" : "The dance of the Sad Flower.",
+				"tooltip" : "{Fortune}\r\n\r\nEnhance various abilities.)"
+			}
+		},
+		"specialty" : {
+			"bonuses" : {
+			    "curse" : {"subtype" : "spell.curse",
+				"type" : "OPENING_BATTLE_SPELL",
+				"val" : 3,
+				"valueType" : "BASE_NUMBER"
+					},
+				"bloodlust" : {"subtype": "spell.bloodlust",
+				"type" : "OPENING_BATTLE_SPELL",
+				"val" : 3,
+				"valueType" : "BASE_NUMBER"
+					},
+			"castscurse" :
+			{
+				"type" : "JOUSTING",
+				"val" : 5
+			},
+			"fireMagic" : {
+				"type" : "SPELL_DAMAGE",
+				"subtype" : "spellSchool.fire",
+				"val" : 10,
+				"valueType" : "BASE_NUMBER",
+					"updater" : "TIMES_HERO_LEVEL"
+				},
+		 	"logistics" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"subtype" : "heroMovementLand",
+					"type" : "MOVEMENT",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+					},
+				 "navigationseaUpdater" : {
+					"type" : "MOVEMENT",
+					"subtype" : "heroMovementSea",
+				    "val" : 50,
+					"valueType" : "BASE_NUMBER",
+					"updater" : "TIMES_HERO_LEVEL"
+					}
+				}
+			}
+		}
+	}
+
+
+

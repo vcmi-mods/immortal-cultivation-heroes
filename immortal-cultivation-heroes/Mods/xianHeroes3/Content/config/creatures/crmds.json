@@ -1,0 +1,95 @@
+{
+	"crmds":
+	{
+		"name" : 
+		{
+			"plural" : "Nine-colored Heaven Swallowing Python",
+			"singular" : "Nine-colored Heaven Swallowing Python"
+		},
+		"description": "Increase attack and damage by 80% before launching a proactive attack, and increase defense by 80% before receiving a proactive attack.",
+		"hasDoubleWeek": false,
+		"doubleWide" : true,
+     	"faction" : "dungeon",
+		"special" : true,
+		"advMapAmount" :
+		{
+			 "min" : 16,
+			 "max" : 25
+		},
+		"level" : 0,
+		"attack" : 6,
+		"defense" : 8,
+		"damage" :
+		{
+			 "min" : 8,
+			 "max" : 15
+		},
+		"growth" : 9,
+		"hitPoints" : 40,
+		"speed" : 5,
+		"fightValue" : 130,
+		"aiValue" : 156,
+		"shots" : 24,
+		"cost" :
+		{
+			"gold" : 140
+		},
+		"graphics" :
+		{
+			"animation" : "creatures/crMdsA.def",
+			"map" : "creatures/crMdsM.def",
+			"iconSmall" : "creatures/crMdsS.png",
+			"iconLarge" : "creatures/crMdsL.png",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 0.5,
+				"idle" : 10.00,
+				"attack" : 1.00
+			}
+		},
+		"sound" :
+		{
+			"attack": "crMdsA.wav",
+			"defend": "crMdsD.wav",
+			"killed": "crMdsK.wav",
+			"move": "crMdsM.wav",
+			"wince": "crMdsW.wav"
+        },
+		"abilities" :
+		{
+			"spmds" :
+    			{
+    			"type" : "SPELL_BEFORE_ATTACK",
+    			"subtype" : "spell.spsrxm",
+    			"val" : 100,
+    			"addInfo": [3,0]
+    			},
+			"revenger": 
+			{
+				"type": "SPELL_BEFORE_ATTACK",
+				"subtype": "spell.spsrxm2",
+				"val": 100,
+				"addInfo": [3,0],
+				"limiters" : [ "OPPOSITE_SIDE" ],
+					"duration": "UNTIL_BEING_ATTACKED",		
+				"propagator": "BATTLE_WIDE",
+				"propagationUpdater" : "BONUS_OWNER_UPDATER"
+			},		
+			"firereduction": 
+			{
+    			"type" : "SPELL_DAMAGE_REDUCTION",
+    			"subtype" : "spellSchool.fire",
+    			"val" : 100,
+    			"valueType" : "BASE_NUMBER",
+    		},
+			"canCast" :
+			{
+			    "type" : "SPELLCASTER",
+			    "subtype" : "spell.slow",
+				"val" : 100
+			}
+		}	
+	}		
+}
+

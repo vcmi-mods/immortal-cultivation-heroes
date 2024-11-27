@@ -1,0 +1,63 @@
+{
+	"name" : "Immortal Cultivation Hero (Mortal Chapter)",
+	"description": "Add a castle hero named Han Li, an Elemental City hero named Nangong Wan, a Hell hero named Ziling, a Necropolis hero named Yuan Yao, and a Rampart hero named Jiuxiao.",
+	"author": "L",
+	"contact": "",
+	"version": "1.0.0",
+	"modType": "Heroes",
+	"compatibility": {
+		"min": "1.6.0"
+	},
+	"depends" : 
+     ["lmods" ],
+     "conflicts" :
+	[
+	"L-mods.xianHeroes+","xianHeroes"
+	],
+	"changelog": {
+		"1.0.0": [
+			"Add a castle hero named Han Li, an Elemental City hero named Nangong Wan, a Hell hero named Ziling, a Necropolis hero named Yuan Yao, and a Rampart hero named Jiuxiao."
+		]
+	},
+		"chinese" : {
+		"name" : "修仙英雄（凡人篇）",
+		"description" : "添加一个城堡英雄韩立，一个元素城英雄南宫婉，一个地狱英雄紫灵，一个亡灵城元瑶，一个壁垒英雄九霄。"
+	},
+	
+		"creatures" :
+	[
+		"config/creatures/crhl.json",
+		"config/creatures/crngw.json",
+		"config/creatures/crzl.json",
+		"config/creatures/cryy.json",
+		"config/creatures/crjx.json"
+		
+	],
+	
+	"heroClasses" :
+	[
+		"config/classes/clhl.json",
+		"config/classes/clngw.json",
+		"config/classes/clzl.json",
+		"config/classes/clyy.json",
+		"config/classes/cljx.json"
+		
+	],
+	
+		"spells" : 
+	[
+		"config/spells/dodge2.json",
+		"config/spells/alwaysfirst2.json"
+	],
+	
+	
+	
+		"heroes" :
+	[
+		"config/heroes/hhl.json",
+		"config/heroes/hngw.json",
+		"config/heroes/hzl.json",
+		"config/heroes/hjx.json",
+		"config/heroes/hyy.json"
+	]
+}

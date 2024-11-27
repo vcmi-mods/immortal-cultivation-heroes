@@ -1,0 +1,115 @@
+{
+	"lmods.artifactsplus.fused:aZlb" : {
+		"fusedComponents" : true,
+		"bonuses" : [
+		{
+			"limiters" : ["IS_UNDEAD"],
+			"subtype" : "spell.destroyUndead",
+			"type" : "SPELL_IMMUNITY",
+			"val" : 0,
+			"valueType" : "BASE_NUMBER"
+		},
+		{
+		    "type": "PRIMARY_SKILL",
+			"subtype" : "primarySkill.attack",
+			"val" : 5,
+			"valueType": "BASE_NUMBER"
+		},
+	    {
+			"type": "PRIMARY_SKILL",
+			"subtype" : "primarySkill.defence",
+			"val" : 5,
+			"valueType": "BASE_NUMBER"
+	    },
+	    {
+		"subtype" : "spell.berserk",
+		"type" : "SPELL_IMMUNITY",
+		"val" : 0,
+		"valueType" : "BASE_NUMBER"
+		},
+		{
+		"subtype": "spell.bloodlust",
+		"type" : "OPENING_BATTLE_SPELL",
+		"val" : 5,
+		"valueType" : "BASE_NUMBER"
+		},
+		{
+			"subtype" : "spell.hypnotize",
+			"type" : "SPELL_IMMUNITY",
+			"val" : 0,
+			"valueType" : "BASE_NUMBER"
+		},
+		{
+        "subtype": "spell.shield",
+		"type" : "OPENING_BATTLE_SPELL",
+		"val" : 5,
+		"valueType" : "BASE_NUMBER"
+		},
+			{
+			"subtype" : "spell.curse",
+			"type" : "SPELL_IMMUNITY",
+			"val" : 0,
+			"valueType" : "BASE_NUMBER"
+		},
+		{
+		"subtype": "spell.bless",
+		"type" : "OPENING_BATTLE_SPELL",
+		"val" : 5,
+		"valueType" : "BASE_NUMBER"
+		},
+			{
+			"subtype" : "spell.deathRipple",
+			"type" : "SPELL_IMMUNITY",
+			"val" : 0,
+			"valueType" : "BASE_NUMBER"
+		},
+		{
+			"type" : "STACK_HEALTH",
+			"val" : 25,
+			"valueType" : "PERCENT_TO_BASE"
+		},
+			{
+			"subtype" : "spell.lightningBolt",
+			"type" : "SPELL_IMMUNITY",
+			"val" : 0,
+			"valueType" : "BASE_NUMBER"
+			},
+		{
+			"subtype" : "spell.chainLightning",
+			"type" : "SPELL_IMMUNITY",
+			"val" : 0,
+			"valueType" : "BASE_NUMBER"
+		},
+		{
+			"type" : "SPELL_DAMAGE",
+			"subtype" : "spellSchool.air",
+			"val" : 50,
+			"valueType" : "BASE_NUMBER"
+		},
+			{
+			"subtype" : "spell.blind",
+			"type" : "SPELL_IMMUNITY",
+			"val" : 0,
+			"valueType" : "BASE_NUMBER"
+		},
+		{
+		"subtype": "spell.precision",
+		"type" : "OPENING_BATTLE_SPELL",
+		"val" : 5,
+		"valueType" : "BASE_NUMBER"
+		},
+			{
+			"subtype" : "spell.forgetfulness",
+				"type" : "SPELL_IMMUNITY",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER"
+		},
+		{
+		"subtype": "spell.airShield",
+		"type" : "OPENING_BATTLE_SPELL",
+		"val" : 5,
+		"valueType" : "BASE_NUMBER"
+		}
+		]
+	}
+} 

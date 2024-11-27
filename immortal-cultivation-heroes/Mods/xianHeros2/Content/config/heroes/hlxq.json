@@ -1,0 +1,108 @@
+﻿{
+	"hlxq" :
+	{
+        		"class": "cllxq",
+        		"female" : true,
+        		"images" :
+        		
+        {
+        			
+          "specialtySmall" : "lxq/slxq-s.bmp",
+          "specialtyLarge" : "lxq/slxq-l.bmp",
+          "large" : "lxq/lxq-l.bmp",
+          "small" : "lxq/lxq-s.bmp"
+        
+        },
+        
+        		"army" :
+        		
+        [
+        			
+       {"creature" : "archMage",
+    "max" : 4,
+    "min" : 3
+    },
+    			
+    {"creature" : "archMage",
+    "max" : 3,
+    "min" : 2
+    },
+    			
+    {
+    "creature" : "archMage",
+    "max" : 2,"min" : 1
+    }
+        ],
+        		
+        "skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			}
+		],
+		"spellbook" :
+		[
+			"precision","lightningBolt"
+		],
+	
+		"texts" :
+		{
+			"name" : "Lu Xueqi",
+			"biography" : "Lu Xueqi has an ethereal and peerlessly beautiful appearance. Dressed in fluttering white clothes, she stands in the wind with a blue immortal sword on her back. Her black hair flutters in the wind, and she travels in the martial world with an air of immortality and chivalry.She is an outstanding figure among the new generation of disciples under Qingyun Sect, which is one of the three major sects of the Righteous Path. She is highly gifted, has profound cultivation, and has a cold and detached personality. She doesn't like talking too much.",
+		
+			"specialty" : {
+				"description" : "For every level the hero upgrades, the damage of the four elemental magics and archery will each increase by 8%, and the air elemental magic will additionally increase by 5% per level. For every level the hero upgrades, the Logistics skill is strengthened by 3%, and the sea movement ability increases by 50 points per level.",
+				"name" : "True Spell of the Divine Sword Summoning Thunder",
+				"tooltip" : "{Fortune}\r\n\r\nEnhance various abilities.)"
+			}
+		},
+		"specialty" : {
+			"bonuses" : {
+				 "anyMagic" : {
+					"type" : "SPELL_DAMAGE",
+					"subtype" : "spellSchool.any",
+					"val" : 8,
+					"valueType" : "BASE_NUMBER",
+					"updater" : "TIMES_HERO_LEVEL"
+				},
+				"airMagic" : {
+					"type" : "SPELL_DAMAGE",
+					"subtype" : "spellSchool.air",
+					"val" : 5,
+					"valueType" : "BASE_NUMBER",
+					"updater" : "TIMES_HERO_LEVEL"
+				},
+					"archery" : {
+					"subtype" : "damageTypeRanged",
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "PERCENTAGE_DAMAGE_BOOST",
+					"val" : 8,
+					"valueType" : "PERCENT_TO_BASE"
+				},
+		 	"logistics" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"subtype" : "heroMovementLand",
+					"type" : "MOVEMENT",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+					},
+				 "navigationseaUpdater" : {
+					"type" : "MOVEMENT",
+					"subtype" : "heroMovementSea",
+				    "val" : 50,
+					"valueType" : "BASE_NUMBER",
+					"updater" : "TIMES_HERO_LEVEL"
+					}
+				}
+			}
+		}
+	}
+
+
+

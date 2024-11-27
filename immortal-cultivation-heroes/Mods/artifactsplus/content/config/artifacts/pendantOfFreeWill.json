@@ -1,0 +1,22 @@
+{
+	"core:pendantOfFreeWill" : {
+		"bonuses" : [
+		{
+			"subtype" : "spell.hypnotize",
+			"type" : "SPELL_IMMUNITY",
+			"val" : 0,
+			"valueType" : "BASE_NUMBER"
+		},
+		{
+        "subtype": "spell.shield",
+		"type" : "OPENING_BATTLE_SPELL",
+		"val" : 5,
+		"valueType" : "BASE_NUMBER"
+		}
+	],
+		"text" : {
+			"description" : "{Pendant Of FreeWill+}\r\n\r\nCreatures are immune to “Hypnotize”, and the “Shield” spell is cast at the start.",
+			"name" : "Pendant Of FreeWill+"
+		}
+	}
+}

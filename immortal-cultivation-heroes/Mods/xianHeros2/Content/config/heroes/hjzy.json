@@ -1,0 +1,114 @@
+﻿{
+	"hjzy" :
+	{
+        		"class": "cljzy",
+        		"female" : true,
+        		"images" :
+        		
+        {
+        			
+          "specialtySmall" : "jzy/sjzy-s.bmp",
+          "specialtyLarge" : "jzy/sjzy-l.bmp",
+          "large" : "jzy/jzy-l.bmp",
+          "small" : "jzy/jzy-s.bmp"
+        
+        },
+        
+        		"army" :
+        		
+        [	
+       {
+    "creature" : "energyElemental","max" : 3,"min" : 2
+    },
+    			
+    {"creature" : "energyElemental",
+    "max" : 2,
+    "min" : 1
+    },
+    			
+    {
+    "creature" : "energyElemental",
+    "max" : 2,"min" : 1
+    },
+        ],
+        		
+        "skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			}
+		],
+		"spellbook" :
+		[
+			"airElemental"
+		],
+	
+		"texts" :
+		{
+			"name" : "Ji Ziyue",
+			"biography" : "Ji Ziyue is an important descendant of the ancient and noble Ji family. She has a Yuan Spirit Body and can merge with the origin of all things. She has a lively and playful personality and is often narcissistic. She met Ye Fan during the Ji family's attack on Yan Ruyu. Later, after going through many adventures, she gradually developed feelings for Ye Fan and eventually became his wife. Together, they ascended to immortality.",
+		
+			"specialty" : {
+				"description" : "The damage of creatures increases by 5 points. The morale and luck of enemy creatures each decrease by 1. For every level the hero upgrades, the air-based damage increases by 10%, the Logistics skill is strengthened by 3%, and the movement ability at sea increases by 50 points per level.",
+				"name" : "Primordial Spirit Body",
+				"tooltip" : "{Fortune}\r\n\r\nEnhance various abilities.)"
+			}
+		},
+		"specialty" : {
+			"bonuses" : {
+				"airMagic" : {
+					"type" : "SPELL_DAMAGE",
+					"subtype" : "spellSchool.air",
+					"val" : 10,
+					"valueType" : "BASE_NUMBER",
+					"updater" : "TIMES_HERO_LEVEL"
+				},
+				"damage1":
+					{
+						"type": "CREATURE_DAMAGE",
+						"subtype": "creatureDamageBoth",
+						"val" : 5,
+						"valueType" : "BASE_NUMBER"
+					},
+					"moraleReduce" : {
+					"type" : "MORALE",
+					"propagator": "BATTLE_WIDE",
+					"propagationUpdater" : "BONUS_OWNER_UPDATER",
+					"limiters" : [ "OPPOSITE_SIDE" ],
+					"val":-1
+				},
+				"luckReduce":
+				{
+					"type" : "LUCK",
+					"val" : -1,
+					"propagator": "BATTLE_WIDE",
+					"propagationUpdater" : "BONUS_OWNER_UPDATER",
+					"limiters" : [ "OPPOSITE_SIDE" ]
+				},
+		 	"logistics" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"subtype" : "heroMovementLand",
+					"type" : "MOVEMENT",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+					},
+				 "navigationseaUpdater" : {
+					"type" : "MOVEMENT",
+					"subtype" : "heroMovementSea",
+				    "val" : 50,
+					"valueType" : "BASE_NUMBER",
+					"updater" : "TIMES_HERO_LEVEL"
+					}
+				}
+			}
+		}
+	}
+
+
+

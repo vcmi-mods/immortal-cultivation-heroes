@@ -1,0 +1,58 @@
+{	
+	"skBjds" : {
+		"name" : "Master of Combat",
+		"gainChance" : {
+			"might" : 4,
+			"magic" : 4
+		},
+		"base" : {
+			"effects" : {
+				"double" : {
+					"type" : "DOUBLE_DAMAGE_CHANCE"
+				},
+				"attack" : {
+					"type" : "ENEMY_ATTACK_REDUCTION"
+				},
+				"defence" : {
+					"type" : "ENEMY_DEFENCE_REDUCTION"
+				}
+			}
+		},
+		"basic" : {
+			"images" : {
+				"small": "skills/skBjds/skBjdsS1.png",
+				"medium": "skills/skBjds/skBjdsM1.png",
+				"large": "skills/skBjds/skBjdsL1.png"
+			},
+			"description" : "{Junior Master of Combat}\n\nIgnore 20% of the enemy's attack when being attacked.",
+			"effects" : {
+				"attack" : { "val" : 20}
+			}
+		},
+		"advanced" : {
+			"images" : {
+				"small": "skills/skBjds/skBjdsS2.png",
+				"medium": "skills/skBjds/skBjdsM2.png",
+				"large": "skills/skBjds/skBjdsL2.png"
+			},
+			"description" : "{Intermediate Master of Combat}\n\nIgnore 20% of the enemy's defense when attacking and ignore 20% of the enemy's attack when being attacked.",
+			"effects" : {
+				"attack" : { "val" : 20},
+				"defence" : { "val" : 20}
+			}
+		},
+		"expert" : {
+			"images" : {
+			"small": "skills/skBjds/skBjdsS3.png",
+				"medium": "skills/skBjds/skBjdsM3.png",
+				"large": "skills/skBjds/skBjdsL3.png"
+			},
+			"description" : "{Advanced Master of Combat}\n\nGrant creatures a 15% chance of double attack. Ignore 20% of the enemy's defense when attacking and ignore 20% of the enemy's attack when being attacked.",
+			"effects" : {
+				"double" : { "val" : 15},
+				"attack" : { "val" : 20},
+				"defence" : { "val" : 20}
+			}
+		}
+	}
+}

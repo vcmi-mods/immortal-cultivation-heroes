@@ -1,0 +1,21 @@
+{
+	"core:pendantOfLife" : {
+		"bonuses" : [
+		{
+			"subtype" : "spell.deathRipple",
+			"type" : "SPELL_IMMUNITY",
+			"val" : 0,
+			"valueType" : "BASE_NUMBER"
+		},
+		{
+			"type" : "STACK_HEALTH",
+			"val" : 25,
+			"valueType" : "PERCENT_TO_BASE"
+		}
+	],
+		"text" : {
+			"description" : "{Pendant Of Life+}\r\n\r\nCreatures are immune to the effect of “Death Ripple” and their health points are increased by 25%.",
+			"name" : "Pendant Of Life+"
+		}
+	}
+}

@@ -1,0 +1,126 @@
+{
+	"crngw" :
+	{
+		"name" :
+		{
+			"singular" : "Vermilion Bird",
+			"plural" : "Vermilion Bird"
+		},
+		"description": "Upgrading increases the power of the commander (non-linearly). The commander is vulnerable to Doomsday Judgment. For each level up, the resistance to magic damage increases by 17%, with a maximum of 100%.",
+		"hasDoubleWeek": false,
+		"doubleWide" : true,
+     	"faction" : "conflux",
+		"special" : true,
+		"advMapAmount" :
+		{
+			 "min" : 16,
+			 "max" : 25
+		},
+		"level" : 0,
+		"attack" : 6,
+		"defense" : 8,
+		"damage" :
+		{
+			 "min" : 8,
+			 "max" : 15
+		},
+		"growth" : 9,
+		"hitPoints" : 40,
+		"speed" : 5,
+		"fightValue" : 130,
+		"aiValue" : 156,
+		"shots" : 24,
+		"cost" :
+		{
+			"gold" : 140
+		},
+		"abilities":
+		{
+				"avoidMagicResistance" :
+			{
+				"type" : "MAGIC_RESISTANCE",
+				"val" : 0,
+				"valueType": "INDEPENDENT_MIN"
+			},
+			"suicide" :
+			{
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"subtype": "armageddon",
+				"val" : 100000
+			},	
+			"reduceSpellDamage" :
+			{
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"subtype" : "spellSchool.any",
+				"updater" : "TIMES_STACK_LEVEL",
+				"val" : 17
+			},	
+			"reduceSpellDamageMax" :
+			{
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"subtype" : "spellSchool.any",
+				"valueType" : "INDEPENDENT_MIN",
+				"val" : 100
+			},				
+			"canFly" : 
+			{	
+			    "type" : "FLYING"
+			},
+			"immuneToMind" : 
+			{
+				"type" : "MIND_IMMUNITY"
+			},
+			"alwaysFirst" : {
+				"type" : "ENCHANTED",
+				"subtype" : "spell.alwaysFirst2"
+			},
+			"armageddon":
+			{
+				"type" : "ENCHANTER",
+				"subtype": "armageddon",
+				"val" : 1,
+				"addInfo" : 1
+			},
+			"armageddonPower":
+			{
+				"type" : "CREATURE_SPELL_POWER",
+				"val": -3000,
+				"valueType": "ADDITIVE_VALUE"
+			},
+			"armageddonPowerMin":
+			{
+				"type" : "CREATURE_SPELL_POWER",
+				"val": 0,
+				"valueType": "INDEPENDENT_MAX"
+			},
+			"casts" :
+			{
+				"type" : "CASTS",
+				"val" : 999999,
+				"valueType" : "INDEPENDENT_MAX"
+			}
+		},
+		"graphics" :
+		{
+			"animation": "battle/ngw.def",
+			"map" : "map/ngw.def",
+			"iconSmall" : "iconsSmall/ngw.bmp",
+			"iconLarge" : "iconsBig/ngw.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"sound" :
+		{
+			"attack": "PHOEATTK.wav",
+			"defend": "PHOEDFND.wav",
+			"killed": "PHOEKILL.wav",
+			"move": "PHOEMOVE.wav",
+			"wince": "PHOEWNCE.wav"
+		}
+	}
+}

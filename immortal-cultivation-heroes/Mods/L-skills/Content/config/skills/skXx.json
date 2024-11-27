@@ -1,0 +1,49 @@
+{	
+	"skXx" : {
+		"name" : "Life Drain",
+		"gainChance" : {
+			"might" : 4,
+			"magic" : 4
+		},
+		"base" : {
+			"effects" : {
+				"main" : {
+					"type" : "LIFE_DRAIN"
+				}
+			}
+		},
+		"basic" : {
+			"images" : {
+				"small": "skills/skXx/skXxS1.png",
+				"medium": "skills/skXx/skXxM1.png",
+				"large": "skills/skXx/skXxL1.png"
+			},
+			"description" : "{Junior Life Drain}\n\nGrant creatures a 5% life drain ability.",
+			"effects" : {
+				"main" : { "val" : 5}
+			}
+		},
+		"advanced" : {
+			"images" : {
+				"small": "skills/skXx/skXxS2.png",
+				"medium": "skills/skXx/skXxM2.png",
+				"large": "skills/skXx/skXxL2.png"
+			},
+			"description" : "{Intermediate Life Drain}\n\nGrant creatures a 10% life drain ability.",
+			"effects" : {
+				"main" : { "val" : 10}
+			}
+		},
+		"expert" : {
+			"images" : {
+			"small": "skills/skXx/skXxS3.png",
+				"medium": "skills/skXx/skXxM3.png",
+				"large": "skills/skXx/skXxL3.png"
+				},
+			"description" : "{Advanced Life Drain}\n\nGrant creatures a 15% life drain ability.",
+			"effects" : {
+				"main" : { "val" : 15}
+			}
+		}
+	}
+}

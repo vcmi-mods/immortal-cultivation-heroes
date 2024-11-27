@@ -1,0 +1,24 @@
+{
+	"name" : "fused artifactsplus",
+	"description" : "Add a fused artifacts.\r\npendantOfDeath+pendantOfDispassion+pendantOfFreeWill+pendantOfHoliness+pendantOfLife+pendantOfNegativity+pendantOfSecondSight+pendantOfTotalRecall→LonngJade",
+	"author" : "L",
+	"version" : "1.0.0",
+	"contact" : "",
+	"modType" : "Artifacts",
+	"language": "chinese",
+	"chinese": {
+		"name": "融合加强吊坠",
+		"description": "新增一个融合宝物，死神挂件+冷静挂件+自由挂件+神圣挂件+生命挂件+闪电挂件+光明挂件+清醒挂件→真龙璧。"
+	},
+	
+	"artifacts" :
+	[
+		"config/artifacts/aZlb.json"
+	
+	],
+	
+	"changelog" :
+    {
+		"1.0.0" : ["Add a fused artifacts"]
+    }  
+}

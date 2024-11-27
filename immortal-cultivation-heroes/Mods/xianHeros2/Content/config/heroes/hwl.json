@@ -1,0 +1,98 @@
+﻿{
+	"hwl" :
+	{
+        		"class": "clwl",
+        		"female" : false,
+        		"images" :
+        		
+        {
+        			
+          "specialtySmall" : "wl/swl-s.bmp",
+          "specialtyLarge" : "wl/swl-l.bmp",
+          "large" : "wl/wl-l.bmp",
+          "small" : "wl/wl-s.bmp"
+        
+        },
+        
+        		"army" :
+        		
+        [
+        			
+       {
+    "creature" : "crwl2","max" : 1,"min" : 1
+    },
+    			
+    {"creature" : "crwl2",
+    "max" : 1,
+    "min" : 1
+    }
+        ],
+        		
+        "skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			}
+		],
+		"spellbook" :
+		[
+			"forceField"
+		],
+	
+		"texts" :
+		{
+			"name" : "Wang Lin",
+			"biography" : "Wang Lin was an ordinary and mediocre teenager. By accident, he obtained the mysterious stone bead named “Tian Ni” and thus embarked on the path of immortality. He went through numerous hardships and difficulties, and relying solely on himself, he became famous in the world of cultivation and eventually grew into the number one powerhouse on the Xi Gang Continent.He cherished friendship and loyalty deeply. In order to resurrect his beloved Li Muwan, he didn't hesitate to defy the will of heaven and change fate. In the end, the two of them stepped into the Heavenly Realm together and had a perfect ending.",
+		
+			"specialty" : {
+				"description" : "Use the extreme-level spiritual consciousness to refine demons, and it's possible to refine cave dwellers into demons. For every level the hero upgrades, the earth-based damage increases by 10%. For every level the hero upgrades, the Logistics skill is strengthened by 3%, and the sea movement ability increases by 50 points per level.",
+				"name" : "Extreme-level Spiritual Consciousness",
+				"tooltip" : "{Fortune}\r\n\r\nEnhance various abilities.)"
+			}
+		},
+		"specialty" : {
+			"bonuses" : {
+			"earthMagic" : {
+					"type" : "SPELL_DAMAGE",
+					"subtype" : "spellSchool.earth",
+					"val" : 10,
+					"valueType" : "BASE_NUMBER",
+					"updater" : "TIMES_HERO_LEVEL"
+				},
+			"troglodyte2crwl2": {
+					"type" : "SPECIAL_UPGRADE",
+					"subtype" : "creature.troglodyte",
+					"addInfo" : "creature.crwl2"
+				},
+				"infernalTroglodyte2crwl2": {
+					"type" : "SPECIAL_UPGRADE",
+					"subtype" : "creature.infernalTroglodyte",
+					"addInfo" : "creature.crwl2"
+				},				
+		 	"logistics" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"subtype" : "heroMovementLand",
+					"type" : "MOVEMENT",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+					},
+				 "navigationseaUpdater" : {
+					"type" : "MOVEMENT",
+					"subtype" : "heroMovementSea",
+				    "val" : 50,
+					"valueType" : "BASE_NUMBER",
+					"updater" : "TIMES_HERO_LEVEL"
+					}
+				}
+			}
+		}
+	}
+
+
+

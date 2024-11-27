@@ -1,0 +1,85 @@
+{	
+	"mresource" : {
+		"name" : "Resource Master",
+		"gainChance" : {
+			"might" : 4,
+			"magic" : 4
+		},
+		"base" : {
+			"effects" : {
+				"wood" : {
+					"subtype" : "resource.wood",
+					"type" : "GENERATE_RESOURCE"
+				},
+					"ore" : {
+					"subtype" : "resource.ore",
+					"type" : "GENERATE_RESOURCE"
+				},
+					"crystal" : {
+					"subtype" : "resource.crystal",
+					"type" : "GENERATE_RESOURCE"
+				},
+				"gems" : {
+					"subtype" : "resource.gems",
+					"type" : "GENERATE_RESOURCE"
+				},
+				"sulfur" : {
+					"subtype" : "resource.sulfur",
+					"type" : "GENERATE_RESOURCE"
+				},
+				"mercury" : {
+					"subtype" : "resource.mercury",
+					"type" : "GENERATE_RESOURCE"
+				}
+			}
+		},
+		"basic" : {
+			"images" : {
+				"small": "skills/mresource/SmallBasic.png",
+				"medium": "skills/mresource/MediumBasic.png",
+				"large": "skills/mresource/LargeBasic.png"
+			},
+			"description" : "{Junior Resource Master}\n\nIncrease 1 unit of wood and 1 unit of stone every day.",
+			"effects" : {
+				"wood" : { "val" : 1 },
+				"ore" : { "val" : 1 },
+				"crystal" : { "val" : 0 },
+				"gems" : { "val" : 0 },
+				"sulfur" : { "val" : 0 },
+				"mercury" : { "val" : 0 }
+			}
+		},
+		"advanced" : {
+			"images" : {
+				"small": "skills/mresource/SmallAdvanced.png",
+				"medium": "skills/mresource/MediumAdvanced.png",
+				"large": "skills/mresource/LargeAdvanced.png"
+			},
+			"description" : "{Intermediate Resource Master。}\n\nIncrease 2 units of wood and 2 units of stone every day.",
+			"effects" : {
+				"wood" : { "val" : 2 },
+				"ore" : { "val" : 2 },
+				"crystal" : { "val" : 0 },
+				"gems" : { "val" : 0 },
+				"sulfur" : { "val" : 0 },
+				"mercury" : { "val" : 0 }
+			}
+		},
+		"expert" : {
+			"images" : {
+				"small": "skills/mresource/SmallExpert.png",
+				"medium": "skills/mresource/MediumExpert.png",
+				"large": "skills/mresource/LargeExpert.png"
+			},
+			"description" : "{Advanced Resource Master}\n\nIncrease 2 units of wood and 2 units of stone every day, and increase each of the other rare resources by 1.",
+			"effects" : {
+				"wood" : { "val" : 2 },
+				"ore" : { "val" : 2 },
+				"crystal" : { "val" : 1 },
+				"gems" : { "val" : 1 },
+				"sulfur" : { "val" : 1 },
+				"mercury" : { "val" : 1 }
+			}
+		}
+	}
+}

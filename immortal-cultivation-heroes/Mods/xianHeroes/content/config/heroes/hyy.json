@@ -1,0 +1,94 @@
+﻿{
+	"hyy" :
+	{
+		"class": "clyy",
+		"female" : true,
+		"images" :
+		
+        {
+        			
+          "specialtySmall" : "yy/syy-s.bmp",
+          "specialtyLarge" : "yy/syy-l.bmp",
+          "large" : "yy/yy-l.bmp",
+          "small" : "yy/yy-s.bmp"
+        
+        },
+        
+        		"army" :
+        		
+        [
+        			
+        {
+            "creature" : "wraith","max" : 5,"min" : 3
+            },
+            			
+            {"creature" : "wraith",
+            "max" : 3,
+            "min" : 2
+            },
+            			
+            {
+            "creature" : "wraith",
+            "max" : 3,"min" : 2
+            },
+        ],
+        		
+        "skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			}
+		],
+		"spellbook" :
+		[
+			"animateDead"
+		],
+	
+		"texts" :
+		{
+			"name" : "Yuan Yao",
+			"biography" : "Yuan Yao was a female cultivator in a small cultivation sect. She had a sweet appearance, a lively and kind personality, and valued friendship and loyalty highly. In order to resurrect her senior sister Yan Li, she accidentally entered the Netherworld and became a Ghost Cultivator. Later, because of Yuan Yao's Yin Body (which could withstand thunder tribulations), she was taken as an apprentice by Qing Yuanzi. She had many interactions with Han Li, and their relationship was rather complicated.",
+			"specialty" : {
+				"description" : "For every level the hero gains, there will be a 10% increase in earth-element damage. For every level the hero's Logistics skill increases by 3%, and the naval movement points increase by 50 per level. At the end of each battle, 20% of the dead creatures will be transformed into wraiths.",
+				"name" : "The Secret of Yin-Yang Reincarnation",
+				"tooltip" : "{Fortune}\r\n\r\nEnhance various abilities.)"
+			}
+		},
+		"specialty" : {
+			"bonuses" : {	
+				"logistics" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"subtype" : "heroMovementLand",
+					"type" : "MOVEMENT",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+					},
+					"earthMagic" : {
+					"type" : "SPELL_DAMAGE",
+					"subtype" : "spellSchool.earth",
+					"val" : 10,
+					"valueType" : "BASE_NUMBER",
+					"updater" : "TIMES_HERO_LEVEL"
+				},
+				"main" : {
+					"type" : "UNDEAD_RAISE_PERCENTAGE",
+					"valueType" : "BASE_NUMBER",
+					"val" : 20	
+				},
+				"power" : {
+					"type" : "IMPROVED_NECROMANCY",
+					"subtype" : "creature.wraith",
+					"addInfo" : 1 ,
+					"val" : 1
+				    }		
+			 }		
+	}
+}
+}
+
