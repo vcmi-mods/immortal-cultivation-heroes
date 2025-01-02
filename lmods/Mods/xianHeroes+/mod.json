@@ -15,7 +15,7 @@
 	],
 	"conflicts" :
 	[
-	"lmods.xianHeroes","lmods.xianHeroes+"
+	"lmods.xianHeroes"
 	],
 	"changelog": {
 		"1.0.0": [
