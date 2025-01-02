@@ -8,8 +8,6 @@
 	"compatibility": {
 		"min": "1.6.0"
 	},
-	"depends" : 
-	  [ "lmods" ],
 	"changelog": {
 		"1.0.0": [
 			"Add a Tower hero named Lu Xueqi, a Stronghold hero named Zhang Xiaofan, a Hell hero named Bi Yao, a Rampart hero named Li Muwan, a Dungeon hero named Wang Lin, a Fortress hero named Ye Fan, and an Elemental City hero named Ji Ziyue."
