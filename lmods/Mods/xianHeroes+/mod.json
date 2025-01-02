@@ -9,10 +9,6 @@
 	"compatibility": {
 		"min": "1.6.0"
 	},
-	"depends" :
-	[
-		"lmods" 
-	],
 	"conflicts" :
 	[
 	"lmods.xianHeroes"
