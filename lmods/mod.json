@@ -15,7 +15,7 @@
 	},
 	"compatibility" :
 	{
-		"min" : "1.5.0"
+		"min" : "1.6.0"
 	},	
 	"skills" : 
 	[
@@ -31,6 +31,7 @@
 	{
 		"1.0.0"   : [ "Add some heroes from “A Record of Mortal's Cultivation to Immortality”, “Zhu Xian”, “Xian Ni” and “Zhe Tian”; introduce three new skills including “Master of Skill Resources”, “Life Drain” and “Vitality Rebirth”; strengthen the original pendant treasures; add some combined treasures made from the original treasures." ],
 		"1.1.0"   : [ "Add some heroes from “Douluo Continent”; introduce a new treasure called “Heavenly Thunder Bamboo”; modify the abilities of Han Li and Nan Gong Wan in the “Mortal” part." ],
-		"1.1.1"   : [ "Add fused artifacts for lartifacts and Add pendant fusion treasure  “loong jade”."]
+		"1.1.1"   : [ "Add fused artifacts for lartifacts and Add pendant fusion treasure  “loong jade”."],
+		"1.1.2"   : [ "Dependencies fixes."]
 	}
 }

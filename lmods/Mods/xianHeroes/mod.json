@@ -10,9 +10,8 @@
 	},
      "conflicts" :
 	[
-	"lmods.xianHeroes+"
+	"immortal-cultivation-heroes.xianHeroes+"
 	],
-	///"xianheroes" looks like copypaste, that's why it was removed.
 	"changelog": {
 		"1.0.0": [
 			"Add a castle hero named Han Li, an Elemental City hero named Nangong Wan, a Hell hero named Ziling, a Necropolis hero named Yuan Yao, and a Rampart hero named Jiuxiao."

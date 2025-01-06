@@ -10,7 +10,7 @@
 	},
 	"depends" :
 	[
-		"lmods.lartifacts" 
+	
 	],
      "conflicts" :
 	[
