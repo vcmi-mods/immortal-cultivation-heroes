@@ -1,62 +1,55 @@
 {
 	"name" : "Immortal Cultivation Heroes (Doupo Chapter)",
-	"description": "Add a Inferno hero named Xiao Yan, an Comflux hero named Xiao Xun'er, a Dungeon hero named Medusa, a Tower hero named Yao Chen, and a Fortress hero named Little Doctor Fairy.",
-	"author": "L",
-	"contact": "",
-	"version": "1.0.0",
-	"modType": "Heroes",
-	"compatibility": {
-		"min": "1.6.0"
+	"description" : "Add a Inferno hero named Xiao Yan, an Comflux hero named Xiao Xun'er, a Dungeon hero named Medusa, a Tower hero named Yao Chen, and a Fortress hero named Little Doctor Fairy.",
+	"author" : "L",
+	"contact" : "",
+	"version" : "1.0.0",
+	"modType" : "Heroes",
+	"compatibility" : {
+		"min" : "1.6.0"
 	},
-     "conflicts" :
-	[
-	
-	],
-	"changelog": {
-		"1.0.0": [
+	"conflicts" : [],
+	"changelog" : {
+		"1.0.0" : [
 			"Add a Hell hero named Xiao Yan, an Elemental City hero named Xiao Xun'er, a Dungeon hero named Medusa, a Tower hero named Yao Chen, and a Fortress hero named Little Doctor Fairy."
 		]
 	},
-		"chinese" : {
+	"chinese" : {
 		"name" : "修仙英雄（斗破篇）",
 		"description" : "添加一个地狱英雄萧炎，一个元素城英雄萧熏儿，一个地下城英雄美杜莎，一个塔楼药尘，一个要塞英雄小医仙。"
 	},
-	
-		"creatures" :
-	[
+
+	"creatures" : [
 		"config/creatures/crxy.json",
 		"config/creatures/crxyx.json",
 		"config/creatures/cryc.json",
 		"config/creatures/crmds.json",
 		"config/creatures/crxxe.json"
 	],
-	
-	"heroClasses" :
-	[
+
+	"heroClasses" : [
 		"config/classes/clxy.json",
 		"config/classes/clxyx.json",
 		"config/classes/clyc.json",
 		"config/classes/clmds.json",
-		"config/classes/clxxe.json",
+		"config/classes/clxxe.json"
 	],
-	
-		"heroes" :
-	[
+
+	"heroes" : [
 		"config/heroes/hxy.json",
 		"config/heroes/hxyx.json",
 		"config/heroes/hyc.json",
 		"config/heroes/hmds.json",
 		"config/heroes/hxxe.json"
 	],
-	
-		"spells" : 
-	[
+
+	"spells" : [
 		"config/spells/spfq.json",
 		"config/spells/spendj.json",
 		"config/spells/spendt.json",
 		"config/spells/spsrxm.json",
 		"config/spells/spsrxm2.json",
 		"config/spells/spsmjx.json",
-		"config/spells/spjdftz.json",
+		"config/spells/spjdftz.json"
 	]
 }

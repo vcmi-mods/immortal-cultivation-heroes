@@ -1,21 +1,18 @@
 {
 	"core:pendantOfDispassion" : {
-		"bonuses" :
-		{
-		"berserk" :
-		{
-		"subtype" : "berserk",
-		"type" : "SPELL_IMMUNITY",
-		"val" : 0,
-		"valueType" : "BASE_NUMBER"
-		},
-		"bloodlust" :
-		{
-		"subtype": "bloodlust",
-		"type" : "OPENING_BATTLE_SPELL",
-		"val" : 5,
-		"valueType" : "BASE_NUMBER"
-		}
+		"bonuses" : {
+			"berserk" : {
+				"subtype" : "berserk",
+				"type" : "SPELL_IMMUNITY",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER"
+			},
+			"bloodlust" : {
+				"subtype" : "bloodlust",
+				"type" : "OPENING_BATTLE_SPELL",
+				"val" : 5,
+				"valueType" : "BASE_NUMBER"
+			}
 		},
 		"text" : {
 			"description" : "{Pendant Of Dispassion+}\r\n\r\nCreatures are immune to the effect of “Berserk”, and the “Bloodlust” spell is cast at the beginning.",

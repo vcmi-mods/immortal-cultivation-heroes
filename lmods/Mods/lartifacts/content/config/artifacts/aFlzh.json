@@ -1,12 +1,14 @@
 {
 	"aFlzh" : {
 		"class" : "RELIC",
-		"type" : [ "HERO" ],
+		"type" : [
+			"HERO"
+		],
 		"value" : 12000,
-		"graphics" : { 
-			"image": "artifacts/aFlzhS.png",
-			"scenarioBonus": "artifacts/aFlzhL.bmp",
-			"map": "artifacts/aFlzhM.def"
+		"graphics" : {
+			"image" : "artifacts/aFlzhS.png",
+			"scenarioBonus" : "artifacts/aFlzhL.bmp",
+			"map" : "artifacts/aFlzhM.def"
 		},
 		"slot" : "RING",
 		"text" : {
@@ -14,40 +16,37 @@
 			"event" : "A phoenix feather drifted down from the sky in front of you. You reached out your hand to catch it, and the feather transformed into a ring.",
 			"name" : "Phoenix Feather Ring"
 		},
-		"components":
-		[
+		"components" : [
 			"capeOfVelocity",
 			"ringOfTheWayfarer",
 			"necklaceOfSwiftness"
 		],
 		"bonuses" : {
-	    	"seaMovement" :
-			{
-			//海上移动力增加1000
-			"type" : "MOVEMENT",
-	    	"subtype" : "heroMovementSea",
-	       "val" : 1000
+			"seaMovement" : {
+				//海上移动力增加1000
+				"type" : "MOVEMENT",
+				"subtype" : "heroMovementSea",
+				"val" : 1000
 			},
-			"landMovement" :
-			{
-			//英雄陆地移动力1000
-			"type" : "MOVEMENT",
-			"subtype" : "heroMovementLand",
-		    "val" : 1000
+			"landMovement" : {
+				//英雄陆地移动力1000
+				"type" : "MOVEMENT",
+				"subtype" : "heroMovementLand",
+				"val" : 1000
 			},
-			"flying" :
-			 {
-			 //飞行
-			 "type": "FLYING"
+			"flying" : {
+				//飞行
+				"type" : "FLYING"
 			},
-			"stackSpeed" :
-			{
-			//敌速-2
-			"type" : "STACKS_SPEED",
-			"propagator": "BATTLE_WIDE",
-			"propagationUpdater" : "BONUS_OWNER_UPDATER",
-			"limiters" : [ "OPPOSITE_SIDE" ],
-			"val":-2
+			"stackSpeed" : {
+				//敌速-2
+				"type" : "STACKS_SPEED",
+				"propagator" : "BATTLE_WIDE",
+				"propagationUpdater" : "BONUS_OWNER_UPDATER",
+				"limiters" : [
+					"OPPOSITE_SIDE"
+				],
+				"val" : -2
 			}
 		}
 	}

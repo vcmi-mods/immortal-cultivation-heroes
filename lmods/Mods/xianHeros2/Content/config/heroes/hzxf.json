@@ -1,40 +1,35 @@
 {
-	"hzxf" :
-	{
-        		"class": "clzxf",
-        		"female" : false,
-        		"images" :
-        		
-        {
-        			
-          "specialtySmall" : "zxf/szxf-s.bmp",
-          "specialtyLarge" : "zxf/szxf-l.bmp",
-          "large" : "zxf/zxf-l.bmp",
-          "small" : "zxf/zxf-s.bmp"
-        
-        },
-        
-        		"army" :
-        		
-        [
-        			
-       {
-    "creature" : "hobgoblinWolfRider","max" : 6,"min" : 4
-    },
-    			
-    {"creature" : "hobgoblinWolfRider",
-    "max" : 5,
-    "min" : 3
-    },
-    			
-    {
-    "creature" : "hobgoblinWolfRider",
-    "max" : 5,"min" : 3
-    },
-        ],
-        		
-        "skills" :
-		[
+	"hzxf" : {
+		"class" : "clzxf",
+		"female" : false,
+		"images" : {
+			"specialtySmall" : "zxf/szxf-s.bmp",
+			"specialtyLarge" : "zxf/szxf-l.bmp",
+			"large" : "zxf/zxf-l.bmp",
+			"small" : "zxf/zxf-s.bmp"
+		},
+
+		"army" : [
+			{
+				"creature" : "hobgoblinWolfRider",
+				"max" : 6,
+				"min" : 4
+			},
+
+			{
+				"creature" : "hobgoblinWolfRider",
+				"max" : 5,
+				"min" : 3
+			},
+
+			{
+				"creature" : "hobgoblinWolfRider",
+				"max" : 5,
+				"min" : 3
+			}
+		],
+
+		"skills" : [
 			{
 				"level" : "basic",
 				"skill" : "offence"
@@ -44,16 +39,14 @@
 				"skill" : "logistics"
 			}
 		],
-		"spellbook" :
-		[
+		"spellbook" : [
 			"visions"
 		],
-	
-		"texts" :
-		{
+
+		"texts" : {
 			"name" : "Zhang Xiaofan",
 			"biography" : "Zhang Xiaofan is the male protagonist in 《Zhu Xian》. He has a stubborn and determined personality and attaches great importance to friendship and loyalty. He possesses the “Da Fan Bo Re” technique of the Buddhist Tianyin Temple and the “Taiji Xuan Qing Dao” technique of the Taoist Qingyun Sect. Later, he learned the true method of the Demonic Dao's Heavenly Book and became a person who cultivated the techniques of Buddhism, Taoism and Demonic Dao simultaneously. After going through numerous hardships, he transformed from a disciple of the Qingyun Sect into Ghost Li, the deputy leader of the Ghost King Sect of the Demonic Sect. Eventually, he returned to his original self and saved all the living beings in the world.",
-		
+
 			"specialty" : {
 				"description" : "In the battlefield, heroes are unable to cast spells. However, for every level the hero upgrades, the attack increases by 1; the speed of all creatures increases by 1, and the luck increases by 2. When attacking the enemy, 20% of the enemy's defense will be ignored. For every level the hero upgrades, the Logistics skill increases by 3% and the sea movement increases by 50 points.",
 				"name" : "fall into devilry",
@@ -62,22 +55,24 @@
 		},
 		"specialty" : {
 			"bonuses" : {
-				  "blockmagic" : {
+				"blockmagic" : {
 					"type" : "BLOCK_ALL_MAGIC",
-					"limiters" : ["noneOf", "OPPOSITE_SIDE"],
+					"limiters" : [
+						"noneOf",
+						"OPPOSITE_SIDE"
+					]
 				},
-					"attack":
-				{
-					"type": "PRIMARY_SKILL",
+				"attack" : {
+					"type" : "PRIMARY_SKILL",
 					"subtype" : "attack",
 					"val" : 1,
-					"valueType": "BASE_NUMBER",
+					"valueType" : "BASE_NUMBER",
 					"updater" : "TIMES_HERO_LEVEL"
 				},
 				"reduceDefence" : {
-					"type" : "ENEMY_DEFENCE_REDUCTION",	
-					"val" : 20,
-				},	
+					"type" : "ENEMY_DEFENCE_REDUCTION",
+					"val" : 20
+				},
 				"speed" : {
 					"type" : "STACKS_SPEED",
 					"valueType" : "ADDITIVE_VALUE",
@@ -86,27 +81,24 @@
 				"lucky" : {
 					"type" : "LUCK",
 					"valueType" : "BASE_NUMBER",
-				    "val" : 2 
-				    },
-		 	"logistics" : {
+					"val" : 2
+				},
+				"logistics" : {
 					"targetSourceType" : "SECONDARY_SKILL",
 					"subtype" : "heroMovementLand",
 					"type" : "MOVEMENT",
 					"updater" : "TIMES_HERO_LEVEL",
 					"val" : 3,
 					"valueType" : "PERCENT_TO_TARGET_TYPE"
-					},
-				 "navigationseaUpdater" : {
+				},
+				"navigationseaUpdater" : {
 					"type" : "MOVEMENT",
 					"subtype" : "heroMovementSea",
-				    "val" : 50,
+					"val" : 50,
 					"valueType" : "BASE_NUMBER",
 					"updater" : "TIMES_HERO_LEVEL"
-					}
 				}
 			}
 		}
 	}
-
-
-
+}

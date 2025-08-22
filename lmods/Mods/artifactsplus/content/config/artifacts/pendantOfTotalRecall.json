@@ -1,20 +1,18 @@
 {
 	"core:pendantOfTotalRecall" : {
 		"bonuses" : {
-		"forgetfulness" :
-		{
-			"subtype" : "forgetfulness",
+			"forgetfulness" : {
+				"subtype" : "forgetfulness",
 				"type" : "SPELL_IMMUNITY",
 				"val" : 0,
 				"valueType" : "BASE_NUMBER"
-		},
-		"airShield" :
-		{
-		"subtype": "airShield",
-		"type" : "OPENING_BATTLE_SPELL",
-		"val" : 5,
-		"valueType" : "BASE_NUMBER"
-		}
+			},
+			"airShield" : {
+				"subtype" : "airShield",
+				"type" : "OPENING_BATTLE_SPELL",
+				"val" : 5,
+				"valueType" : "BASE_NUMBER"
+			}
 		},
 		"text" : {
 			"description" : "{Pendant Of TotalRecall+}\r\n\r\nCreatures are immune to the “forgetfulness” spell, and the “airShield” spell is cast at the beginning.",

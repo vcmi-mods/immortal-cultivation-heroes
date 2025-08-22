@@ -2,132 +2,116 @@
 	"lmods.artifactsplus.fused:aZlb" : {
 		"fusedComponents" : true,
 		"bonuses" : {
-		"airShield" :
-		{
-			"limiters" : ["IS_UNDEAD"],
-			"subtype" : "destroyUndead",
-			"type" : "SPELL_IMMUNITY",
-			"val" : 0,
-			"valueType" : "BASE_NUMBER"
-		},
-		"attack" :
-		{
-			"type": "PRIMARY_SKILL",
-			"subtype" : "attack",
-			"val" : 5,
-			"valueType": "BASE_NUMBER"
-		},
-		"defence" :
-	    {
-			"type": "PRIMARY_SKILL",
-			"subtype" : "defence",
-			"val" : 5,
-			"valueType": "BASE_NUMBER"
-	    },
-		"berserk" :
-	    {
-		"subtype" : "berserk",
-		"type" : "SPELL_IMMUNITY",
-		"val" : 0,
-		"valueType" : "BASE_NUMBER"
-		},
-		"bloodlust" :
-		{
-		"subtype": "bloodlust",
-		"type" : "OPENING_BATTLE_SPELL",
-		"val" : 5,
-		"valueType" : "BASE_NUMBER"
-		},
-		"hypnotize" :
-		{
-			"subtype" : "hypnotize",
-			"type" : "SPELL_IMMUNITY",
-			"val" : 0,
-			"valueType" : "BASE_NUMBER"
-		},
-		"shield" :
-		{
-        "subtype": "shield",
-		"type" : "OPENING_BATTLE_SPELL",
-		"val" : 5,
-		"valueType" : "BASE_NUMBER"
-		},
-		"curse" :
-			{
-			"subtype" : "curse",
-			"type" : "SPELL_IMMUNITY",
-			"val" : 0,
-			"valueType" : "BASE_NUMBER"
-		},
-		"bless" :
-		{
-		"subtype": "bless",
-		"type" : "OPENING_BATTLE_SPELL",
-		"val" : 5,
-		"valueType" : "BASE_NUMBER"
-		},
-		"deathRipple" :
-			{
-			"subtype" : "deathRipple",
-			"type" : "SPELL_IMMUNITY",
-			"val" : 0,
-			"valueType" : "BASE_NUMBER"
-		},
-		"stackHealth" :
-		{
-			"type" : "STACK_HEALTH",
-			"val" : 25,
-			"valueType" : "PERCENT_TO_BASE"
-		},
-		"lightningBolt" :
-			{
-			"subtype" : "lightningBolt",
-			"type" : "SPELL_IMMUNITY",
-			"val" : 0,
-			"valueType" : "BASE_NUMBER"
-			},
-			"chainLightning" :
-		{
-			"subtype" : "chainLightning",
-			"type" : "SPELL_IMMUNITY",
-			"val" : 0,
-			"valueType" : "BASE_NUMBER"
-		},
-		"spellSchoolAir" :
-		{
-			"type" : "SPELL_DAMAGE",
-			"subtype" : "air",
-			"val" : 50,
-			"valueType" : "BASE_NUMBER"
-		},
-		"blind" :
-			{
-			"subtype" : "blind",
-			"type" : "SPELL_IMMUNITY",
-			"val" : 0,
-			"valueType" : "BASE_NUMBER"
-		},
-		"precision" :
-		{
-		"subtype": "precision",
-		"type" : "OPENING_BATTLE_SPELL",
-		"val" : 5,
-		"valueType" : "BASE_NUMBER"
-		},
-		"forgetfulness" :
-			{
-			"subtype" : "forgetfulness",
+			"airShield" : {
+				"limiters" : [
+					"IS_UNDEAD"
+				],
+				"subtype" : "destroyUndead",
 				"type" : "SPELL_IMMUNITY",
 				"val" : 0,
 				"valueType" : "BASE_NUMBER"
-		},
-		"airShield" :
-		{
-		"subtype": "airShield",
-		"type" : "OPENING_BATTLE_SPELL",
-		"val" : 5,
-		"valueType" : "BASE_NUMBER"
-		}
+			},
+			"attack" : {
+				"type" : "PRIMARY_SKILL",
+				"subtype" : "attack",
+				"val" : 5,
+				"valueType" : "BASE_NUMBER"
+			},
+			"defence" : {
+				"type" : "PRIMARY_SKILL",
+				"subtype" : "defence",
+				"val" : 5,
+				"valueType" : "BASE_NUMBER"
+			},
+			"berserk" : {
+				"subtype" : "berserk",
+				"type" : "SPELL_IMMUNITY",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER"
+			},
+			"bloodlust" : {
+				"subtype" : "bloodlust",
+				"type" : "OPENING_BATTLE_SPELL",
+				"val" : 5,
+				"valueType" : "BASE_NUMBER"
+			},
+			"hypnotize" : {
+				"subtype" : "hypnotize",
+				"type" : "SPELL_IMMUNITY",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER"
+			},
+			"shield" : {
+				"subtype" : "shield",
+				"type" : "OPENING_BATTLE_SPELL",
+				"val" : 5,
+				"valueType" : "BASE_NUMBER"
+			},
+			"curse" : {
+				"subtype" : "curse",
+				"type" : "SPELL_IMMUNITY",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER"
+			},
+			"bless" : {
+				"subtype" : "bless",
+				"type" : "OPENING_BATTLE_SPELL",
+				"val" : 5,
+				"valueType" : "BASE_NUMBER"
+			},
+			"deathRipple" : {
+				"subtype" : "deathRipple",
+				"type" : "SPELL_IMMUNITY",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER"
+			},
+			"stackHealth" : {
+				"type" : "STACK_HEALTH",
+				"val" : 25,
+				"valueType" : "PERCENT_TO_BASE"
+			},
+			"lightningBolt" : {
+				"subtype" : "lightningBolt",
+				"type" : "SPELL_IMMUNITY",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER"
+			},
+			"chainLightning" : {
+				"subtype" : "chainLightning",
+				"type" : "SPELL_IMMUNITY",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER"
+			},
+			"spellSchoolAir" : {
+				"type" : "SPELL_DAMAGE",
+				"subtype" : "air",
+				"val" : 50,
+				"valueType" : "BASE_NUMBER"
+			},
+			"blind" : {
+				"subtype" : "blind",
+				"type" : "SPELL_IMMUNITY",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER"
+			},
+			"precision" : {
+				"subtype" : "precision",
+				"type" : "OPENING_BATTLE_SPELL",
+				"val" : 5,
+				"valueType" : "BASE_NUMBER"
+			},
+			"forgetfulness" : {
+				"subtype" : "forgetfulness",
+				"type" : "SPELL_IMMUNITY",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER"
+			},
+			"airShield" : {
+				"subtype" : "airShield",
+				"type" : "OPENING_BATTLE_SPELL",
+				"val" : 5,
+				"valueType" : "BASE_NUMBER"
+			}
 		}
 	}
-} 
+}

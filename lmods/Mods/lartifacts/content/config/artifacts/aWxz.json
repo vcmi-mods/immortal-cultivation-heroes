@@ -1,12 +1,14 @@
 {
 	"aWxz" : {
 		"class" : "RELIC",
-		"type" : [ "HERO" ],
+		"type" : [
+			"HERO"
+		],
 		"value" : 15000,
-		"graphics" : { 
-			"image": "artifacts/aWxzS.png",
-			"scenarioBonus": "artifacts/aWxzL.bmp",
-			"map": "artifacts/aWxzM.def"
+		"graphics" : {
+			"image" : "artifacts/aWxzS.png",
+			"scenarioBonus" : "artifacts/aWxzL.bmp",
+			"map" : "artifacts/aWxzM.def"
 		},
 		"slot" : "MISC",
 		"text" : {
@@ -14,38 +16,33 @@
 			"event" : "As you waved your hands, a flash of golden light shone. Four spirit orbs combined into one, and a pure stream of magical energy radiated from within it.",
 			"name" : "Five - Element Beads"
 		},
-		"components":
-		[
+		"components" : [
 			"orbOfTheFirmament",
 			"orbOfTempestuousFire",
 			"orbOfDrivingRain",
 			"orbOfSilt"
 		],
 		"bonuses" : {
-			 "spellDamage1" :
-			 {
-			 //四系魔法伤害+50%
-			"type" : "SPELL_DAMAGE",
-			"subtype" : "any",
-			"val" : 50,
-			"valueType" : "BASE_NUMBER"
+			"spellDamage1" : {
+				//四系魔法伤害+50%
+				"type" : "SPELL_DAMAGE",
+				"subtype" : "any",
+				"val" : 50,
+				"valueType" : "BASE_NUMBER"
 			},
-			"spellDamage2" :
-			{
-			//魔法伤害减免50%
-			"type" : "SPELL_DAMAGE_REDUCTION",
-			"subtype" : "any",
-			"val" : 50
+			"spellDamage2" : {
+				//魔法伤害减免50%
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"subtype" : "any",
+				"val" : 50
 			},
-			"magicMirror" :			
-        	{ 
-        	//魔法折射+50%
-			    "type" : "MAGIC_MIRROR",		
-				"val" : 50	
-			},	
-			"magicResistance" :
-			{
-			//魔法抗性+50%
+			"magicMirror" : {
+				//魔法折射+50%
+				"type" : "MAGIC_MIRROR",
+				"val" : 50
+			},
+			"magicResistance" : {
+				//魔法抗性+50%
 				"type" : "MAGIC_RESISTANCE",
 				"val" : 50
 			}

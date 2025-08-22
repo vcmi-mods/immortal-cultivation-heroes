@@ -1,28 +1,24 @@
 {
-	"crxyx":
-	{
-		"name" : 
-		{
+	"crxyx" : {
+		"name" : {
 			"plural" : "Calamity Poison Body",
 			"singular" : "Calamity Poison Body"
 		},
-		"description": "The influence of the Calamity Poison Body increases attack, damage and speed by 50% at the beginning for 5 rounds. There is a 50% chance that an attack will poison the enemy creatures, and it is immune to poisoning.",
-		"hasDoubleWeek": false,
+		"description" : "The influence of the Calamity Poison Body increases attack, damage and speed by 50% at the beginning for 5 rounds. There is a 50% chance that an attack will poison the enemy creatures, and it is immune to poisoning.",
+		"hasDoubleWeek" : false,
 		"doubleWide" : false,
-     	"faction" : "fortress",
+		"faction" : "fortress",
 		"special" : true,
-		"advMapAmount" :
-		{
-			 "min" : 16,
-			 "max" : 25
+		"advMapAmount" : {
+			"min" : 16,
+			"max" : 25
 		},
 		"level" : 0,
 		"attack" : 6,
 		"defense" : 8,
-		"damage" :
-		{
-			 "min" : 8,
-			 "max" : 15
+		"damage" : {
+			"min" : 8,
+			"max" : 15
 		},
 		"growth" : 9,
 		"hitPoints" : 40,
@@ -30,58 +26,49 @@
 		"fightValue" : 130,
 		"aiValue" : 156,
 		"shots" : 24,
-		"cost" :
-		{
+		"cost" : {
 			"gold" : 140
 		},
-		"graphics" :
-		{
+		"graphics" : {
 			"animation" : "creatures/crxyxA.def",
 			"map" : "creatures/crxyxM.def",
 			"iconSmall" : "creatures/crxyxS.png",
 			"iconLarge" : "creatures/crxyxL.png",
 			"timeBetweenFidgets" : 1,
-			"animationTime" :
-			{
+			"animationTime" : {
 				"walk" : 0.6,
-				"idle" : 10.00,
-				"attack" : 1.00
+				"idle" : 10.0,
+				"attack" : 1.0
 			}
 		},
-		"sound" :
-		{
+		"sound" : {
 			"attack" : "MGELATTK.wav",
 			"defend" : "MGELDFND.wav",
 			"killed" : "MGELKILL.wav",
 			"move" : "MGELMOVE.wav",
 			"wince" : "MGELWNCE.wav"
-        },
-		"abilities" :
-		{
-	    	"poisonous" : 
-			{
+		},
+		"abilities" : {
+			"poisonous" : {
 				"type" : "SPELL_AFTER_ATTACK",
 				"subtype" : "poison",
 				"val" : 50,
 				"addInfo" : 0
 			},
-				"poisonImm" : 
-			{
+			"poisonImm" : {
 				"type" : "SPELL_IMMUNITY",
 				"subtype" : "poison",
 				"addInfo" : 0
-			},									
-			"castsAmount" :	{
-			    "type" : "CASTS",
-			    "val" : 1
-			    },
-				"canCast" :
-			{
-			    	"type" : "SPELLCASTER",
-			    	"subtype" : "haste",
-				    "val" : 100
+			},
+			"castsAmount" : {
+				"type" : "CASTS",
+				"val" : 1
+			},
+			"canCast" : {
+				"type" : "SPELLCASTER",
+				"subtype" : "haste",
+				"val" : 100
 			}
-		}	
-	}		
+		}
+	}
 }
-

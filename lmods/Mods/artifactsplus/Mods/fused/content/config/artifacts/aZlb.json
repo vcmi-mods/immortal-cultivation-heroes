@@ -2,12 +2,14 @@
 	"aZlb" : {
 		"fusedComponents" : true,
 		"class" : "RELIC",
-		"type" : [ "HERO" ],
+		"type" : [
+			"HERO"
+		],
 		"value" : 22000,
 		"graphics" : {
-			"image": "artifacts/aZlbS.png",
-			"scenarioBonus": "artifacts/aZlbL.bmp",
-			"map": "artifacts/aZlbM.def"
+			"image" : "artifacts/aZlbS.png",
+			"scenarioBonus" : "artifacts/aZlbL.bmp",
+			"map" : "artifacts/aZlbM.def"
 		},
 		"slot" : "NECK",
 		"text" : {
@@ -15,8 +17,7 @@
 			"event" : "After going through numerous hardships, deep within this ancient mysterious realm, I encountered the legendary treasure—the Loong Jade. It emanated a faint dragon's breath, with faintly visible dragon shadows swirling around it. I approached slowly and gently touched the Dragon Jade with both hands, feeling a warm and powerful force surging into my body.",
 			"name" : "Imperial Seal"
 		},
-		"components":
-		[
+		"components" : [
 			"pendantOfDeath",
 			"pendantOfDispassion",
 			"pendantOfFreeWill",
@@ -27,132 +28,116 @@
 			"pendantOfTotalRecall"
 		],
 		"bonuses" : {
-		"destroyUndead" :
-		{
-			"limiters" : ["IS_UNDEAD"],
-			"subtype" : "destroyUndead",
-			"type" : "SPELL_IMMUNITY",
-			"val" : 0,
-			"valueType" : "BASE_NUMBER"
-		},
-		"attack" :
-		{
-		    "type": "PRIMARY_SKILL",
-			"subtype" : "attack",
-			"val" : 5,
-			"valueType": "BASE_NUMBER"
-		},
-		"defence" :
-	    {
-			"type": "PRIMARY_SKILL",
-			"subtype" : "defence",
-			"val" : 5,
-			"valueType": "BASE_NUMBER"
-	    },
-		"berserk" :
-	    {
-		"subtype" : "berserk",
-		"type" : "SPELL_IMMUNITY",
-		"val" : 0,
-		"valueType" : "BASE_NUMBER"
-		},
-		"bloodlust" :
-		{
-		"subtype": "bloodlust",
-		"type" : "OPENING_BATTLE_SPELL",
-		"val" : 5,
-		"valueType" : "BASE_NUMBER"
-		},
-		"Hypnotize" :
-			{
-			"subtype" : "hypnotize",
-			"type" : "SPELL_IMMUNITY",
-			"val" : 0,
-			"valueType" : "BASE_NUMBER"
-		},
-		"shield" :
-		{
-        "subtype": "shield",
-		"type" : "OPENING_BATTLE_SPELL",
-		"val" : 5,
-		"valueType" : "BASE_NUMBER"
-		},
-		"curse" :
-			{
-			"subtype" : "curse",
-			"type" : "SPELL_IMMUNITY",
-			"val" : 0,
-			"valueType" : "BASE_NUMBER"
-		},
-		"bless" :
-		{
-		"subtype": "bless",
-		"type" : "OPENING_BATTLE_SPELL",
-		"val" : 5,
-		"valueType" : "BASE_NUMBER"
-		},
-		"deathRipple" :
-			{
-			"subtype" : "deathRipple",
-			"type" : "SPELL_IMMUNITY",
-			"val" : 0,
-			"valueType" : "BASE_NUMBER"
-		},
-		"stackHealth" :
-		{
-			"type" : "STACK_HEALTH",
-			"val" : 25,
-			"valueType" : "PERCENT_TO_BASE"
-		},
-		"lightningBolt" :
-			{
-			"subtype" : "lightningBolt",
-			"type" : "SPELL_IMMUNITY",
-			"val" : 0,
-			"valueType" : "BASE_NUMBER"
-			},
-			"chainLightning" :
-		{
-			"subtype" : "chainLightning",
-			"type" : "SPELL_IMMUNITY",
-			"val" : 0,
-			"valueType" : "BASE_NUMBER"
-		},
-		"spellSchoolAir" :
-		{
-			"type" : "SPELL_DAMAGE",
-			"subtype" : "air",
-			"val" : 50,
-			"valueType" : "BASE_NUMBER"
-		},
-		"blind" :
-			{
-			"subtype" : "blind",
-			"type" : "SPELL_IMMUNITY",
-			"val" : 0,
-			"valueType" : "BASE_NUMBER"
-		},
-		"precision" :
-		{
-		"subtype": "precision",
-		"type" : "OPENING_BATTLE_SPELL",
-		"val" : 5,
-		"valueType" : "BASE_NUMBER"
-		},
-		"forgetfulness" :
-			{
-			"subtype" : "forgetfulness",
+			"destroyUndead" : {
+				"limiters" : [
+					"IS_UNDEAD"
+				],
+				"subtype" : "destroyUndead",
 				"type" : "SPELL_IMMUNITY",
 				"val" : 0,
 				"valueType" : "BASE_NUMBER"
-		},
-		"airShield" :
-		{
-		"subtype": "airShield",
-		"type" : "OPENING_BATTLE_SPELL",
-		"val" : 5,
-		"valueType" : "BASE_NUMBER"
-		}
+			},
+			"attack" : {
+				"type" : "PRIMARY_SKILL",
+				"subtype" : "attack",
+				"val" : 5,
+				"valueType" : "BASE_NUMBER"
+			},
+			"defence" : {
+				"type" : "PRIMARY_SKILL",
+				"subtype" : "defence",
+				"val" : 5,
+				"valueType" : "BASE_NUMBER"
+			},
+			"berserk" : {
+				"subtype" : "berserk",
+				"type" : "SPELL_IMMUNITY",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER"
+			},
+			"bloodlust" : {
+				"subtype" : "bloodlust",
+				"type" : "OPENING_BATTLE_SPELL",
+				"val" : 5,
+				"valueType" : "BASE_NUMBER"
+			},
+			"Hypnotize" : {
+				"subtype" : "hypnotize",
+				"type" : "SPELL_IMMUNITY",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER"
+			},
+			"shield" : {
+				"subtype" : "shield",
+				"type" : "OPENING_BATTLE_SPELL",
+				"val" : 5,
+				"valueType" : "BASE_NUMBER"
+			},
+			"curse" : {
+				"subtype" : "curse",
+				"type" : "SPELL_IMMUNITY",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER"
+			},
+			"bless" : {
+				"subtype" : "bless",
+				"type" : "OPENING_BATTLE_SPELL",
+				"val" : 5,
+				"valueType" : "BASE_NUMBER"
+			},
+			"deathRipple" : {
+				"subtype" : "deathRipple",
+				"type" : "SPELL_IMMUNITY",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER"
+			},
+			"stackHealth" : {
+				"type" : "STACK_HEALTH",
+				"val" : 25,
+				"valueType" : "PERCENT_TO_BASE"
+			},
+			"lightningBolt" : {
+				"subtype" : "lightningBolt",
+				"type" : "SPELL_IMMUNITY",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER"
+			},
+			"chainLightning" : {
+				"subtype" : "chainLightning",
+				"type" : "SPELL_IMMUNITY",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER"
+			},
+			"spellSchoolAir" : {
+				"type" : "SPELL_DAMAGE",
+				"subtype" : "air",
+				"val" : 50,
+				"valueType" : "BASE_NUMBER"
+			},
+			"blind" : {
+				"subtype" : "blind",
+				"type" : "SPELL_IMMUNITY",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER"
+			},
+			"precision" : {
+				"subtype" : "precision",
+				"type" : "OPENING_BATTLE_SPELL",
+				"val" : 5,
+				"valueType" : "BASE_NUMBER"
+			},
+			"forgetfulness" : {
+				"subtype" : "forgetfulness",
+				"type" : "SPELL_IMMUNITY",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER"
+			},
+			"airShield" : {
+				"subtype" : "airShield",
+				"type" : "OPENING_BATTLE_SPELL",
+				"val" : 5,
+				"valueType" : "BASE_NUMBER"
+			}
 		}
 	}
 }

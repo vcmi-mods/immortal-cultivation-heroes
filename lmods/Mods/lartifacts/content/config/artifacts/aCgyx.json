@@ -1,12 +1,14 @@
 {
 	"aCgyx" : {
 		"class" : "RELIC",
-		"type" : [ "HERO" ],
+		"type" : [
+			"HERO"
+		],
 		"value" : 12000,
 		"graphics" : {
-			"image": "artifacts/aCgyxS.png",
-			"scenarioBonus": "artifacts/aCgyxL.bmp",
-			"map": "artifacts/aCgyxM.def"
+			"image" : "artifacts/aCgyxS.png",
+			"scenarioBonus" : "artifacts/aCgyxL.bmp",
+			"map" : "artifacts/aCgyxM.def"
 		},
 		"slot" : "MISC",
 		"text" : {
@@ -14,33 +16,31 @@
 			"event" : "It's a seal. You picked it up and saw the inscription on it which read, “By the mandate of Heaven, may you live long and prosper.” At that moment, you understood who the truly chosen one by Heaven was.",
 			"name" : "Imperial Seal"
 		},
-		"components":
-		[
+		"components" : [
 			"badgeOfCourage",
 			"crestOfValor",
 			"glyphOfGallantry"
 		],
 		"bonuses" : {
-			"morale" :
-			{
+			"morale" : {
 				//敌方士气-3
-			"type" : "MORALE",
-			"propagator": "BATTLE_WIDE",
-			"propagationUpdater" : "BONUS_OWNER_UPDATER",
-			"limiters" : [ "OPPOSITE_SIDE" ],
-			"val":-3
+				"type" : "MORALE",
+				"propagator" : "BATTLE_WIDE",
+				"propagationUpdater" : "BONUS_OWNER_UPDATER",
+				"limiters" : [
+					"OPPOSITE_SIDE"
+				],
+				"val" : -3
 			},
-			"bless" :
-			{
-			//永久处于圣灵佑佐状态
-			"type" : "ENCHANTED",
-			"subtype" : "bless",
-			"val" : 2
+			"bless" : {
+				//永久处于圣灵佑佐状态
+				"type" : "ENCHANTED",
+				"subtype" : "bless",
+				"val" : 2
 			},
-			"receptive" :
-			{
-			//接纳增益魔法
-		   "type" : "RECEPTIVE"
+			"receptive" : {
+				//接纳增益魔法
+				"type" : "RECEPTIVE"
 			}
 		}
 	}

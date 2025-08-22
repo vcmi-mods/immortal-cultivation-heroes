@@ -1,33 +1,26 @@
 {
-"name" : "Fused artifacts for lartifacts",
+	"name" : "Fused artifacts for lartifacts",
 	"description" : "Fused artifacts for lartifacts.",
-	"author": "L",
-	"contact": "",
-	"version": "1.0.0",
-	"modType": "Artifacts",
-	"compatibility": {
-		"min": "1.6.0"
+	"author" : "L",
+	"contact" : "",
+	"version" : "1.0.0",
+	"modType" : "Artifacts",
+	"compatibility" : {
+		"min" : "1.6.0"
 	},
-	"depends" :
-	[
-	
-	],
-     "conflicts" :
-	[
-	
-	],
-	"changelog": {
-		"1.0.0": [
+	"depends" : [],
+	"conflicts" : [],
+	"changelog" : {
+		"1.0.0" : [
 			"Fused artifacts for lartifacts."
 		]
 	},
-		"chinese" : {
+	"chinese" : {
 		"name" : "融合一些宝物组合",
 		"description" : "将l的一些宝物mod里面的组合宝物融合成一格。"
 	},
-	
-		"artifacts" :
-	[
+
+	"artifacts" : [
 		"config/artifacts/fusedArtifacts.json"
 	]
 }

@@ -1,12 +1,14 @@
 {
 	"aDjkg" : {
 		"class" : "RELIC",
-		"type" : [ "HERO" ],
+		"type" : [
+			"HERO"
+		],
 		"value" : 12000,
 		"graphics" : {
-			"image": "artifacts/aDjkgS.png",
-			"scenarioBonus": "artifacts/aDjkgL.bmp",
-			"map": "artifacts/aDjkgM.def"
+			"image" : "artifacts/aDjkgS.png",
+			"scenarioBonus" : "artifacts/aDjkgL.bmp",
+			"map" : "artifacts/aDjkgM.def"
 		},
 		"slot" : "MISC",
 		"text" : {
@@ -14,23 +16,20 @@
 			"event" : "You came to a mine, where a group of ugly creatures were busy at work. You caught one of them and heard that this kind of creature was really good at doing hard labor.",
 			"name" : "Goblin Miner"
 		},
-		"components":
-		[
+		"components" : [
 			"inexhaustibleCartOfLumber",
 			"inexhaustibleCartOfOre"
 		],
 		"bonuses" : {
-			"wood" :	       
-		   {
-			"subtype" : "wood",
-			"type" : "GENERATE_RESOURCE",
-			"val" : 4
-		    },
-			"ore" :
-	    	 {
-			"subtype" : "ore",
-			"type" : "GENERATE_RESOURCE",
-			"val" : 4
+			"wood" : {
+				"subtype" : "wood",
+				"type" : "GENERATE_RESOURCE",
+				"val" : 4
+			},
+			"ore" : {
+				"subtype" : "ore",
+				"type" : "GENERATE_RESOURCE",
+				"val" : 4
 			}
 		}
 	}

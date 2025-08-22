@@ -1,44 +1,46 @@
 {
-	"aJlz":
-	{
-		"type": ["HERO"],
+	"aJlz" : {
+		"type" : [
+			"HERO"
+		],
 		"slot" : "RIGHT_HAND",
-		"class": "RELIC",
-		"value": 30000,	
-		"text":
-		{
-			"name": "Golden Thunder Bamboo",
-			"description": "The hero's attack increases by 5, and there is a 50% chance for the troops to cast the Divine Thunder for Exorcising Evil after attacking, causing spell damage to 6 creatures of the enemy side.",
-			"event": "Ziling took out a box from her storage ring and sent it to in front of you. When the lid was opened, there was a section of glittering golden bamboo inside, with faint electric lights flickering all over it."
+		"class" : "RELIC",
+		"value" : 30000,
+		"text" : {
+			"name" : "Golden Thunder Bamboo",
+			"description" : "The hero's attack increases by 5, and there is a 50% chance for the troops to cast the Divine Thunder for Exorcising Evil after attacking, causing spell damage to 6 creatures of the enemy side.",
+			"event" : "Ziling took out a box from her storage ring and sent it to in front of you. When the lid was opened, there was a section of glittering golden bamboo inside, with faint electric lights flickering all over it."
 		},
-		"graphics" : { 
-			"image": "artifacts/aJlzS.png",
-			"scenarioBonus": "artifacts/aJlzL.png",
-			"map": "artifacts/aJlzM.def"
+		"graphics" : {
+			"image" : "artifacts/aJlzS.png",
+			"scenarioBonus" : "artifacts/aJlzL.png",
+			"map" : "artifacts/aJlzM.def"
 		},
-		"bonuses":
-		{	
-			"attack" :
-			{
-				"type": "PRIMARY_SKILL",
-				"subtype": "attack",
-				"val": 5
+		"bonuses" : {
+			"attack" : {
+				"type" : "PRIMARY_SKILL",
+				"subtype" : "attack",
+				"val" : 5
 			},
-			"spbxsl" :
-			{
-				"type": "SPELL_AFTER_ATTACK",
-				"subtype": "spbxsl",
-				"val": 50,
-				"addInfo": [3,0],
-				"limiters" : ["noneOf", "OPPOSITE_SIDE"],
+			"spbxsl" : {
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spbxsl",
+				"val" : 50,
+				"addInfo" : [
+					3,
+					0
+				],
+				"limiters" : [
+					"noneOf",
+					"OPPOSITE_SIDE"
+				],
 				"propagationUpdater" : "BONUS_OWNER_UPDATER"
-		    },
-			"spbxslImm" :
-		    {
-    			"type" : "SPELL_IMMUNITY",
-    			"subtype" : "spbxsl",
-    			"addInfo" : 0
-    		}			
+			},
+			"spbxslImm" : {
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spbxsl",
+				"addInfo" : 0
+			}
 		}
 	}
 }

@@ -2,35 +2,32 @@
 	"immortal-cultivation-heroes.lartifacts:aCgyx" : {
 		"fusedComponents" : true,
 		"bonuses" : {
-			"morale" :
-			{
+			"morale" : {
 				//敌方士气-3
-			"type" : "MORALE",
-			"propagator": "BATTLE_WIDE",
-			"propagationUpdater" : "BONUS_OWNER_UPDATER",
-			"limiters" : [ "OPPOSITE_SIDE" ],
-			"val":-3
+				"type" : "MORALE",
+				"propagator" : "BATTLE_WIDE",
+				"propagationUpdater" : "BONUS_OWNER_UPDATER",
+				"limiters" : [
+					"OPPOSITE_SIDE"
+				],
+				"val" : -3
 			},
-			"bless" :
-			{
-			//永久处于圣灵佑佐状态
-			"type" : "ENCHANTED",
-			"subtype" : "bless",
-			"val" : 2
+			"bless" : {
+				//永久处于圣灵佑佐状态
+				"type" : "ENCHANTED",
+				"subtype" : "bless",
+				"val" : 2
 			},
-			"receptive" : 
-			{
-			//接纳增益魔法
-		   "type" : "RECEPTIVE"
+			"receptive" : {
+				//接纳增益魔法
+				"type" : "RECEPTIVE"
 			},
-			"morale2" :
-			{
+			"morale2" : {
 				"type" : "MORALE",
 				"val" : 3,
 				"valueType" : "BASE_NUMBER"
 			},
-			"mindImm" :
-			{
+			"mindImm" : {
 				"type" : "MIND_IMMUNITY",
 				"val" : 0,
 				"valueType" : "BASE_NUMBER"
@@ -40,53 +37,48 @@
 	"immortal-cultivation-heroes.lartifacts:aDjkg" : {
 		"fusedComponents" : true,
 		"bonuses" : {
-			"wood" :		   
-		   {
-			"subtype" : "wood",
-			"type" : "GENERATE_RESOURCE",
-			"val" : 5
-		    },
-			"ore" :
-	    	 {
-			"subtype" : "ore",
-			"type" : "GENERATE_RESOURCE",
-			"val" : 5
+			"wood" : {
+				"subtype" : "wood",
+				"type" : "GENERATE_RESOURCE",
+				"val" : 5
+			},
+			"ore" : {
+				"subtype" : "ore",
+				"type" : "GENERATE_RESOURCE",
+				"val" : 5
 			}
 		}
 	},
 	"immortal-cultivation-heroes.lartifacts:aFlzh" : {
 		"fusedComponents" : true,
 		"bonuses" : {
-			"seaMovement" :
-			{
-			//海上移动力增加1000
-			"type" : "MOVEMENT",
-	    	"subtype" : "heroMovementSea",
-	       "val" : 1000
+			"seaMovement" : {
+				//海上移动力增加1000
+				"type" : "MOVEMENT",
+				"subtype" : "heroMovementSea",
+				"val" : 1000
 			},
-			"landMovement" :
-			{
-			//英雄陆地移动力1000
-			"type" : "MOVEMENT",
-			"subtype" : "heroMovementLand",
-		    "val" : 1000
+			"landMovement" : {
+				//英雄陆地移动力1000
+				"type" : "MOVEMENT",
+				"subtype" : "heroMovementLand",
+				"val" : 1000
 			},
-			"flying" :
-			 {
-			 //飞行
-			 "type": "FLYING"
+			"flying" : {
+				//飞行
+				"type" : "FLYING"
 			},
-			"stackSpeed" :
-			{
-			//敌速-2
-			"type" : "STACKS_SPEED",
-			"propagator": "BATTLE_WIDE",
-			"propagationUpdater" : "BONUS_OWNER_UPDATER",
-			"limiters" : [ "OPPOSITE_SIDE" ],
-			"val":-2
+			"stackSpeed" : {
+				//敌速-2
+				"type" : "STACKS_SPEED",
+				"propagator" : "BATTLE_WIDE",
+				"propagationUpdater" : "BONUS_OWNER_UPDATER",
+				"limiters" : [
+					"OPPOSITE_SIDE"
+				],
+				"val" : -2
 			},
-			"stackSpeed2" :
-			{
+			"stackSpeed2" : {
 				"type" : "STACKS_SPEED",
 				"val" : 4,
 				"valueType" : "BASE_NUMBER"
@@ -96,53 +88,45 @@
 	"immortal-cultivation-heroes.lartifacts:aHyjfh" : {
 		"fusedComponents" : true,
 		"bonuses" : {
-		"seaMovement" :
-		{
-			//海上移动力增加1800
-			"type" : "MOVEMENT",
-	    	"subtype" : "heroMovementSea",
-	       "val" : 1800
+			"seaMovement" : {
+				//海上移动力增加1800
+				"type" : "MOVEMENT",
+				"subtype" : "heroMovementSea",
+				"val" : 1800
 			},
-			"landMovement" :
-			{
-			//英雄陆地移动力1800
-			"type" : "MOVEMENT",
-			"subtype" : "heroMovementLand",
-		    "val" : 1800
+			"landMovement" : {
+				//英雄陆地移动力1800
+				"type" : "MOVEMENT",
+				"subtype" : "heroMovementLand",
+				"val" : 1800
 			},
-			"flyingMovement" :
-			{
-			//大地图飞行移动
+			"flyingMovement" : {
+				//大地图飞行移动
 				"type" : "FLYING_MOVEMENT",
 				"val" : 0,
 				"valueType" : "INDEPENDENT_MIN"
 			},
-			"flying" :
-			 {
-			 //飞行
-			 "type": "FLYING"
+			"flying" : {
+				//飞行
+				"type" : "FLYING"
 			},
-			"haste" :
-			{
-			//永久处于攻击加速状态
+			"haste" : {
+				//永久处于攻击加速状态
 				"type" : "ENCHANTED",
 				"subtype" : "haste",
 				"val" : 2
 			},
-			"roughTerrain" :
-		    {
-			 //恶路减免100点
-			"type" : "ROUGH_TERRAIN_DISCOUNT",
-			"val" : 100
-			},			
-			"jousting" :
-			{
-			//冲锋攻击8%
-			"type" : "JOUSTING",
-			"val" : 8
+			"roughTerrain" : {
+				//恶路减免100点
+				"type" : "ROUGH_TERRAIN_DISCOUNT",
+				"val" : 100
 			},
-			"stackSpeed" :
-			{
+			"jousting" : {
+				//冲锋攻击8%
+				"type" : "JOUSTING",
+				"val" : 8
+			},
+			"stackSpeed" : {
 				"type" : "STACKS_SPEED",
 				"val" : 4,
 				"valueType" : "BASE_NUMBER"
@@ -151,57 +135,54 @@
 	},
 	"immortal-cultivation-heroes.lartifacts:aLz" : {
 		"fusedComponents" : true,
-		"bonuses" :{
-			"luck" :
-			{
-			//敌方幸运-3
-			"type" : "LUCK",
-			"val" : -3,
-			"propagator": "BATTLE_WIDE",
-			"propagationUpdater" : "BONUS_OWNER_UPDATER",
-			"limiters" : [ "OPPOSITE_SIDE" ]
+		"bonuses" : {
+			"luck" : {
+				//敌方幸运-3
+				"type" : "LUCK",
+				"val" : -3,
+				"propagator" : "BATTLE_WIDE",
+				"propagationUpdater" : "BONUS_OWNER_UPDATER",
+				"limiters" : [
+					"OPPOSITE_SIDE"
+				]
 			},
-			"curse" :
-			{
-			//敌方永久处于恶咒缠身状态
-			"type" : "ENCHANTED",
-			"subtype" : "curse",
-			"val" : 2,
-			"propagator": "BATTLE_WIDE",
-			"propagationUpdater" : "BONUS_OWNER_UPDATER",
-			"limiters" : [ "OPPOSITE_SIDE" ]
+			"curse" : {
+				//敌方永久处于恶咒缠身状态
+				"type" : "ENCHANTED",
+				"subtype" : "curse",
+				"val" : 2,
+				"propagator" : "BATTLE_WIDE",
+				"propagationUpdater" : "BONUS_OWNER_UPDATER",
+				"limiters" : [
+					"OPPOSITE_SIDE"
+				]
 			},
-			"2hexAttack" :
-	    	{
-	    	//吐息攻击
-			"type" : "TWO_HEX_ATTACK_BREATH"
+			"2hexAttack" : {
+				//吐息攻击
+				"type" : "TWO_HEX_ATTACK_BREATH"
 			},
-			"luck2" :
-			{
+			"luck2" : {
 				"type" : "LUCK",
 				"val" : 3,
 				"valueType" : "BASE_NUMBER"
 			}
 		}
 	},
-	
+
 	"immortal-cultivation-heroes.lartifacts:aTyx" : {
 		"fusedComponents" : true,
 		"bonuses" : {
-"roughTerrain" :		   
-		   {
-			 //恶路减免100点
-			"type" : "ROUGH_TERRAIN_DISCOUNT",
-			"val" : 100
+			"roughTerrain" : {
+				//恶路减免100点
+				"type" : "ROUGH_TERRAIN_DISCOUNT",
+				"val" : 100
 			},
-			"jousting" :
-			{
-			//冲锋攻击5%
-			"type" : "JOUSTING",
-			"val" : 5
+			"jousting" : {
+				//冲锋攻击5%
+				"type" : "JOUSTING",
+				"val" : 5
 			},
-			"landMovement" :
-			{
+			"landMovement" : {
 				"type" : "MOVEMENT",
 				"subtype" : "heroMovementLand",
 				"val" : 900,
@@ -212,30 +193,26 @@
 	"immortal-cultivation-heroes.lartifacts:aWxz" : {
 		"fusedComponents" : true,
 		"bonuses" : {
-"spellDamage1" :			
-			{
-			 //四系魔法伤害+100%
-			"type" : "SPELL_DAMAGE",
-			"subtype" : "any",
-			"val" : 100,
-			"valueType" : "BASE_NUMBER"
+			"spellDamage1" : {
+				//四系魔法伤害+100%
+				"type" : "SPELL_DAMAGE",
+				"subtype" : "any",
+				"val" : 100,
+				"valueType" : "BASE_NUMBER"
 			},
-			"spellDamage2" :
-			{
-			//魔法伤害减免50%
-			"type" : "SPELL_DAMAGE_REDUCTION",
-			"subtype" : "any",
-			"val" : 50
-			},			
-			"magicMirror" :
-        	{ 
-        	//魔法折射+50%
-			    "type" : "MAGIC_MIRROR",		
-				"val" : 50	
-			},	
-			"magicRes" :
-			{
-			//魔法抗性+50%
+			"spellDamage2" : {
+				//魔法伤害减免50%
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"subtype" : "any",
+				"val" : 50
+			},
+			"magicMirror" : {
+				//魔法折射+50%
+				"type" : "MAGIC_MIRROR",
+				"val" : 50
+			},
+			"magicRes" : {
+				//魔法抗性+50%
 				"type" : "MAGIC_RESISTANCE",
 				"val" : 50
 			}

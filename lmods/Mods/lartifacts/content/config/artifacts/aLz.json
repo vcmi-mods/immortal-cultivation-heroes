@@ -1,12 +1,14 @@
 {
 	"aLz" : {
 		"class" : "RELIC",
-		"type" : [ "HERO" ],
+		"type" : [
+			"HERO"
+		],
 		"value" : 12000,
-		"graphics" : { 
-			"image": "artifacts/aLzS.png",
-			"scenarioBonus": "artifacts/aLzL.bmp",
-			"map": "artifacts/aLzM.def"
+		"graphics" : {
+			"image" : "artifacts/aLzS.png",
+			"scenarioBonus" : "artifacts/aLzL.bmp",
+			"map" : "artifacts/aLzM.def"
 		},
 		"slot" : "MISC",
 		"text" : {
@@ -14,36 +16,36 @@
 			"event" : "A round bead was spat out from the dragon's mouth. The bead slowly floated towards you, containing the power of a divine dragon within it.",
 			"name" : "Dragon Ball"
 		},
-		"components":
-		[
+		"components" : [
 			"cardsOfProphecy",
 			"cloverOfFortune",
 			"ladybirdOfLuck"
 		],
 		"bonuses" : {
-			"luck" :
-			{
-			//敌方幸运-3
-			"type" : "LUCK",
-			"val" : -3,
-			"propagator": "BATTLE_WIDE",
-			"propagationUpdater" : "BONUS_OWNER_UPDATER",
-			"limiters" : [ "OPPOSITE_SIDE" ]
+			"luck" : {
+				//敌方幸运-3
+				"type" : "LUCK",
+				"val" : -3,
+				"propagator" : "BATTLE_WIDE",
+				"propagationUpdater" : "BONUS_OWNER_UPDATER",
+				"limiters" : [
+					"OPPOSITE_SIDE"
+				]
 			},
-			"curse" :
-			{
-			//敌方永久处于恶咒缠身状态
-			"type" : "ENCHANTED",
-			"subtype" : "curse",
-			"val" : 2,
-			"propagator": "BATTLE_WIDE",
-			"propagationUpdater" : "BONUS_OWNER_UPDATER",
-			"limiters" : [ "OPPOSITE_SIDE" ]
+			"curse" : {
+				//敌方永久处于恶咒缠身状态
+				"type" : "ENCHANTED",
+				"subtype" : "curse",
+				"val" : 2,
+				"propagator" : "BATTLE_WIDE",
+				"propagationUpdater" : "BONUS_OWNER_UPDATER",
+				"limiters" : [
+					"OPPOSITE_SIDE"
+				]
 			},
-			"2hexAttack" :
-	    	{
-	    	//吐息攻击
-			"type" : "TWO_HEX_ATTACK_BREATH"
+			"2hexAttack" : {
+				//吐息攻击
+				"type" : "TWO_HEX_ATTACK_BREATH"
 			}
 		}
 	}

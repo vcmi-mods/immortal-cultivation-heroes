@@ -1,40 +1,35 @@
 {
-	"hyy" :
-	{
-		"class": "clyy",
+	"hyy" : {
+		"class" : "clyy",
 		"female" : true,
-		"images" :
-		
-        {
-        			
-          "specialtySmall" : "yy/syy-s.bmp",
-          "specialtyLarge" : "yy/syy-l.bmp",
-          "large" : "yy/yy-l.bmp",
-          "small" : "yy/yy-s.bmp"
-        
-        },
-        
-        		"army" :
-        		
-        [
-        			
-        {
-            "creature" : "wraith","max" : 5,"min" : 3
-            },
-            			
-            {"creature" : "wraith",
-            "max" : 3,
-            "min" : 2
-            },
-            			
-            {
-            "creature" : "wraith",
-            "max" : 3,"min" : 2
-            },
-        ],
-        		
-        "skills" :
-		[
+		"images" : {
+			"specialtySmall" : "yy/syy-s.bmp",
+			"specialtyLarge" : "yy/syy-l.bmp",
+			"large" : "yy/yy-l.bmp",
+			"small" : "yy/yy-s.bmp"
+		},
+
+		"army" : [
+			{
+				"creature" : "wraith",
+				"max" : 5,
+				"min" : 3
+			},
+
+			{
+				"creature" : "wraith",
+				"max" : 3,
+				"min" : 2
+			},
+
+			{
+				"creature" : "wraith",
+				"max" : 3,
+				"min" : 2
+			}
+		],
+
+		"skills" : [
 			{
 				"level" : "basic",
 				"skill" : "wisdom"
@@ -44,13 +39,11 @@
 				"skill" : "logistics"
 			}
 		],
-		"spellbook" :
-		[
+		"spellbook" : [
 			"animateDead"
 		],
-	
-		"texts" :
-		{
+
+		"texts" : {
 			"name" : "Yuan Yao",
 			"biography" : "Yuan Yao is a female cultivator from a small immortal cultivation sect. She has a sweet appearance, a lively and kind personality, and values friendship and loyalty highly. In order to resurrect her senior sister Yan Li, she accidentally entered the Netherworld and became a ghost cultivator. Later, because of her Heavenly Yin Body (which can withstand thunder tribulations), she was taken as an apprentice by Qing Yuanzi. She had many interactions with Han Li, and their relationship was rather complicated.",
 			"specialty" : {
@@ -60,7 +53,7 @@
 			}
 		},
 		"specialty" : {
-			"bonuses" : {	
+			"bonuses" : {
 				"logistics" : {
 					"targetSourceType" : "SECONDARY_SKILL",
 					"subtype" : "heroMovementLand",
@@ -68,8 +61,8 @@
 					"updater" : "TIMES_HERO_LEVEL",
 					"val" : 3,
 					"valueType" : "PERCENT_TO_TARGET_TYPE"
-					},
-					"earthMagic" : {
+				},
+				"earthMagic" : {
 					"type" : "SPELL_DAMAGE",
 					"subtype" : "earth",
 					"val" : 10,
@@ -79,16 +72,15 @@
 				"main" : {
 					"type" : "UNDEAD_RAISE_PERCENTAGE",
 					"valueType" : "BASE_NUMBER",
-					"val" : 20	
+					"val" : 20
 				},
 				"power" : {
 					"type" : "IMPROVED_NECROMANCY",
 					"subtype" : "wraith",
 					"addInfo" : 1,
 					"val" : 1
-				    }		
-			 }		
+				}
+			}
+		}
 	}
 }
-}
-

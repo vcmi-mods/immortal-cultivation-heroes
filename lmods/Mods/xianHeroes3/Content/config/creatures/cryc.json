@@ -1,28 +1,24 @@
 {
-	"cryc":
-	{
-		"name" : 
-		{
+	"cryc" : {
+		"name" : {
 			"plural" : "Soul body",
 			"singular" : "Soul body"
 		},
-		"description": "Cast healing magic after attacking.",
-		"hasDoubleWeek": false,
+		"description" : "Cast healing magic after attacking.",
+		"hasDoubleWeek" : false,
 		"doubleWide" : false,
-     	"faction" : "tower",
+		"faction" : "tower",
 		"special" : true,
-		"advMapAmount" :
-		{
-			 "min" : 16,
-			 "max" : 25
+		"advMapAmount" : {
+			"min" : 16,
+			"max" : 25
 		},
 		"level" : 0,
 		"attack" : 6,
 		"defense" : 8,
-		"damage" :
-		{
-			 "min" : 8,
-			 "max" : 15
+		"damage" : {
+			"min" : 8,
+			"max" : 15
 		},
 		"growth" : 9,
 		"hitPoints" : 40,
@@ -30,54 +26,48 @@
 		"fightValue" : 130,
 		"aiValue" : 156,
 		"shots" : 24,
-		"cost" :
-		{
+		"cost" : {
 			"gold" : 140
 		},
-		"graphics" :
-		{
+		"graphics" : {
 			"animation" : "creatures/crycA.def",
 			"map" : "creatures/crycM.def",
 			"iconSmall" : "creatures/crycS.bmp",
 			"iconLarge" : "creatures/crycL.bmp",
 			"timeBetweenFidgets" : 1,
-			"animationTime" :
-			{
+			"animationTime" : {
 				"walk" : 0.7,
-				"idle" : 10.00,
-				"attack" : 1.00
+				"idle" : 10.0,
+				"attack" : 1.0
 			}
 		},
-		"sound" :
-		{
-			"attack": "GWRDATTK.wav",
-			"defend": "GWRDDFND.wav",
-			"killed": "GWRDKILL.wav",
-			"move":  "GWRDMOVE.wav",
-			"wince": "GWRDWNCE.wav"
-        },
-		"abilities" :
-		{
-			"cure" :
-			{
+		"sound" : {
+			"attack" : "GWRDATTK.wav",
+			"defend" : "GWRDDFND.wav",
+			"killed" : "GWRDKILL.wav",
+			"move" : "GWRDMOVE.wav",
+			"wince" : "GWRDWNCE.wav"
+		},
+		"abilities" : {
+			"cure" : {
 				"type" : "SPELL_AFTER_ATTACK",
 				"subtype" : "cure",
 				"val" : 100,
-				"addInfo": [3,0]
+				"addInfo" : [
+					3,
+					0
+				]
 			},
-				"curepower" :
-			{
+			"curepower" : {
 				"type" : "SPECIFIC_SPELL_POWER",
 				"subtype" : "cure",
 				"val" : 100
 			},
-				"canCast" :
-			{
-			    	"type" : "SPELLCASTER",
-			    	"subtype" : "resurrection",
-				    "val" : 100
+			"canCast" : {
+				"type" : "SPELLCASTER",
+				"subtype" : "resurrection",
+				"val" : 100
 			}
-		}	
-	}		
+		}
+	}
 }
-

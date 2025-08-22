@@ -1,28 +1,24 @@
 {
-	"crzxf":
-	{
-		"name" : 
-		{
+	"crzxf" : {
+		"name" : {
 			"plural" : "Xiao Hui",
 			"singular" : "Xiao Hui"
 		},
-		"description": "The Three-eyed Ferocious Monkey goes berserk and is permanently in the state of the Bloodthirsty Magic. It can attack one more time whenever it kills any creature.",
-		"hasDoubleWeek": false,
+		"description" : "The Three-eyed Ferocious Monkey goes berserk and is permanently in the state of the Bloodthirsty Magic. It can attack one more time whenever it kills any creature.",
+		"hasDoubleWeek" : false,
 		"doubleWide" : true,
-     	"faction" : "stronghold",
+		"faction" : "stronghold",
 		"special" : true,
-		"advMapAmount" :
-		{
-			 "min" : 16,
-			 "max" : 25
+		"advMapAmount" : {
+			"min" : 16,
+			"max" : 25
 		},
 		"level" : 0,
 		"attack" : 7,
 		"defense" : 7,
-		"damage" :
-		{
-			 "min" : 9,
-			 "max" : 16
+		"damage" : {
+			"min" : 9,
+			"max" : 16
 		},
 		"growth" : 9,
 		"hitPoints" : 40,
@@ -30,29 +26,24 @@
 		"fightValue" : 130,
 		"aiValue" : 156,
 		"shots" : 24,
-		"cost" :
-		{
+		"cost" : {
 			"gold" : 140
 		},
-		"graphics" :
-		{ 
+		"graphics" : {
 			"animation" : "battle/zxf.def",
 			"map" : "map/zxf.def",
 			"iconSmall" : "iconsSmall/zxf.png",
 			"iconLarge" : "iconsBig/zxf.png",
 			"timeBetweenFidgets" : 1,
-				"animationTime" :
-			{
+			"animationTime" : {
 				"walk" : 1.38,
 				"attack" : 1,
 				"idle" : 10
 			},
-			"missile" :
-			{
-				"projectile": "CPRGTIX",
+			"missile" : {
+				"projectile" : "CPRGTIX",
 				"attackClimaxFrame" : 6,
-				"offset" :
-				{
+				"offset" : {
 					"upperX" : 11,
 					"upperY" : -131,
 					"middleX" : 76,
@@ -60,32 +51,40 @@
 					"lowerX" : 19,
 					"lowerY" : -1
 				},
-				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+				"frameAngles" : [
+					90,
+					72,
+					45,
+					27,
+					0,
+					-27,
+					-45,
+					-72,
+					-90,
+					0,
+					0,
+					0
+				]
 			}
 		},
-		"sound" :
-		{
-		   	"attack": "GTITATTK.wav",
-			"defend": "GTITDFND.wav",
-			"killed": "GTITKILL.wav",
-			"move": "GTITMOVE.wav",
-			"shoot": "GTITSHOT.wav",
-			"wince": "GTITWNCE.wav"
-        },
-		"abilities" :
-		{
-		    	"bloodlust" :
-			{
+		"sound" : {
+			"attack" : "GTITATTK.wav",
+			"defend" : "GTITDFND.wav",
+			"killed" : "GTITKILL.wav",
+			"move" : "GTITMOVE.wav",
+			"shoot" : "GTITSHOT.wav",
+			"wince" : "GTITWNCE.wav"
+		},
+		"abilities" : {
+			"bloodlust" : {
 				"type" : "ENCHANTED",
 				"subtype" : "bloodlust",
 				"val" : 2
 			},
-		"doubleAttack" : 
-			{
+			"doubleAttack" : {
 				"type" : "FEROCITY",
 				"val" : 1
 			}
-		}	
-	}		
+		}
+	}
 }
-

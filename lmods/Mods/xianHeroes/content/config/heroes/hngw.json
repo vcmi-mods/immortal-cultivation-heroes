@@ -1,69 +1,56 @@
 {
-	"hngw" :
-	{
+	"hngw" : {
 		"class" : "clngw",
 		"female" : true,
-		"images" :
-		
-{
-			
-  "specialtySmall" : "ngw/sngw-s.bmp",
-  "specialtyLarge" : "ngw/sngw-l.bmp",
- "large" : "ngw/ngw-l.bmp",
-  "small" : "ngw/ngw-s.bmp"
+		"images" : {
+			"specialtySmall" : "ngw/sngw-s.bmp",
+			"specialtyLarge" : "ngw/sngw-l.bmp",
+			"large" : "ngw/ngw-l.bmp",
+			"small" : "ngw/ngw-s.bmp"
+		},
 
-},
+		"army" : [
+			{
+				"creature" : "energyElemental",
+				"max" : 3,
+				"min" : 2
+			},
 
-		"army" :
-		
-[
-			
-{
-    "creature" : "energyElemental","max" : 3,"min" : 2
-    },
-    			
-    {"creature" : "energyElemental",
-    "max" : 2,
-    "min" : 1
-    },
-    			
-    {
-    "creature" : "energyElemental",
-    "max" : 2,"min" : 1
-    },
-],
-		
-"skills" :
+			{
+				"creature" : "energyElemental",
+				"max" : 2,
+				"min" : 1
+			},
 
-[
+			{
+				"creature" : "energyElemental",
+				"max" : 2,
+				"min" : 1
+			}
+		],
 
-{
+		"skills" : [
+			{
+				"level" : "basic",
 
-"level" : "basic",
+				"skill" : "wisdom"
+			},
 
-"skill" : "wisdom"
+			{
+				"level" : "basic",
 
-},
+				"skill" : "logistics"
+			}
+		],
 
-{
+		"spellbook" : [
+			"fireElemental"
+		],
 
-"level" : "basic",
-
-"skill" : "logistics"
-
-}
-
-],
-		
-"spellbook" :
-["fireElemental"
-],
-	
-		"texts" :
-		{
+		"texts" : {
 			"name" : "Nan Gongwan",
 			"biography" : "Nan Gongwan is a Core Formation cultivator from the Moon-covering Sect, one of the seven major sects in the Yue Kingdom. She has a gentle and lively personality, an elegant and noble temperament, and is breathtakingly beautiful. She is wholeheartedly devoted to the path of cultivation. She got acquainted with Han Li during the Blood-colored Trial and later became Han Li's wife. Nan Gongwan had a tremendous influence on Han Li's cultivation journey and is the most important person in Han Li's heart.",
-		
+
 			"specialty" : {
 				"description" : "Magic resistance is increased by 10%, and the damage of Fire Magic is increased by 10% for each level up. Every day, +1 rare resource, +2 wood and stone, and +1000 + 50×(the hero's level) gold coins are gained. For each level that the hero upgrades, the Logistics skill is increased by 3% and the sea movement points are increased by 50 points per level.",
 				"name" : "Su - nu Reincarnation Skill",
@@ -71,61 +58,55 @@
 			}
 		},
 		"specialty" : {
-			"bonuses": {
-			"commanderPowerBasePercent":
-				{
+			"bonuses" : {
+				"commanderPowerBasePercent" : {
 					"type" : "CREATURE_SPELL_POWER",
-					"val": 30,
+					"val" : 30,
 					"updater" : "TIMES_HERO_LEVEL",
 					"valueType" : "BASE_NUMBER",
-				    "limiters" : 
-					[
+					"limiters" : [
 						{
 							"type" : "CREATURE_TYPE_LIMITER",
-							"creature" : "crngw", 
-							"includeUpgrades" :	false
+							"creature" : "crngw",
+							"includeUpgrades" : false
 						}
 					]
 				},
-				"commanderPowerAllPercent":
-				{
+				"commanderPowerAllPercent" : {
 					"type" : "CREATURE_SPELL_POWER",
-					"val": 30,
+					"val" : 30,
 					"updater" : "TIMES_HERO_LEVEL",
 					"valueType" : "PERCENT_TO_ALL",
-				    "limiters" : 
-					[
+					"limiters" : [
 						{
 							"type" : "CREATURE_TYPE_LIMITER",
-							"creature" : "crngw", 
-							"includeUpgrades" :	false
+							"creature" : "crngw",
+							"includeUpgrades" : false
 						}
 					]
 				},
-				"commanderPowerMin":
-				{
+				"commanderPowerMin" : {
 					"type" : "CREATURE_SPELL_POWER",
-					"val": 35,
+					"val" : 35,
 					"updater" : "TIMES_HERO_LEVEL",
 					"valueType" : "INDEPENDENT_MAX",
-				    "limiters" : 
-					[
+					"limiters" : [
 						{
 							"type" : "CREATURE_TYPE_LIMITER",
-							"creature" : "crngw", 
-							"includeUpgrades" :	false
+							"creature" : "crngw",
+							"includeUpgrades" : false
 						}
 					]
 				},
-			"logistics" : {
+				"logistics" : {
 					"targetSourceType" : "SECONDARY_SKILL",
 					"subtype" : "heroMovementLand",
 					"type" : "MOVEMENT",
 					"updater" : "TIMES_HERO_LEVEL",
 					"val" : 3,
 					"valueType" : "PERCENT_TO_TARGET_TYPE"
-					},
-					"fireMagic" : {
+				},
+				"fireMagic" : {
 					"type" : "SPELL_DAMAGE",
 					"subtype" : "fire",
 					"val" : 10,
@@ -133,10 +114,10 @@
 					"updater" : "TIMES_HERO_LEVEL"
 				},
 				"Resist" : {
-				"type" : "MAGIC_RESISTANCE",
-				"val" : 10,
-			},
-		 	"crystal" : {
+					"type" : "MAGIC_RESISTANCE",
+					"val" : 10
+				},
+				"crystal" : {
 					"subtype" : "crystal",
 					"type" : "GENERATE_RESOURCE",
 					"val" : 1
@@ -172,15 +153,12 @@
 					"val" : 1000
 				},
 				"manaRegen" : {
-				"type" : "GENERATE_RESOURCE",
-				"subtype" : "gold",
-				"val" : 200,
-				"updater" : "TIMES_HERO_LEVEL"
-				}
+					"type" : "GENERATE_RESOURCE",
+					"subtype" : "gold",
+					"val" : 200,
+					"updater" : "TIMES_HERO_LEVEL"
 				}
 			}
 		}
 	}
-
-
-
+}

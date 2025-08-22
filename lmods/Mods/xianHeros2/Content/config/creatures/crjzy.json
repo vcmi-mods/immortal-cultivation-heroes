@@ -1,28 +1,24 @@
 {
-	"crjzy":
-	{
-		"name" : 
-		{
+	"crjzy" : {
+		"name" : {
 			"plural" : "Yuan Spirit Body",
 			"singular" : "Yuan Spirit Body"
 		},
-		"description": "Randomly cast group magic. There is a 50% chance to inflict an additional 50% acidic damage when attacking.",
-		"hasDoubleWeek": false,
+		"description" : "Randomly cast group magic. There is a 50% chance to inflict an additional 50% acidic damage when attacking.",
+		"hasDoubleWeek" : false,
 		"doubleWide" : false,
-     	"faction" : "conflux",
+		"faction" : "conflux",
 		"special" : true,
-		"advMapAmount" :
-		{
-			 "min" : 16,
-			 "max" : 25
+		"advMapAmount" : {
+			"min" : 16,
+			"max" : 25
 		},
 		"level" : 0,
 		"attack" : 7,
 		"defense" : 7,
-		"damage" :
-		{
-			 "min" : 8,
-			 "max" : 15
+		"damage" : {
+			"min" : 8,
+			"max" : 15
 		},
 		"growth" : 9,
 		"hitPoints" : 40,
@@ -30,95 +26,79 @@
 		"fightValue" : 130,
 		"aiValue" : 156,
 		"shots" : 24,
-		"cost" :
-		{
+		"cost" : {
 			"gold" : 140
 		},
-		"graphics" :
-		{ 
+		"graphics" : {
 			"animation" : "battle/jzy.def",
 			"map" : "map/jzy.def",
 			"iconSmall" : "iconsSmall/jzy.bmp",
 			"iconLarge" : "iconsBig/jzy.bmp",
 			"timeBetweenFidgets" : 1,
-				"animationTime" :
-			{
+			"animationTime" : {
 				"walk" : 1,
 				"attack" : 1,
 				"idle" : 10
 			}
 		},
-		"sound" :
-		{
-		   	"attack" : "UXatack.wav",
+		"sound" : {
+			"attack" : "UXatack.wav",
 			"defend" : "UXdefend.wav",
 			"killed" : "UXkill.wav",
-			"move"   : "UXmove.wav",
-			"wince"  : "UXwince.wav"
-        },
-		"abilities" :
-		{
-		          	"disease"	:
-			{
+			"move" : "UXmove.wav",
+			"wince" : "UXwince.wav"
+		},
+		"abilities" : {
+			"disease" : {
 				"type" : "ACID_BREATH",
 				"val" : 50,
 				"addInfo" : 50
-			},			
-		        "castsAmount" :
-		    	{
-				    "type" : "CASTS",
-			    	"val" : 3
-		    	},
-				"canCast" :
-		    	{
-			    	"type" : "SPELLCASTER",
-			    	"subtype" : "airShield",
-				    "val" : 100
-		    	},
-			"castsAirShield" :
-			{
+			},
+			"castsAmount" : {
+				"type" : "CASTS",
+				"val" : 3
+			},
+			"canCast" : {
+				"type" : "SPELLCASTER",
+				"subtype" : "airShield",
+				"val" : 100
+			},
+			"castsAirShield" : {
 				"type" : "ENCHANTER",
 				"subtype" : "airShield",
 				"val" : 3,
 				"addInfo" : 3
 			},
-			"castsBless" :
-			{
+			"castsBless" : {
 				"type" : "ENCHANTER",
 				"subtype" : "bless",
 				"val" : 3,
 				"addInfo" : 3
 			},
-			"castsWeakness" :
-			{
+			"castsWeakness" : {
 				"type" : "ENCHANTER",
 				"subtype" : "weakness",
 				"val" : 3,
 				"addInfo" : 3
 			},
-			"castsStoneSkin" :
-			{
+			"castsStoneSkin" : {
 				"type" : "ENCHANTER",
 				"subtype" : "stoneSkin",
 				"val" : 3,
 				"addInfo" : 3
 			},
-			"castsSlow" :
-			{
+			"castsSlow" : {
 				"type" : "ENCHANTER",
 				"subtype" : "slow",
 				"val" : 3,
 				"addInfo" : 3
 			},
-			"castsHaste" :
-			{
+			"castsHaste" : {
 				"type" : "ENCHANTER",
 				"subtype" : "haste",
 				"val" : 3,
 				"addInfo" : 3
 			}
-				    
-		}	
-	}		
+		}
+	}
 }
-

@@ -1,28 +1,24 @@
 {
-	"crmds":
-	{
-		"name" : 
-		{
+	"crmds" : {
+		"name" : {
 			"plural" : "Nine-colored Heaven Swallowing Python",
 			"singular" : "Nine-colored Heaven Swallowing Python"
 		},
-		"description": "Increase attack and damage by 80% before launching a proactive attack, and increase defense by 80% before receiving a proactive attack.",
-		"hasDoubleWeek": false,
+		"description" : "Increase attack and damage by 80% before launching a proactive attack, and increase defense by 80% before receiving a proactive attack.",
+		"hasDoubleWeek" : false,
 		"doubleWide" : true,
-     	"faction" : "dungeon",
+		"faction" : "dungeon",
 		"special" : true,
-		"advMapAmount" :
-		{
-			 "min" : 16,
-			 "max" : 25
+		"advMapAmount" : {
+			"min" : 16,
+			"max" : 25
 		},
 		"level" : 0,
 		"attack" : 6,
 		"defense" : 8,
-		"damage" :
-		{
-			 "min" : 8,
-			 "max" : 15
+		"damage" : {
+			"min" : 8,
+			"max" : 15
 		},
 		"growth" : 9,
 		"hitPoints" : 40,
@@ -30,66 +26,64 @@
 		"fightValue" : 130,
 		"aiValue" : 156,
 		"shots" : 24,
-		"cost" :
-		{
+		"cost" : {
 			"gold" : 140
 		},
-		"graphics" :
-		{
+		"graphics" : {
 			"animation" : "creatures/crMdsA.def",
 			"map" : "creatures/crMdsM.def",
 			"iconSmall" : "creatures/crMdsS.png",
 			"iconLarge" : "creatures/crMdsL.png",
 			"timeBetweenFidgets" : 1,
-			"animationTime" :
-			{
+			"animationTime" : {
 				"walk" : 0.5,
-				"idle" : 10.00,
-				"attack" : 1.00
+				"idle" : 10.0,
+				"attack" : 1.0
 			}
 		},
-		"sound" :
-		{
-			"attack": "crMdsA.wav",
-			"defend": "crMdsD.wav",
-			"killed": "crMdsK.wav",
-			"move": "crMdsM.wav",
-			"wince": "crMdsW.wav"
-        },
-		"abilities" :
-		{
-			"spmds" :
-    			{
-    			"type" : "SPELL_BEFORE_ATTACK",
-    			"subtype" : "spsrxm",
-    			"val" : 100,
-    			"addInfo": [3,0]
-    			},
-			"revenger": 
-			{
-				"type": "SPELL_BEFORE_ATTACK",
-				"subtype": "spsrxm2",
-				"val": 100,
-				"addInfo": [3,0],
-				"limiters" : [ "OPPOSITE_SIDE" ],
-					"duration": "UNTIL_BEING_ATTACKED",		
-				"propagator": "BATTLE_WIDE",
+		"sound" : {
+			"attack" : "crMdsA.wav",
+			"defend" : "crMdsD.wav",
+			"killed" : "crMdsK.wav",
+			"move" : "crMdsM.wav",
+			"wince" : "crMdsW.wav"
+		},
+		"abilities" : {
+			"spmds" : {
+				"type" : "SPELL_BEFORE_ATTACK",
+				"subtype" : "spsrxm",
+				"val" : 100,
+				"addInfo" : [
+					3,
+					0
+				]
+			},
+			"revenger" : {
+				"type" : "SPELL_BEFORE_ATTACK",
+				"subtype" : "spsrxm2",
+				"val" : 100,
+				"addInfo" : [
+					3,
+					0
+				],
+				"limiters" : [
+					"OPPOSITE_SIDE"
+				],
+				"duration" : "UNTIL_BEING_ATTACKED",
+				"propagator" : "BATTLE_WIDE",
 				"propagationUpdater" : "BONUS_OWNER_UPDATER"
-			},		
-			"firereduction": 
-			{
-    			"type" : "SPELL_DAMAGE_REDUCTION",
-    			"subtype" : "fire",
-    			"val" : 100,
-    			"valueType" : "BASE_NUMBER",
-    		},
-			"canCast" :
-			{
-			    "type" : "SPELLCASTER",
-			    "subtype" : "slow",
+			},
+			"firereduction" : {
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"subtype" : "fire",
+				"val" : 100,
+				"valueType" : "BASE_NUMBER"
+			},
+			"canCast" : {
+				"type" : "SPELLCASTER",
+				"subtype" : "slow",
 				"val" : 100
 			}
-		}	
-	}		
+		}
+	}
 }
-

@@ -1,20 +1,18 @@
 {
 	"core:pendantOfSecondSight" : {
 		"bonuses" : {
-		"blind" :
-		{
-			"subtype" : "blind",
-			"type" : "SPELL_IMMUNITY",
-			"val" : 0,
-			"valueType" : "BASE_NUMBER"
-		},
-		"precision" :
-		{
-		"subtype": "precision",
-		"type" : "OPENING_BATTLE_SPELL",
-		"val" : 5,
-		"valueType" : "BASE_NUMBER"
-		}
+			"blind" : {
+				"subtype" : "blind",
+				"type" : "SPELL_IMMUNITY",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER"
+			},
+			"precision" : {
+				"subtype" : "precision",
+				"type" : "OPENING_BATTLE_SPELL",
+				"val" : 5,
+				"valueType" : "BASE_NUMBER"
+			}
 		},
 		"text" : {
 			"description" : "{Pendant Of SecondSight+}\r\n\r\nCreatures are immune to the “blind” and cast the “precision” spell at the start.",

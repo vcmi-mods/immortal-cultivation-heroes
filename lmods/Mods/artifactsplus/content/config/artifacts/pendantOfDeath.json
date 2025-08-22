@@ -1,28 +1,27 @@
 {
 	"core:pendantOfDeath" : {
 		"bonuses" : {
-		"destroyUndeadImm" :
-		{
-			"limiters" : ["IS_UNDEAD"],
-			"subtype" : "destroyUndead",
-			"type" : "SPELL_IMMUNITY",
-			"val" : 0,
-			"valueType" : "BASE_NUMBER"
-		},
-		"attack" :
-		{
-		    "type": "PRIMARY_SKILL",
-			"subtype" : "attack",
-			"val" : 5,
-			"valueType": "BASE_NUMBER"
-		},
-		"defence" :
-	    {
-			"type": "PRIMARY_SKILL",
-			"subtype" : "defence",
-			"val" : 5,
-			"valueType": "BASE_NUMBER"
-	    }
+			"destroyUndeadImm" : {
+				"limiters" : [
+					"IS_UNDEAD"
+				],
+				"subtype" : "destroyUndead",
+				"type" : "SPELL_IMMUNITY",
+				"val" : 0,
+				"valueType" : "BASE_NUMBER"
+			},
+			"attack" : {
+				"type" : "PRIMARY_SKILL",
+				"subtype" : "attack",
+				"val" : 5,
+				"valueType" : "BASE_NUMBER"
+			},
+			"defence" : {
+				"type" : "PRIMARY_SKILL",
+				"subtype" : "defence",
+				"val" : 5,
+				"valueType" : "BASE_NUMBER"
+			}
 		},
 		"text" : {
 			"description" : "{Pendant Of Death+}\r\n\r\nCreatures are immune to the Undead Slayer, and their attack and defense are increased by 5 points.",

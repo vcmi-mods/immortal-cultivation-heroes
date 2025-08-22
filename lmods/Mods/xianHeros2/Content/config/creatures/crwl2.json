@@ -1,115 +1,181 @@
 {
 	"crwl2" : {
-		"advMapAmount" : 
-		{"max" : 8, "min" : 3},
+		"advMapAmount" : {
+			"max" : 8,
+			"min" : 3
+		},
 		"aiValue" : 2525,
 		"attack" : 15,
-		"cost" : 
-		{ "gold" : 2500},
-		"damage" :
-		 {"max" : 32, "min" : 22},
+		"cost" : {
+			"gold" : 2500
+		},
+		"damage" : {
+			"max" : 32,
+			"min" : 22
+		},
 		"defense" : 15,
 		"faction" : "dungeon",
 		"fightValue" : 2454,
 		"graphics" : {
-			"animationTime" :
-			 { "attack" : 1, "idle" : 10, "walk" : 0.8},
+			"animationTime" : {
+				"attack" : 1,
+				"idle" : 10,
+				"walk" : 0.8
+			},
 			"animation" : "battle/wl2.def",
 			"map" : "map/wl2.def",
 			"iconSmall" : "iconsSmall/wl2.bmp",
 			"iconLarge" : "iconsBig/wl2.bmp",
 			"timeBetweenFidgets" : 1
-			},
+		},
 		"growth" : 1,
 		"hitPoints" : 80,
 		"speed" : 13,
-        "doubleWide" : true,
-        "special" : true,
-        "hasDoubleWeek": false,
+		"doubleWide" : true,
+		"special" : true,
+		"hasDoubleWeek" : false,
 		"level" : 6,
-		"name" : { "plural" : "魔头", "singular" : "魔头" },
-		"sound" :
-		{
+		"name" : {
+			"plural" : "魔头",
+			"singular" : "魔头"
+		},
+		"sound" : {
 			"attack" : "TempATTK.wav",
 			"defend" : "TempDFND.wav",
 			"killed" : "TempDEAD.wav",
 			"move" : "TempMOVE.wav",
 			"wince" : "TempWNCE.wav"
-		} ,
-		"abilities":
-		{
-			
-           "FLYING_ARMY" :
-			{
-				"type": "FLYING",
+		},
+		"abilities" : {
+			"FLYING_ARMY" : {
+				"type" : "FLYING",
 				"subtype" : "movementTeleporting"
 			},
-			"descreaseLuck" :
-			{
+			"descreaseLuck" : {
 				"type" : "LUCK",
-				"propagator": "BATTLE_WIDE",
+				"propagator" : "BATTLE_WIDE",
 				"propagationUpdater" : "BONUS_OWNER_UPDATER",
-				"limiters" : [ "OPPOSITE_SIDE" ],
+				"limiters" : [
+					"OPPOSITE_SIDE"
+				],
 				"val" : -3,
 				"stacking" : "Devils"
 			},
-			"doubledamage" :
-			{
+			"doubledamage" : {
 				"type" : "DOUBLE_DAMAGE_CHANCE",
 				"val" : 20
 			}
 		},
-		"stackExperience" :
-		[
+		"stackExperience" : [
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"subtype" : "attack",
 					"type" : "PRIMARY_SKILL"
 				},
-				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
-			},	
+				"values" : [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10
+				]
+			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"subtype" : "defence",
 					"type" : "PRIMARY_SKILL"
 				},
-				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+				"values" : [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"subtype" : "creatureDamageBoth",
 					"type" : "CREATURE_DAMAGE"
 				},
-				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+				"values" : [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "ENCHANTED",
 					"subtype" : "prayer",
 					"val" : 3
 				},
-				"values" : [ 0, 0, 0, 1, 1, 2, 2, 3, 3, 3 ]	
+				"values" : [
+					0,
+					0,
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					3
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "FEARFUL",
 					"valueType" : "INDEPENDENT_MIN",
 					"val" : 0
 				},
-				"values" : [ false, false, false, false, true, true, true, true, true, true ]
+				"values" : [
+					false,
+					false,
+					false,
+					false,
+					true,
+					true,
+					true,
+					true,
+					true,
+					true
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "STACKS_SPEED"
 				},
-				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2 ]
+				"values" : [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					2
+				]
 			}
-		]	
+		]
 	}
 }

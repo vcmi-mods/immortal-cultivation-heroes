@@ -1,12 +1,14 @@
 {
 	"aHyjfh" : {
 		"class" : "RELIC",
-		"type" : [ "HERO" ],
+		"type" : [
+			"HERO"
+		],
 		"value" : 20000,
-		"graphics" : { 
-			"image": "artifacts/aHyjfhS.png",
-			"scenarioBonus": "artifacts/aHyjfhL.bmp",
-			"map": "artifacts/aHyjfhM.def"
+		"graphics" : {
+			"image" : "artifacts/aHyjfhS.png",
+			"scenarioBonus" : "artifacts/aHyjfhL.bmp",
+			"map" : "artifacts/aHyjfhM.def"
 		},
 		"slot" : "RING",
 		"text" : {
@@ -14,59 +16,51 @@
 			"event" : "As soon as you put on this ring, you instantly felt light and airy, and then you flew up into the air.",
 			"name" : "Phantom Gale Ring"
 		},
-		"components":
-		[
+		"components" : [
 			"capeOfVelocity",
 			"ringOfTheWayfarer",
 			"necklaceOfSwiftness",
 			"bootsOfSpeed",
-		    "equestriansGloves"
+			"equestriansGloves"
 		],
 		"bonuses" : {
-			"seaMovement" :
-			{
-			//海上移动力增加900
-			"type" : "MOVEMENT",
-	    	"subtype" : "heroMovementSea",
-	       "val" : 900
+			"seaMovement" : {
+				//海上移动力增加900
+				"type" : "MOVEMENT",
+				"subtype" : "heroMovementSea",
+				"val" : 900
 			},
-			"landMovement" :
-			{
-			//英雄陆地移动力900
-			"type" : "MOVEMENT",
-			"subtype" : "heroMovementLand",
-		    "val" : 900
+			"landMovement" : {
+				//英雄陆地移动力900
+				"type" : "MOVEMENT",
+				"subtype" : "heroMovementLand",
+				"val" : 900
 			},
-			"flyingMovement" :
-			{
-			//大地图飞行移动
+			"flyingMovement" : {
+				//大地图飞行移动
 				"type" : "FLYING_MOVEMENT",
 				"val" : 0,
 				"valueType" : "INDEPENDENT_MIN"
 			},
-			"roughTerrain" :
-		    {
-			 //恶路减免100点
-			"type" : "ROUGH_TERRAIN_DISCOUNT",
-			"val" : 100
+			"roughTerrain" : {
+				//恶路减免100点
+				"type" : "ROUGH_TERRAIN_DISCOUNT",
+				"val" : 100
 			},
-			"flying" :
-			 {
-			 //飞行
-			 "type": "FLYING"
+			"flying" : {
+				//飞行
+				"type" : "FLYING"
 			},
-			"haste" :
-			{
-			//永久处于攻击加速状态
+			"haste" : {
+				//永久处于攻击加速状态
 				"type" : "ENCHANTED",
 				"subtype" : "haste",
 				"val" : 2
-			},		
-			"jousting" :
-			{
-			//冲锋攻击8%
-			"type" : "JOUSTING",
-			"val" : 8
+			},
+			"jousting" : {
+				//冲锋攻击8%
+				"type" : "JOUSTING",
+				"val" : 8
 			}
 		}
 	}

@@ -18,7 +18,7 @@
 				"fireSpellDamageReduction" : {
 					"type" : "SPELL_DAMAGE_REDUCTION",
 					"subtype" : "fire",
-					"val": 25
+					"val" : 25
 				}
 			}
 		},
@@ -29,12 +29,12 @@
 				"large" : "skills/fireResist/fireResistAdvLarge",
 				"scenarioBonus" : "skills/fireResist/bonusBlank.png"
 			},
-			"description" :  "{advanced fire element reduction}\n\nThe intermediate fire element reduction spell reduces the damage of fire element magic to hero troops by 50%.",
+			"description" : "{advanced fire element reduction}\n\nThe intermediate fire element reduction spell reduces the damage of fire element magic to hero troops by 50%.",
 			"effects" : {
 				"fireSpellDamageReduction" : {
 					"type" : "SPELL_DAMAGE_REDUCTION",
 					"subtype" : "fire",
-					"val": 50
+					"val" : 50
 				}
 			}
 		},
@@ -45,12 +45,12 @@
 				"large" : "skills/fireResist/fireResistExpLarge",
 				"scenarioBonus" : "skills/fireResist/bonusBlank.png"
 			},
-			"description" :  "{expert fire element reduction}\n\nThe advanced fire element reduction spell reduces the damage of fire element magic to hero troops by 100%.",
+			"description" : "{expert fire element reduction}\n\nThe advanced fire element reduction spell reduces the damage of fire element magic to hero troops by 100%.",
 			"effects" : {
 				"fireSpellDamageReduction" : {
 					"type" : "SPELL_DAMAGE_REDUCTION",
 					"subtype" : "fire",
-					"val": 100
+					"val" : 100
 				}
 			}
 		}

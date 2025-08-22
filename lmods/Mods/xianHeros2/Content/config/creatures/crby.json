@@ -1,28 +1,24 @@
 {
-	"crby":
-	{
-		"name" : 
-		{
+	"crby" : {
+		"name" : {
 			"plural" : "Ghost King",
 			"singular" : "Ghost King"
 		},
-		"description": "Resurrect once after death. Each attack reduces the enemy's luck by 3 points and has a 50% chance to make the enemy age.",
-		"hasDoubleWeek": false,
+		"description" : "Resurrect once after death. Each attack reduces the enemy's luck by 3 points and has a 50% chance to make the enemy age.",
+		"hasDoubleWeek" : false,
 		"doubleWide" : true,
-     	"faction" : "inferno",
+		"faction" : "inferno",
 		"special" : true,
-		"advMapAmount" :
-		{
-			 "min" : 16,
-			 "max" : 25
+		"advMapAmount" : {
+			"min" : 16,
+			"max" : 25
 		},
 		"level" : 0,
 		"attack" : 6,
 		"defense" : 9,
-		"damage" :
-		{
-			 "min" : 8,
-			 "max" : 15
+		"damage" : {
+			"min" : 8,
+			"max" : 15
 		},
 		"growth" : 9,
 		"hitPoints" : 50,
@@ -30,68 +26,61 @@
 		"fightValue" : 130,
 		"aiValue" : 156,
 		"shots" : 24,
-		"cost" :
-		{
+		"cost" : {
 			"gold" : 140
 		},
-		"graphics" :
-		{ 
-		"animationTime" :
-		 { "attack" : 1, "idle" : 10, "walk" : 0.8
-		  },
+		"graphics" : {
+			"animationTime" : {
+				"attack" : 1,
+				"idle" : 10,
+				"walk" : 0.8
+			},
 			"animation" : "battle/by.def",
 			"map" : "map/by.def",
 			"iconSmall" : "iconsSmall/by.png",
 			"iconLarge" : "iconsBig/by.bmp",
 			"timeBetweenFidgets" : 1
 		},
-		"sound" :
-		{
+		"sound" : {
 			"attack" : "TempATTK.wav",
 			"defend" : "TempDFND.wav",
 			"killed" : "TempDEAD.wav",
 			"move" : "TempMOVE.wav",
 			"wince" : "TempWNCE.wav"
-        },
-		"abilities" :
-		{
-			"FLYING_ARMY" :
-			{
-				"type": "FLYING",
+		},
+		"abilities" : {
+			"FLYING_ARMY" : {
+				"type" : "FLYING",
 				"subtype" : "movementTeleporting"
-			},			
-			"descreaseLuck" :
-			{
+			},
+			"descreaseLuck" : {
 				"type" : "LUCK",
-				"propagator": "BATTLE_WIDE",
+				"propagator" : "BATTLE_WIDE",
 				"propagationUpdater" : "BONUS_OWNER_UPDATER",
-				"limiters" : [ "OPPOSITE_SIDE" ],
+				"limiters" : [
+					"OPPOSITE_SIDE"
+				],
 				"val" : -3,
 				"stacking" : "Devils"
 			},
-				"age" :
-			{
+			"age" : {
 				"type" : "SPELL_AFTER_ATTACK",
 				"subtype" : "age",
 				"val" : 50
 			},
-			"rebirthOnce" :
-			{
+			"rebirthOnce" : {
 				"type" : "CASTS",
 				"val" : 1
 			},
-			"rebirth" : 
-			{
+			"rebirth" : {
 				"type" : "REBIRTH",
 				"val" : 100
 			},
-					"canCast" :
-			{
-			    	"type" : "SPELLCASTER",
-			    	"subtype" : "frenzy",
-				    "val" : 100
+			"canCast" : {
+				"type" : "SPELLCASTER",
+				"subtype" : "frenzy",
+				"val" : 100
 			}
-		}	
-	}		
+		}
+	}
 }
-

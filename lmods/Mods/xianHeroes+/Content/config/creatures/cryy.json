@@ -1,96 +1,80 @@
 {
-	"cryy":
-	{
-		"name" :
-		{
+	"cryy" : {
+		"name" : {
 			"plural" : "Yanli",
 			"singular" : "Yanli"
 		},
-    		"description": "The attack comes with the effects of the Fog of Death and the Light of Destruction.",
-		"advMapAmount" :
-		{
-			 "max" : 16,
-			 "min" : 10
+		"description" : "The attack comes with the effects of the Fog of Death and the Light of Destruction.",
+		"advMapAmount" : {
+			"max" : 16,
+			"min" : 10
 		},
 		"faction" : "necropolis",
 		"aiValue" : 562,
 		"shots" : 24,
 		"attack" : 8,
-		"cost" :
-		{
+		"cost" : {
 			"gold" : 500
 		},
-		"damage" :
-		{
-			 "max" : 6,
-			 "min" : 4
+		"damage" : {
+			"max" : 6,
+			"min" : 4
 		},
 		"defense" : 6,
 		"fightValue" : 526,
-		"graphics" :
-		{
-				"animation": "battle/yy.def",
+		"graphics" : {
+			"animation" : "battle/yy.def",
 			"map" : "map/yy.def",
 			"iconSmall" : "iconsSmall/yy.bmp",
 			"iconLarge" : "iconsBig/yy.bmp",
 			"timeBetweenFidgets" : 1,
-			"animationTime" :
-			{
+			"animationTime" : {
 				"walk" : 1.2,
-				"idle" : 10.00,
+				"idle" : 10.0,
 				"attack" : 1
 			}
 		},
 		"growth" : 4,
 		"hitPoints" : 40,
 		"level" : 4,
-		"sound" :
-		{
-			"attack": "1.wav",
-			"defend": "6.wav",
-			"killed": "3.wav",
-			"move": "4.wav",
-			"wince": "SPRTWNCE.wav"
+		"sound" : {
+			"attack" : "1.wav",
+			"defend" : "6.wav",
+			"killed" : "3.wav",
+			"move" : "4.wav",
+			"wince" : "SPRTWNCE.wav"
 		},
 		"speed" : 6,
-		"abilities" :
-		{
-			"ability1":	{
+		"abilities" : {
+			"ability1" : {
 				"type" : "UNDEAD"
 			},
-		"petrify" :
-			{
+			"petrify" : {
 				"type" : "SPELL_AFTER_ATTACK",
 				"subtype" : "disruptingRay",
 				"val" : 100,
 				"turns" : 3
 			},
-			"canShoot" :
-			{
+			"canShoot" : {
 				"type" : "SHOOTER"
 			},
-			"deathCloud" :
-			{
+			"deathCloud" : {
 				"type" : "SPELL_LIKE_ATTACK",
 				"subtype" : "deathCloud"
 			},
-			"castsAmount" :
-			{
+			"castsAmount" : {
 				"type" : "CASTS",
 				"val" : 1
 			},
-			"enchant" :
-			{
+			"enchant" : {
 				"type" : "CREATURE_ENCHANT_POWER",
 				"val" : 1
 			},
-			"spellpower" :
-			{
+			"spellpower" : {
 				"type" : "CREATURE_SPELL_POWER",
 				"val" : 100
 			},
-			"canCast" :
-			{
+			"canCast" : {
 				"type" : "SPELLCASTER",
 				"subtype" : "animateDead",
 				"val" : 100
