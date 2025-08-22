@@ -64,7 +64,7 @@
 		    "petrify" : 
 		    {
     			"type" : "SPELL_AFTER_ATTACK",
-    			"subtype" : "spell.spjdftz",
+    			"subtype" : "spjdftz",
     			"addInfo": [3,0],
     			"val" :60
     		},  
@@ -86,7 +86,7 @@
 			"canCast" :
 			{
 			    "type" : "SPELLCASTER",
-			    "subtype" : "spell.fireball",
+			    "subtype" : "fireball",
 				"val" : 100
 			}
 		}	

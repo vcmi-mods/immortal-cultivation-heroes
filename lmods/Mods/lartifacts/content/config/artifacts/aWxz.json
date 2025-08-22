@@ -5,7 +5,7 @@
 		"value" : 15000,
 		"graphics" : { 
 			"image": "artifacts/aWxzS.png",
-			"large": "artifacts/aWxzL.bmp",
+			"scenarioBonus": "artifacts/aWxzL.bmp",
 			"map": "artifacts/aWxzM.def"
 		},
 		"slot" : "MISC",
@@ -21,30 +21,34 @@
 			"orbOfDrivingRain",
 			"orbOfSilt"
 		],
-		"bonuses" : [
+		"bonuses" : {
+			 "spellDamage1" :
 			 {
 			 //四系魔法伤害+50%
 			"type" : "SPELL_DAMAGE",
-			"subtype" : "spellSchool.any",
+			"subtype" : "any",
 			"val" : 50,
 			"valueType" : "BASE_NUMBER"
 			},
+			"spellDamage2" :
 			{
 			//魔法伤害减免50%
 			"type" : "SPELL_DAMAGE_REDUCTION",
-			"subtype" : "spellSchool.any",
+			"subtype" : "any",
 			"val" : 50
-			},			
+			},
+			"magicMirror" :			
         	{ 
         	//魔法折射+50%
 			    "type" : "MAGIC_MIRROR",		
 				"val" : 50	
 			},	
+			"magicResistance" :
 			{
 			//魔法抗性+50%
 				"type" : "MAGIC_RESISTANCE",
 				"val" : 50
 			}
-		]
+		}
 	}
 }

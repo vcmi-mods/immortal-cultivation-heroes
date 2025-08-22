@@ -5,7 +5,7 @@
 		"value" : 12000,
 		"graphics" : {
 			"image": "artifacts/aDjkgS.png",
-			"large": "artifacts/aDjkgL.bmp",
+			"scenarioBonus": "artifacts/aDjkgL.bmp",
 			"map": "artifacts/aDjkgM.def"
 		},
 		"slot" : "MISC",
@@ -19,17 +19,19 @@
 			"inexhaustibleCartOfLumber",
 			"inexhaustibleCartOfOre"
 		],
-		"bonuses" : [
-	        {
-			"subtype" : "resource.wood",
+		"bonuses" : {
+			"wood" :	       
+		   {
+			"subtype" : "wood",
 			"type" : "GENERATE_RESOURCE",
 			"val" : 4
 		    },
+			"ore" :
 	    	 {
-			"subtype" : "resource.ore",
+			"subtype" : "ore",
 			"type" : "GENERATE_RESOURCE",
 			"val" : 4
 			}
-		]
+		}
 	}
 }

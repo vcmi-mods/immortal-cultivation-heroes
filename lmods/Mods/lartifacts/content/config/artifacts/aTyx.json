@@ -5,7 +5,7 @@
 		"value" : 8000,
 		"graphics" : { 
 			"image": "artifacts/aTyxS.png",
-			"large": "artifacts/aTyxL.bmp",
+			"scenarioBonus": "artifacts/aTyxL.bmp",
 			"map": "artifacts/aTyxM.def"
 		},
 		"slot" : "FEET",
@@ -19,17 +19,19 @@
 			"bootsOfSpeed",
 		    "equestriansGloves"
 		],
-		"bonuses" : [
+		"bonuses" : {
+			 "roughTerrain" :
 			 {
 			 //恶路减免100点
 			"type" : "ROUGH_TERRAIN_DISCOUNT",
 			"val" : 100
 			},
+			"jousting" :
 			{
 			//冲锋攻击5%
 			"type" : "JOUSTING",
 			"val" : 5
 			}
-		]
+		}
 	}
 }

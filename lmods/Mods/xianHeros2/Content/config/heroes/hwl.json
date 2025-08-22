@@ -59,20 +59,20 @@
 			"bonuses" : {
 			"earthMagic" : {
 					"type" : "SPELL_DAMAGE",
-					"subtype" : "spellSchool.earth",
+					"subtype" : "earth",
 					"val" : 10,
 					"valueType" : "BASE_NUMBER",
 					"updater" : "TIMES_HERO_LEVEL"
 				},
 			"troglodyte2crwl2": {
 					"type" : "SPECIAL_UPGRADE",
-					"subtype" : "creature.troglodyte",
-					"addInfo" : "creature.crwl2"
+					"subtype" : "troglodyte",
+					"addInfo" : "crwl2"
 				},
 				"infernalTroglodyte2crwl2": {
 					"type" : "SPECIAL_UPGRADE",
-					"subtype" : "creature.infernalTroglodyte",
-					"addInfo" : "creature.crwl2"
+					"subtype" : "infernalTroglodyte",
+					"addInfo" : "crwl2"
 				},				
 		 	"logistics" : {
 					"targetSourceType" : "SECONDARY_SKILL",

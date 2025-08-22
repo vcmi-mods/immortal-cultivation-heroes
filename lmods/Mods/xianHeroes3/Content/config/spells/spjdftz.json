@@ -50,7 +50,7 @@
 		{
 			"base":
 			{
-				"aiValue": 15,
+//				"aiValue": 15,
 				"range": "0",
 				"targetModifier":
 				{

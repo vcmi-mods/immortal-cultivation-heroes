@@ -79,7 +79,7 @@
 			"canCast" :
 			{
 			    "type" : "SPELLCASTER",
-			    "subtype" : "spell.resurrection",
+			    "subtype" : "resurrection",
 			    "val" : 100
 			},
 			"damageReduction": 

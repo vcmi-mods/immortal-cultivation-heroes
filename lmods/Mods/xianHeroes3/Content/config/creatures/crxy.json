@@ -76,19 +76,19 @@
 			"fireball" :
 			{	
 			    "type" : "SPELL_LIKE_ATTACK",
-				"subtype" : "spell.fireball"
+				"subtype" : "fireball"
 			},
 		
 					"firereduction": {
 				"type" : "SPELL_DAMAGE_REDUCTION",
-				"subtype" : "spellSchool.fire",
+				"subtype" : "fire",
 				"val" : 100,
 				"valueType" : "BASE_NUMBER",
 			},
 				"canCast" :
 			{
 			    	"type" : "SPELLCASTER",
-			    	"subtype" : "spell.fireShield",
+			    	"subtype" : "fireShield",
 				    "val" : 100
 			}
 		}	

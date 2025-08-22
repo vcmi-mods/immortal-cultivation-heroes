@@ -39,7 +39,7 @@
 				"description": "Cause a large amount of damage to all enemies. Within 2 rounds, the attack, damage, health, defense and speed of creatures will be reduced by 20%, and they will also be paralyzed.",
 				"cost": 0,
 				"power": 50,
-				"aiValue": 0,
+//				"aiValue": 0,
 				"range" : "0",
 				"targetModifier":{"smart":true},
     			"effects" : 
@@ -59,7 +59,7 @@
             		"attack":
 				    {
 					    "type": "PRIMARY_SKILL",
-					    "subtype" : "primarySkill.attack",
+					    "subtype" : "attack",
             			"valueType" : "PERCENT_TO_BASE",
             			"val" : -20,
             			"duration" : 
@@ -82,7 +82,7 @@
             		"defence": 	
         			{
             			"type": "PRIMARY_SKILL",
-        				"subtype" : "primarySkill.defence",
+        				"subtype" : "defence",
             			"valueType" : "PERCENT_TO_BASE",
             			"val" : -20,
             			"duration" : 
@@ -106,7 +106,7 @@
     				{
     					"val" : 0,
     					"type" : "NOT_ACTIVE",
-    					"subtype" : "spell.paralyze",
+    					"subtype" : "paralyze",
     					"duration" : 
     					[
 							"N_TURNS"

@@ -64,7 +64,7 @@
 			"bonuses" : {
 			"miss": {
 					"type": "SPELL_BEFORE_ATTACK",
-					"subtype": "spell.dodge2",
+					"subtype": "dodge2",
 					"val": 20,
 					"addInfo": [3,0],
 					"limiters" : [ "OPPOSITE_SIDE" ],

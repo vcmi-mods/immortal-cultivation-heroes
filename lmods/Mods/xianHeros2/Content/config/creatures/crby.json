@@ -72,7 +72,7 @@
 				"age" :
 			{
 				"type" : "SPELL_AFTER_ATTACK",
-				"subtype" : "spell.age",
+				"subtype" : "age",
 				"val" : 50
 			},
 			"rebirthOnce" :
@@ -88,7 +88,7 @@
 					"canCast" :
 			{
 			    	"type" : "SPELLCASTER",
-			    	"subtype" : "spell.frenzy",
+			    	"subtype" : "frenzy",
 				    "val" : 100
 			}
 		}	

@@ -1,25 +1,28 @@
 {
 	"core:pendantOfNegativity" : {
-		"bonuses" : [
+		"bonuses" : {
+		"lightningBolt" :
 		{
-			"subtype" : "spell.lightningBolt",
+			"subtype" : "lightningBolt",
 			"type" : "SPELL_IMMUNITY",
 			"val" : 0,
 			"valueType" : "BASE_NUMBER"
 			},
+		"chainLightning" :
 		{
-			"subtype" : "spell.chainLightning",
+			"subtype" : "chainLightning",
 			"type" : "SPELL_IMMUNITY",
 			"val" : 0,
 			"valueType" : "BASE_NUMBER"
 		},
+		"airMagic" :
 		{
 			"type" : "SPELL_DAMAGE",
-			"subtype" : "spellSchool.air",
+			"subtype" : "air",
 			"val" : 50,
 			"valueType" : "BASE_NUMBER"
 		}
-	],
+		},
 		"text" : {
 			"description" : "{Pendant Of Negativity+}\r\n\r\nImmune to lightning magic damage, and increase air-based magic damage by 50%.",
 			"name" : "Pendant Of Negativity+"

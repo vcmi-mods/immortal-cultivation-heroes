@@ -69,7 +69,7 @@
 					"attack":
 				{
 					"type": "PRIMARY_SKILL",
-					"subtype" : "primarySkill.attack",
+					"subtype" : "attack",
 					"val" : 1,
 					"valueType": "BASE_NUMBER",
 					"updater" : "TIMES_HERO_LEVEL"

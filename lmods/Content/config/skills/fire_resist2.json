@@ -1,6 +1,7 @@
 {
 	"paadFireResist2" : {
 		"name" : "Fire element reduction",
+		"specialty" : [], // no generic specialty
 		"gainChance" : {
 			"might" : 0,
 			"magic" : 0
@@ -9,7 +10,8 @@
 			"images" : {
 				"small" : "skills/fireResist/fireResistBasicSmall",
 				"medium" : "skills/fireResist/fireResistBasicMedium",
-				"large" : "skills/fireResist/fireResistBasicLarge"
+				"large" : "skills/fireResist/fireResistBasicLarge",
+				"scenarioBonus" : "skills/fireResist/bonusBlank.png"
 			},
 			"description" : "{basic fire element reduction}\n\nThe primary fire element reduction spell reduces the damage of fire element magic to hero troops by 25%.",
 			"effects" : {
@@ -24,7 +26,8 @@
 			"images" : {
 				"small" : "skills/fireResist/fireResistAdvSmall",
 				"medium" : "skills/fireResist/fireResistAdvMedium",
-				"large" : "skills/fireResist/fireResistAdvLarge"
+				"large" : "skills/fireResist/fireResistAdvLarge",
+				"scenarioBonus" : "skills/fireResist/bonusBlank.png"
 			},
 			"description" :  "{advanced fire element reduction}\n\nThe intermediate fire element reduction spell reduces the damage of fire element magic to hero troops by 50%.",
 			"effects" : {
@@ -39,7 +42,8 @@
 			"images" : {
 				"small" : "skills/fireResist/fireResistExpSmall",
 				"medium" : "skills/fireResist/fireResistExpMedium",
-				"large" : "skills/fireResist/fireResistExpLarge"
+				"large" : "skills/fireResist/fireResistExpLarge",
+				"scenarioBonus" : "skills/fireResist/bonusBlank.png"
 			},
 			"description" :  "{expert fire element reduction}\n\nThe advanced fire element reduction spell reduces the damage of fire element magic to hero troops by 100%.",
 			"effects" : {

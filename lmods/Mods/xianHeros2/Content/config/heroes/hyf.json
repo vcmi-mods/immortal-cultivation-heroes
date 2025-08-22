@@ -69,7 +69,7 @@
 					"defence":
 				{
 					"type": "PRIMARY_SKILL",
-					"subtype" : "primarySkill.defence",
+					"subtype" : "defence",
 					"val" : 1,
 					"valueType": "BASE_NUMBER",
 					"updater" : "TIMES_HERO_LEVEL",

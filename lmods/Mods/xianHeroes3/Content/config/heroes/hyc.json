@@ -59,14 +59,14 @@
 		        	},
 				"waterMagic" : {
 				    "type" : "SPELL_DAMAGE",
-				    "subtype" : "spellSchool.water",
+				    "subtype" : "water",
 				    "val" : 5,
 				    "valueType" : "BASE_NUMBER",
 					"updater" : "TIMES_HERO_LEVEL"
 			    	},
 			    	"earthMagic" : {
 				    "type" : "SPELL_DAMAGE",
-				    "subtype" : "spellSchool.earth",
+				    "subtype" : "earth",
 				    "val" : 5,
 				    "valueType" : "BASE_NUMBER",
 					"updater" : "TIMES_HERO_LEVEL"

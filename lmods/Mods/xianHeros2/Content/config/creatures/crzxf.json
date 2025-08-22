@@ -77,7 +77,7 @@
 		    	"bloodlust" :
 			{
 				"type" : "ENCHANTED",
-				"subtype" : "spell.bloodlust",
+				"subtype" : "bloodlust",
 				"val" : 2
 			},
 		"doubleAttack" : 

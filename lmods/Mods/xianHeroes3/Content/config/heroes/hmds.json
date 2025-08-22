@@ -65,12 +65,12 @@
 			        },
 			    "petrify" : {
     				"type" : "SPELL_AFTER_ATTACK",
-    				"subtype" : "spell.stoneGaze",
+    				"subtype" : "stoneGaze",
     				"val" : 20
     				},   			
 				"earthMagic" : {
     				"type" : "SPELL_DAMAGE",
-    				"subtype" : "spellSchool.earth",
+    				"subtype" : "earth",
     				"val" : 10,
     				"valueType" : "BASE_NUMBER",
     				"updater" : "TIMES_HERO_LEVEL"

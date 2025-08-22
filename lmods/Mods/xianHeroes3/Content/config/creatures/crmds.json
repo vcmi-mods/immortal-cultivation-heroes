@@ -61,14 +61,14 @@
 			"spmds" :
     			{
     			"type" : "SPELL_BEFORE_ATTACK",
-    			"subtype" : "spell.spsrxm",
+    			"subtype" : "spsrxm",
     			"val" : 100,
     			"addInfo": [3,0]
     			},
 			"revenger": 
 			{
 				"type": "SPELL_BEFORE_ATTACK",
-				"subtype": "spell.spsrxm2",
+				"subtype": "spsrxm2",
 				"val": 100,
 				"addInfo": [3,0],
 				"limiters" : [ "OPPOSITE_SIDE" ],
@@ -79,14 +79,14 @@
 			"firereduction": 
 			{
     			"type" : "SPELL_DAMAGE_REDUCTION",
-    			"subtype" : "spellSchool.fire",
+    			"subtype" : "fire",
     			"val" : 100,
     			"valueType" : "BASE_NUMBER",
     		},
 			"canCast" :
 			{
 			    "type" : "SPELLCASTER",
-			    "subtype" : "spell.slow",
+			    "subtype" : "slow",
 				"val" : 100
 			}
 		}	

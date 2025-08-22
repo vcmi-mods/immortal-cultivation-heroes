@@ -71,7 +71,7 @@
 					},
 					"earthMagic" : {
 					"type" : "SPELL_DAMAGE",
-					"subtype" : "spellSchool.earth",
+					"subtype" : "earth",
 					"val" : 10,
 					"valueType" : "BASE_NUMBER",
 					"updater" : "TIMES_HERO_LEVEL"
@@ -83,7 +83,7 @@
 				},
 				"power" : {
 					"type" : "IMPROVED_NECROMANCY",
-					"subtype" : "creature.wraith",
+					"subtype" : "wraith",
 					"addInfo" : 1 ,
 					"val" : 1
 				    }		

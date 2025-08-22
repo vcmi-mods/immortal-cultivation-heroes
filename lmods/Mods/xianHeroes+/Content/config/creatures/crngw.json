@@ -39,14 +39,14 @@
 		"attack":
 				{
 					"type": "PRIMARY_SKILL",
-					"subtype" : "primarySkill.attack",
+					"subtype" : "attack",
 					"val" : 30,
 					"valueType": "PERCENT_TO_BASE"
 				},
 			"defence":
 				{
 					"type": "PRIMARY_SKILL",
-					"subtype" : "primarySkill.defence",
+					"subtype" : "defence",
 					"val" : 30,
 					"valueType": "PERCENT_TO_BASE"
 				},
@@ -81,14 +81,14 @@
 			"reduceSpellDamage" :
 			{
 				"type" : "SPELL_DAMAGE_REDUCTION",
-				"subtype" : "spellSchool.any",
+				"subtype" : "any",
 				"updater" : "TIMES_STACK_LEVEL",
 				"val" : 17
 			},	
 			"reduceSpellDamageMax" :
 			{
 				"type" : "SPELL_DAMAGE_REDUCTION",
-				"subtype" : "spellSchool.any",
+				"subtype" : "any",
 				"valueType" : "INDEPENDENT_MIN",
 				"val" : 100
 			},				
@@ -102,7 +102,7 @@
 			},
 			"alwaysFirst" : {
 				"type" : "ENCHANTED",
-				"subtype" : "spell.alwaysFirst2"
+				"subtype" : "alwaysFirst2"
 			},
 			"armageddon":
 			{

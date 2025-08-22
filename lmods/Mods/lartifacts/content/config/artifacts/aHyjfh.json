@@ -5,7 +5,7 @@
 		"value" : 20000,
 		"graphics" : { 
 			"image": "artifacts/aHyjfhS.png",
-			"large": "artifacts/aHyjfhL.bmp",
+			"scenarioBonus": "artifacts/aHyjfhL.bmp",
 			"map": "artifacts/aHyjfhM.def"
 		},
 		"slot" : "RING",
@@ -22,45 +22,52 @@
 			"bootsOfSpeed",
 		    "equestriansGloves"
 		],
-		"bonuses" : [
+		"bonuses" : {
+			"seaMovement" :
 			{
 			//海上移动力增加900
 			"type" : "MOVEMENT",
 	    	"subtype" : "heroMovementSea",
 	       "val" : 900
 			},
+			"landMovement" :
 			{
 			//英雄陆地移动力900
 			"type" : "MOVEMENT",
 			"subtype" : "heroMovementLand",
 		    "val" : 900
 			},
+			"flyingMovement" :
 			{
 			//大地图飞行移动
 				"type" : "FLYING_MOVEMENT",
 				"val" : 0,
 				"valueType" : "INDEPENDENT_MIN"
 			},
+			"roughTerrain" :
 		    {
 			 //恶路减免100点
 			"type" : "ROUGH_TERRAIN_DISCOUNT",
 			"val" : 100
 			},
+			"flying" :
 			 {
 			 //飞行
 			 "type": "FLYING"
 			},
+			"haste" :
 			{
 			//永久处于攻击加速状态
 				"type" : "ENCHANTED",
-				"subtype" : "spell.haste",
+				"subtype" : "haste",
 				"val" : 2
-			},			
+			},		
+			"jousting" :
 			{
 			//冲锋攻击8%
 			"type" : "JOUSTING",
 			"val" : 8
 			}
-		]
+		}
 	}
 }

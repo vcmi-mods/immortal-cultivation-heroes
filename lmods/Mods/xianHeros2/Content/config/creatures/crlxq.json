@@ -82,12 +82,12 @@
 				"canCast" :
 		    	{
 			    	"type" : "SPELLCASTER",
-			    	"subtype" : "spell.counterstrike",
+			    	"subtype" : "counterstrike",
 				    "val" : 100
 		    	},
 		"lightningbolt": {
 					"type": "SPELL_AFTER_ATTACK",
-					"subtype": "spell.sjylzj",
+					"subtype": "sjylzj",
 					"val": 50,
 					"addInfo": [3,0],
 					"limiters" : ["noneOf", "OPPOSITE_SIDE"],
@@ -95,7 +95,7 @@
 				    },
 				    "airMagic" : {
 					"type" : "SPELL_DAMAGE",
-					"subtype" : "spellSchool.air",
+					"subtype" : "air",
 					"val" : 100,
 					"valueType" : "BASE_NUMBER"
 				}

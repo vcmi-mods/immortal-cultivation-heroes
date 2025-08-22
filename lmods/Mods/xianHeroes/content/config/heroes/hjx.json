@@ -74,7 +74,7 @@
 		"specialty" : {
 			"bonuses": {
 		"lightning" : {
-		        "subtype": "spell.chainLightning",
+		        "subtype": "chainLightning",
 				"type" : "OPENING_BATTLE_SPELL",
 				"val" : 100,
 				"valueType" : "BASE_NUMBER",
@@ -99,7 +99,7 @@
 					},
 				"airMagic" : {
 					"type" : "SPELL_DAMAGE",
-					"subtype" : "spellSchool.air",
+					"subtype" : "air",
 					"val" : 10,
 					"valueType" : "BASE_NUMBER",
 					"updater" : "TIMES_HERO_LEVEL"

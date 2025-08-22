@@ -51,7 +51,7 @@
 			"bonuses" : {
 			    "revenger": {
 					"type": "SPELL_BEFORE_ATTACK",
-					"subtype": "spell.spfq",
+					"subtype": "spfq",
 					"val": 100,
 					"addInfo": [3,0],
 					"limiters" : [ "OPPOSITE_SIDE" ],
@@ -60,14 +60,14 @@
 				    },		
 			    "fireMagic" : {
 					"type" : "SPELL_DAMAGE",
-					"subtype" : "spellSchool.fire",
+					"subtype" : "fire",
 					"val" : 5,
 					"valueType" : "BASE_NUMBER",
 					"updater" : "TIMES_HERO_LEVEL"
     				},
     		    	"firereduction": {
     				"type" : "SPELL_DAMAGE_REDUCTION",
-			    	"subtype" : "spellSchool.fire",
+			    	"subtype" : "fire",
 			    	"val" : 5,
     				"updater" : "TIMES_HERO_LEVEL"
     		    	},

@@ -24,13 +24,13 @@
 					"description": "Creatures will have their attack power and damage value increased by 80%.",
 					"cost": 0,
 					"power": 0,
-					"aiValue": 0,
+//					"aiValue": 0,
 					"range" : "0",
 					"targetModifier":{"smart":false},
 					"effects" : {
 					"attack": {
 					    "type": "PRIMARY_SKILL",
-				    	"subtype" : "primarySkill.attack",
+				    	"subtype" : "attack",
 				      	"valueType" : "PERCENT_TO_BASE",
 				    	"duration": "UNTIL_ATTACK",		
 				    	"limiters": [ 

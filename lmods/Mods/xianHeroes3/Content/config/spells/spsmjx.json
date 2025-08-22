@@ -23,14 +23,14 @@
 					"description": "The attack, damage and speed of creatures will be increased by 50%.",
 					"cost": 0,
 					"power": 0,
-					"aiValue": 0,
+//					"aiValue": 0,
 					"range" : "0",
 					"targetModifier":{"smart":true},
 				"effects" : {
 					"attack":
     				{
     					"type": "PRIMARY_SKILL",
-    					"subtype" : "primarySkill.attack",
+    					"subtype" : "attack",
         				"valueType" : "PERCENT_TO_BASE",
         				"val" : 50
         		   	},

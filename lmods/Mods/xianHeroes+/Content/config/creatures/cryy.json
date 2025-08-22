@@ -61,7 +61,7 @@
 		"petrify" :
 			{
 				"type" : "SPELL_AFTER_ATTACK",
-				"subtype" : "spell.disruptingRay",
+				"subtype" : "disruptingRay",
 				"val" : 100,
 				"turns" : 3
 			},
@@ -72,7 +72,7 @@
 			"deathCloud" :
 			{
 				"type" : "SPELL_LIKE_ATTACK",
-				"subtype" : "spell.deathCloud"
+				"subtype" : "deathCloud"
 			},
 			"castsAmount" :
 			{
@@ -92,7 +92,7 @@
 			"canCast" :
 			{
 				"type" : "SPELLCASTER",
-				"subtype" : "spell.animateDead",
+				"subtype" : "animateDead",
 				"val" : 100
 			}
 		}

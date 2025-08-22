@@ -5,7 +5,7 @@
 		"value" : 12000,
 		"graphics" : {
 			"image": "artifacts/aCgyxS.png",
-			"large": "artifacts/aCgyxL.bmp",
+			"scenarioBonus": "artifacts/aCgyxL.bmp",
 			"map": "artifacts/aCgyxM.def"
 		},
 		"slot" : "MISC",
@@ -20,7 +20,8 @@
 			"crestOfValor",
 			"glyphOfGallantry"
 		],
-		"bonuses" : [
+		"bonuses" : {
+			"morale" :
 			{
 				//敌方士气-3
 			"type" : "MORALE",
@@ -29,16 +30,18 @@
 			"limiters" : [ "OPPOSITE_SIDE" ],
 			"val":-3
 			},
+			"bless" :
 			{
 			//永久处于圣灵佑佐状态
 			"type" : "ENCHANTED",
-			"subtype" : "spell.bless",
+			"subtype" : "bless",
 			"val" : 2
 			},
+			"receptive" :
 			{
 			//接纳增益魔法
 		   "type" : "RECEPTIVE"
 			}
-		]
+		}
 	}
 }

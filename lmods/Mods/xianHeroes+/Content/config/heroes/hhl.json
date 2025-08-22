@@ -67,26 +67,26 @@
 				"spbxslimmunity" :
     			{
     				"type" : "SPELL_IMMUNITY",
-    				"subtype" : "spell.spbxsl",
+    				"subtype" : "spbxsl",
     				"addInfo" : 0
     			},			
 			    "spxtzlj" : 
 			    {
-		            "subtype" : "spell.spxtzlj",
+		            "subtype" : "spxtzlj",
     				"type" : "OPENING_BATTLE_SPELL",
     				"val" : 30,
     				"valueType" : "BASE_NUMBER"
 			    },
 			    "spxtzlj2" : 
 			    {
-		            "subtype" : "spell.spxtzlj2",
+		            "subtype" : "spxtzlj2",
     				"type" : "OPENING_BATTLE_SPELL",
     				"val" : 3,
     				"valueType" : "BASE_NUMBER"
 			    },
 			    "spxtzlj3" : 
 			    {
-		            "subtype" : "spell.spxtzlj3",
+		            "subtype" : "spxtzlj3",
     				"type" : "OPENING_BATTLE_SPELL",
     				"val" : 4,
     				"valueType" : "BASE_NUMBER"
@@ -94,56 +94,56 @@
 				"marksman" : 
 				{
     				"type" : "SPECIAL_UPGRADE",
-    				"subtype" : "creature.pikeman",
-    				"addInfo" : "creature.marksman"
+    				"subtype" : "pikeman",
+    				"addInfo" : "marksman"
 		        },
 				"marksman2" : 
 				{
     				"type" : "SPECIAL_UPGRADE",
-    				"subtype" : "creature.halberdier",
-    				"addInfo" : "creature.marksman"
+    				"subtype" : "halberdier",
+    				"addInfo" : "marksman"
 		        },
 				"zealot" : 
 				{
     				"type" : "SPECIAL_UPGRADE",
-    				"subtype" : "creature.swordsman",
-    				"addInfo" : "creature.zealot"
+    				"subtype" : "swordsman",
+    				"addInfo" : "zealot"
 		        },
 				"zealot2" : 
 				{
     				"type" : "SPECIAL_UPGRADE",
-    				"subtype" : "creature.crusader",
-    				"addInfo" : "creature.zealot"
+    				"subtype" : "crusader",
+    				"addInfo" : "zealot"
 		        },
 				"archangel" : 
 				{
     				"type" : "SPECIAL_UPGRADE",
-    				"subtype" : "creature.champion",
-    				"addInfo" : "creature.archangel"
+    				"subtype" : "champion",
+    				"addInfo" : "archangel"
 		        },
 				"archangel2" : 
 				{
     				"type" : "SPECIAL_UPGRADE",
-    				"subtype" : "creature.cavalier",
-    				"addInfo" : "creature.archangel"
+    				"subtype" : "cavalier",
+    				"addInfo" : "archangel"
 		        },
 		        "archangel3" : 
 				{
     				"type" : "SPECIAL_UPGRADE",
-    				"subtype" : "creature.angel",
-    				"addInfo" : "creature.archangel"
+    				"subtype" : "angel",
+    				"addInfo" : "archangel"
 		        },
 				"attack":
 				{
 					"type": "PRIMARY_SKILL",
-					"subtype" : "primarySkill.attack",
+					"subtype" : "attack",
 					"val" : 25,
 					"valueType": "PERCENT_TO_BASE"
 				},
 		    	"defence":
 				{
 					"type": "PRIMARY_SKILL",
-					"subtype" : "primarySkill.defence",
+					"subtype" : "defence",
 					"val" : 25,
 					"valueType": "PERCENT_TO_BASE"
 				},
@@ -206,38 +206,38 @@
                 "age" :
         		{
         			"type" : "SPELL_AFTER_ATTACK",
-        			"subtype" : "spell.age",
+        			"subtype" : "age",
         			"val" : 5
         		},
                 "petrify" :
     			   {
     				"type" : "SPELL_AFTER_ATTACK",
-    				"subtype" : "spell.stoneGaze",
+    				"subtype" : "stoneGaze",
     				"val" : 5,
     				},
         	    "bindattack" :
         			{
         				"type" : "SPELL_AFTER_ATTACK",
-        				"subtype" : "spell.bind",
+        				"subtype" : "bind",
         				"val" : 5,
         			},
             	"disease":
         			{
         				"type" : "SPELL_BEFORE_ATTACK",
-        				"subtype" : "spell.disease",
+        				"subtype" : "disease",
         				"val" : 5,
         				"addInfo" : 1
         			},
         		"paralize" :
         			{
         				"type" : "SPELL_AFTER_ATTACK",
-        				"subtype" : "spell.paralyze",
+        				"subtype" : "paralyze",
         				"val" : 5
         			},
                 "poisonous" : 
     			{
     				"type" : "SPELL_AFTER_ATTACK",
-    				"subtype" : "spell.poison",
+    				"subtype" : "poison",
     				"val" : 5,
     				"addInfo" : 0
     			},					
@@ -262,7 +262,7 @@
 		        "miss": 
 		        {
 					"type": "SPELL_BEFORE_ATTACK",
-					"subtype": "spell.dodge2",
+					"subtype": "dodge2",
 					"val": 10,
 					"addInfo": [3,0],
 					"limiters" : [ "OPPOSITE_SIDE" ],
@@ -284,7 +284,7 @@
 				"anyMagic" : 
 				{
 					"type" : "SPELL_DAMAGE",
-					"subtype" : "spellSchool.any",
+					"subtype" : "any",
 					"val" : 10,
 					"valueType" : "BASE_NUMBER",
 					"updater" : "TIMES_HERO_LEVEL"
@@ -333,44 +333,44 @@
 				},
 				"crystal" : 
 				{
-					"subtype" : "resource.crystal",
+					"subtype" : "crystal",
 					"type" : "GENERATE_RESOURCE",
 					"val" : 1
 				},
 				"gems" : {
-					"subtype" : "resource.gems",
+					"subtype" : "gems",
 					"type" : "GENERATE_RESOURCE",
 					"val" : 1
 				},
 				"sulfur" : {
-					"subtype" : "resource.sulfur",
+					"subtype" : "sulfur",
 					"type" : "GENERATE_RESOURCE",
 					"val" : 1
 				},
 				"mercury" : {
-					"subtype" : "resource.mercury",
+					"subtype" : "mercury",
 					"type" : "GENERATE_RESOURCE",
 					"val" : 1
 				},
 				"wood" : {
-					"subtype" : "resource.wood",
+					"subtype" : "wood",
 					"type" : "GENERATE_RESOURCE",
 					"val" : 2
 				},
 				"ore" : {
-					"subtype" : "resource.ore",
+					"subtype" : "ore",
 					"type" : "GENERATE_RESOURCE",
 					"val" : 2
 				},
 				"gold" : {
-					"subtype" : "resource.gold",
+					"subtype" : "gold",
 					"type" : "GENERATE_RESOURCE",
 					"val" : 1000
 				},
 				"manaRegen" : 
 				{
     				"type" : "GENERATE_RESOURCE",
-    				"subtype" : "resource.gold",
+    				"subtype" : "gold",
     				"val" : 250,
     				"updater" : "TIMES_HERO_LEVEL"
 				}

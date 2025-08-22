@@ -5,7 +5,7 @@
 		"value" : 12000,
 		"graphics" : { 
 			"image": "artifacts/aFlzhS.png",
-			"large": "artifacts/aFlzhL.bmp",
+			"scenarioBonus": "artifacts/aFlzhL.bmp",
 			"map": "artifacts/aFlzhM.def"
 		},
 		"slot" : "RING",
@@ -20,23 +20,27 @@
 			"ringOfTheWayfarer",
 			"necklaceOfSwiftness"
 		],
-		"bonuses" : [
-	    	{
+		"bonuses" : {
+	    	"seaMovement" :
+			{
 			//海上移动力增加1000
 			"type" : "MOVEMENT",
 	    	"subtype" : "heroMovementSea",
 	       "val" : 1000
 			},
+			"landMovement" :
 			{
 			//英雄陆地移动力1000
 			"type" : "MOVEMENT",
 			"subtype" : "heroMovementLand",
 		    "val" : 1000
 			},
+			"flying" :
 			 {
 			 //飞行
 			 "type": "FLYING"
 			},
+			"stackSpeed" :
 			{
 			//敌速-2
 			"type" : "STACKS_SPEED",
@@ -45,6 +49,6 @@
 			"limiters" : [ "OPPOSITE_SIDE" ],
 			"val":-2
 			}
-		]
+		}
 	}
 }

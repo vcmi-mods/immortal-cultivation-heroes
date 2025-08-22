@@ -82,10 +82,8 @@
 					[
 						{
 							"type" : "CREATURE_TYPE_LIMITER",
-							"parameters" : [
-								"crngw", 
-								false
-							]
+							"creature" : "crngw", 
+							"includeUpgrades" :	false
 						}
 					]
 				},
@@ -99,10 +97,8 @@
 					[
 						{
 							"type" : "CREATURE_TYPE_LIMITER",
-							"parameters" : [
-								"crngw", 
-								false
-							]
+							"creature" : "crngw", 
+							"includeUpgrades" :	false
 						}
 					]
 				},
@@ -116,10 +112,8 @@
 					[
 						{
 							"type" : "CREATURE_TYPE_LIMITER",
-							"parameters" : [
-								"crngw", 
-								false
-							]
+							"creature" : "crngw", 
+							"includeUpgrades" :	false
 						}
 					]
 				},
@@ -133,7 +127,7 @@
 					},
 					"fireMagic" : {
 					"type" : "SPELL_DAMAGE",
-					"subtype" : "spellSchool.fire",
+					"subtype" : "fire",
 					"val" : 10,
 					"valueType" : "BASE_NUMBER",
 					"updater" : "TIMES_HERO_LEVEL"
@@ -143,43 +137,43 @@
 				"val" : 10,
 			},
 		 	"crystal" : {
-					"subtype" : "resource.crystal",
+					"subtype" : "crystal",
 					"type" : "GENERATE_RESOURCE",
 					"val" : 1
 				},
 				"gems" : {
-					"subtype" : "resource.gems",
+					"subtype" : "gems",
 					"type" : "GENERATE_RESOURCE",
 					"val" : 1
 				},
 				"sulfur" : {
-					"subtype" : "resource.sulfur",
+					"subtype" : "sulfur",
 					"type" : "GENERATE_RESOURCE",
 					"val" : 1
 				},
 				"mercury" : {
-					"subtype" : "resource.mercury",
+					"subtype" : "mercury",
 					"type" : "GENERATE_RESOURCE",
 					"val" : 1
 				},
 				"wood" : {
-					"subtype" : "resource.wood",
+					"subtype" : "wood",
 					"type" : "GENERATE_RESOURCE",
 					"val" : 2
 				},
 				"ore" : {
-					"subtype" : "resource.ore",
+					"subtype" : "ore",
 					"type" : "GENERATE_RESOURCE",
 					"val" : 2
 				},
 				"gold" : {
-					"subtype" : "resource.gold",
+					"subtype" : "gold",
 					"type" : "GENERATE_RESOURCE",
 					"val" : 1000
 				},
 				"manaRegen" : {
 				"type" : "GENERATE_RESOURCE",
-				"subtype" : "resource.gold",
+				"subtype" : "gold",
 				"val" : 200,
 				"updater" : "TIMES_HERO_LEVEL"
 				}

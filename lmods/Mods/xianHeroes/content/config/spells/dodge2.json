@@ -28,7 +28,7 @@
 					"description": "The damage that creatures will receive next time is reduced by 1 point.",
 					"cost": 0,
 					"power": 0,
-					"aiValue": 0,
+//					"aiValue": 0,
 					"range" : "0",
 					"targetModifier":{"smart":false},
 					"effects" : {

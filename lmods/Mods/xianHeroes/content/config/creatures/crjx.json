@@ -86,7 +86,7 @@
 				"canCast" :
 			{
 				"type" : "SPELLCASTER",
-				"subtype" : "spell.haste",
+				"subtype" : "haste",
 				"val" : 100
 			}
 			}	

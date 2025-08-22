@@ -61,20 +61,20 @@
 			"cure" :
 			{
 				"type" : "SPELL_AFTER_ATTACK",
-				"subtype" : "spell.cure",
+				"subtype" : "cure",
 				"val" : 100,
 				"addInfo": [3,0]
 			},
 				"curepower" :
 			{
 				"type" : "SPECIFIC_SPELL_POWER",
-				"subtype" : "spell.cure",
+				"subtype" : "cure",
 				"val" : 100
 			},
 				"canCast" :
 			{
 			    	"type" : "SPELLCASTER",
-			    	"subtype" : "spell.resurrection",
+			    	"subtype" : "resurrection",
 				    "val" : 100
 			}
 		}	

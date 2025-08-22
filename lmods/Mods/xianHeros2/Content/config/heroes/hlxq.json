@@ -65,14 +65,14 @@
 			"bonuses" : {
 				 "anyMagic" : {
 					"type" : "SPELL_DAMAGE",
-					"subtype" : "spellSchool.any",
+					"subtype" : "any",
 					"val" : 8,
 					"valueType" : "BASE_NUMBER",
 					"updater" : "TIMES_HERO_LEVEL"
 				},
 				"airMagic" : {
 					"type" : "SPELL_DAMAGE",
-					"subtype" : "spellSchool.air",
+					"subtype" : "air",
 					"val" : 5,
 					"valueType" : "BASE_NUMBER",
 					"updater" : "TIMES_HERO_LEVEL"

@@ -58,7 +58,7 @@
 		"disease"	:
 			{
 				"type" : "SPELL_BEFORE_ATTACK",
-				"subtype" : "spell.disease",
+				"subtype" : "disease",
 				"val" : 100,
 				"addInfo" : 3
 			},		
@@ -74,7 +74,7 @@
 					"canCast" :
 			{
 			    	"type" : "SPELLCASTER",
-			    	"subtype" : "spell.resurrection",
+			    	"subtype" : "resurrection",
 				    "val" : 100
 			}
 		}	

@@ -25,14 +25,14 @@
 					"description": "The defense will be increased by 80%.",
 					"cost": 0,
 					"power": 0,
-					"aiValue": 0,
+//					"aiValue": 0,
 					"range" : "X",
 					"targetModifier":{"smart":false},
 				"effects" : {
     				"defence":
     				{
     					"type": "PRIMARY_SKILL",
-    					"subtype" : "primarySkill.defence",
+    					"subtype" : "defence",
         				"valueType" : "PERCENT_TO_BASE",
         				"val" : 80,
         	        	"duration": "UNTIL_BEING_ATTACKED",		
@@ -40,10 +40,8 @@
     				    [
     					    {
     					    "type" : "CREATURE_TYPE_LIMITER",
-    				    	"parameters" :
-    				    	    [
-    						    "crmds", false
-    						    ]
+							"creature" : "crmds", 
+							"includeUpgrades" :	false
     					    }
     				    ]
         		   	}

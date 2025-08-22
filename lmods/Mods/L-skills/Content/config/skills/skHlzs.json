@@ -1,6 +1,7 @@
 {	
 	"skHlzs" : {
 		"name" : "Vitality Regeneration",
+		"specialty" : [], // no generic specialty
 		"gainChance" : {
 			"might" : 4,
 			"magic" : 4
@@ -16,7 +17,8 @@
 			"images" : {
 				"small": "skills/skHlzs/skHlzsS1.png",
 				"medium": "skills/skHlzs/skHlzsM1.png",
-				"large": "skills/skHlzs/skHlzsL1.png"
+				"large": "skills/skHlzs/skHlzsL1.png",
+				"scenarioBonus" : "skills/skHlzs/bonusBlank.png"
 			},
 			"description" : "{Junior Vitality Regeneration}\n\nCreatures recover 10 hit points per turn.",
 			"effects" : {
@@ -27,7 +29,8 @@
 			"images" : {
 				"small": "skills/skHlzs/skHlzsS2.png",
 				"medium": "skills/skHlzs/skHlzsM2.png",
-				"large": "skills/skHlzs/skHlzsL2.png"
+				"large": "skills/skHlzs/skHlzsL2.png",
+				"scenarioBonus" : "skills/skHlzs/bonusBlank.png"
 			},
 			"description" : "{Intermediate Vitality Regeneratio}\n\nCreatures recover 20 hit points per turn.",
 			"effects" : {
@@ -38,7 +41,8 @@
 			"images" : {
 			"small": "skills/skHlzs/skHlzsS3.png",
 				"medium": "skills/skHlzs/skHlzsM3.png",
-				"large": "skills/skHlzs/skHlzsL3.png"
+				"large": "skills/skHlzs/skHlzsL3.png",
+				"scenarioBonus" : "skills/skHlzs/bonusBlank.png"
 			},
 			"description" : "{Advanced Vitality Regeneration}\n\nCreatures recover 30 hit points per turn.",
 			"effects" : {

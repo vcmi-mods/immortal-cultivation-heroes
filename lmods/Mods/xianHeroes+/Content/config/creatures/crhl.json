@@ -60,7 +60,7 @@
 		{
 				"lightningbolt": {
 					"type": "SPELL_AFTER_ATTACK",
-					"subtype": "spell.spbxsl",
+					"subtype": "spbxsl",
 					"val": 50,
 					"addInfo": [3,0],
 					"limiters" : ["noneOf", "OPPOSITE_SIDE"],
@@ -69,14 +69,14 @@
 			"attack":
 				{
 					"type": "PRIMARY_SKILL",
-					"subtype" : "primarySkill.attack",
+					"subtype" : "attack",
 					"val" : 30,
 					"valueType": "PERCENT_TO_BASE"
 				},
 			"defence":
 				{
 					"type": "PRIMARY_SKILL",
-					"subtype" : "primarySkill.defence",
+					"subtype" : "defence",
 					"val" : 30,
 					"valueType": "PERCENT_TO_BASE"
 				},
@@ -128,7 +128,7 @@
 				"canCast" :
 			{
 			    	"type" : "SPELLCASTER",
-			    	"subtype" : "spell.resurrection",
+			    	"subtype" : "resurrection",
 				    "val" : 100
 			}
 		}	

@@ -85,7 +85,7 @@
 				"canCast" :
 		    	{
 			    	"type" : "SPELLCASTER",
-			    	"subtype" : "spell.counterstrike",
+			    	"subtype" : "counterstrike",
 				    "val" : 100
 		    	},
 		    	"drainsLife" :
@@ -96,8 +96,8 @@
 		"bindattack" :
 			{
 				"type" : "SPELL_AFTER_ATTACK",
-				"subtype" : "spell.bind",
-				"val" : 100,
+				"subtype" : "bind",
+				"val" : 100
 			}
 		}	
 	}		

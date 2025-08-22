@@ -61,14 +61,14 @@
 	    	"poisonous" : 
 			{
 				"type" : "SPELL_AFTER_ATTACK",
-				"subtype" : "spell.poison",
+				"subtype" : "poison",
 				"val" : 50,
 				"addInfo" : 0
 			},
 				"poisonImm" : 
 			{
 				"type" : "SPELL_IMMUNITY",
-				"subtype" : "spell.poison",
+				"subtype" : "poison",
 				"addInfo" : 0
 			},									
 			"castsAmount" :	{
@@ -78,7 +78,7 @@
 				"canCast" :
 			{
 			    	"type" : "SPELLCASTER",
-			    	"subtype" : "spell.haste",
+			    	"subtype" : "haste",
 				    "val" : 100
 			}
 		}	

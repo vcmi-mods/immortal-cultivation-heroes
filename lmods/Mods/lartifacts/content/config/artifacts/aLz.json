@@ -5,7 +5,7 @@
 		"value" : 12000,
 		"graphics" : { 
 			"image": "artifacts/aLzS.png",
-			"large": "artifacts/aLzL.bmp",
+			"scenarioBonus": "artifacts/aLzL.bmp",
 			"map": "artifacts/aLzM.def"
 		},
 		"slot" : "MISC",
@@ -20,7 +20,8 @@
 			"cloverOfFortune",
 			"ladybirdOfLuck"
 		],
-		"bonuses" : [
+		"bonuses" : {
+			"luck" :
 			{
 			//敌方幸运-3
 			"type" : "LUCK",
@@ -29,19 +30,21 @@
 			"propagationUpdater" : "BONUS_OWNER_UPDATER",
 			"limiters" : [ "OPPOSITE_SIDE" ]
 			},
+			"curse" :
 			{
 			//敌方永久处于恶咒缠身状态
 			"type" : "ENCHANTED",
-			"subtype" : "spell.curse",
+			"subtype" : "curse",
 			"val" : 2,
 			"propagator": "BATTLE_WIDE",
 			"propagationUpdater" : "BONUS_OWNER_UPDATER",
 			"limiters" : [ "OPPOSITE_SIDE" ]
 			},
+			"2hexAttack" :
 	    	{
 	    	//吐息攻击
 			"type" : "TWO_HEX_ATTACK_BREATH"
 			}
-		]
+		}
 	}
 }

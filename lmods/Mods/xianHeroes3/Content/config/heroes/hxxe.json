@@ -51,21 +51,21 @@
 		"specialty" : {
 			"bonuses" : {
 		        "spendt" : {
-		            "subtype" : "spell.spsmjx",
+		            "subtype" : "spsmjx",
     				"type" : "OPENING_BATTLE_SPELL",
     				"val" : 5,
     				"valueType" : "BASE_NUMBER"
 			    	},
 			    "fireMagic" : {
 					"type" : "SPELL_DAMAGE",
-					"subtype" : "spellSchool.fire",
+					"subtype" : "fire",
 					"val" : 5,
 					"valueType" : "BASE_NUMBER",
 					"updater" : "TIMES_HERO_LEVEL"
     				},
     		    "airMagic" : {
 					"type" : "SPELL_DAMAGE",
-					"subtype" : "spellSchool.air",
+					"subtype" : "air",
 					"val" : 5,
 					"valueType" : "BASE_NUMBER",
 					"updater" : "TIMES_HERO_LEVEL"

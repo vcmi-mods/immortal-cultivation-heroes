@@ -37,7 +37,7 @@
 				"description": "Within 3 rounds, the attack, damage, health, defense and speed of creatures will be reduced by 15%, and they will also be entangled.",
 				"cost": 0,
 				"power": 0,
-				"aiValue": 0,
+//				"aiValue": 0,
 				"range" : "0",
 				"targetModifier":{"smart":true},
     			"effects" : 
@@ -57,7 +57,7 @@
             		"attack":
 				    {
 					    "type": "PRIMARY_SKILL",
-					    "subtype" : "primarySkill.attack",
+					    "subtype" : "attack",
             			"valueType" : "PERCENT_TO_BASE",
             			"val" : -15,
             			"duration" : 
@@ -80,7 +80,7 @@
             		"defence": 	
         			{
             			"type": "PRIMARY_SKILL",
-        				"subtype" : "primarySkill.defence",
+        				"subtype" : "defence",
             			"valueType" : "PERCENT_TO_BASE",
             			"val" : -15,
             			"duration" : 

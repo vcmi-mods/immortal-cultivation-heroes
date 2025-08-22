@@ -21,12 +21,11 @@
 				"description": "Make creature always be the first one to take action.",
 				"cost": 0,
 				"power": 3,
-				"aiValue": 0,
+//				"aiValue": 0,
 				"range" : "0",
 				"targetModifier":{"smart":false},
 				"effects" : {
 					"initiativeFlat" : {
-						"addInfo" : 0,
 						"val" : 999999,
 						"valueType" : "INDEPENDENT_MAX",
 						"type" : "STACKS_SPEED",

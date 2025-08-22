@@ -61,12 +61,12 @@
 		"enchanted" :
 			{
 				"type" : "ENCHANTED",
-				"subtype" : "spell.prayer",
+				"subtype" : "prayer",
 				"val" : 2
 			},
 				    "airMagic" : {
 					"type" : "SPELL_DAMAGE",
-					"subtype" : "spellSchool.air",
+					"subtype" : "air",
 					"val" : 100,
 					"valueType" : "BASE_NUMBER"
 				}

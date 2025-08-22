@@ -53,33 +53,34 @@
 		{
 			"base":
 			{
-				"aiValue": 25,
+//				"aiValue": 25,
 				"range": "0,0",
 
 				"targetModifier":
 				{
 					"smart": true
-				}
-			},
-			"none":
-			{
-				"description": "{True Lightning-Controlling Sword Art}\n\nLaunch lightning to attack the enemy troops. Meanwhile, the targeted enemy troops will be paralyzed and unable to take actions for one round.\n",
-	 
-				"cost": 14,
-				"power": 20,
+				},
 				"effects":
 				{
 					"notActive":
 					{
 						"val" : 0,
 						"type" : "NOT_ACTIVE",
-						"subtype" : "spell.paralyze",
+						"subtype" : "paralyze",
 						"duration" : [
 							"N_TURNS"
 						],
 						"turns":1
 					}
-				}
+				}				
+			},
+			"none":
+			{
+				"description": "{True Lightning-Controlling Sword Art}\n\nLaunch lightning to attack the enemy troops. Meanwhile, the targeted enemy troops will be paralyzed and unable to take actions for one round.\n",
+	 
+				"cost": 14,
+				"power": 20
+
 	 
 			},
 			"basic":
@@ -87,39 +88,18 @@
 				"description": "{basic True Lightning-Controlling Sword Art}\n\nLaunch lightning to attack the enemy troops. Meanwhile, the targeted enemy troops will be paralyzed and unable to take any actions for one round.\n",
 	 
 				"cost": 11,
-				"power": 20,
-	 
-				"effects":
-				{
-					"notActive":
-					{
-						"val" : 0,
-						"type" : "NOT_ACTIVE",
-						"subtype" : "spell.paralyze",
-						"duration" : [
-							"N_TURNS"
-						],
-						"turns":1
-					}
-				}
+				"power": 20
 			},
 			"advanced":
 			{
 				"description": "{advanced True Lightning-Controlling Sword Art}\n\nLaunch lightning to attack the enemy troops. Meanwhile, the targeted enemy troops will be paralyzed and unable to take any actions for two rounds.\n",
 	 
 				"cost": 11,
-				"power": 40,
-	 
+				"power": 40, 
 				"effects":
 				{
 					"notActive":
 					{
-						"val" : 0,
-						"type" : "NOT_ACTIVE",
-						"subtype" : "spell.paralyze",
-						"duration" : [
-							"N_TURNS"
-						],
 						"turns":2
 					}
 				}
@@ -135,12 +115,6 @@
 				{
 					"notActive":
 					{
-						"val" : 0,
-						"type" : "NOT_ACTIVE",
-						"subtype" : "spell.paralyze",
-						"duration" : [
-							"N_TURNS"
-						],
 						"turns":2
 					}
 				}

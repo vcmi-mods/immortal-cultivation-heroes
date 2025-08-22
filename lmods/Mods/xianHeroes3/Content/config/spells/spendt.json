@@ -24,7 +24,7 @@
 					"description": "The attack, damage and speed will be increased by 50%.",
 					"cost": 0,
 					"power": 0,
-					"aiValue": 0,
+//					"aiValue": 0,
 					"range" : "0",
 					"targetModifier":{"smart":true},
 				"effects" : {
@@ -38,27 +38,23 @@
 					[
 						{
 							"type" : "CREATURE_TYPE_LIMITER",
-							"parameters" : [
-								"crxyx", 
-								false
-							]
+							"creature" : "crxyx", 
+							"includeUpgrades" :	false							
 						}
 					]
     		   	},
     		   		"attack": 	
 				{
     				"type": "PRIMARY_SKILL",
-					"subtype" : "primarySkill.attack",
+					"subtype" : "attack",
     				"valueType" : "PERCENT_TO_BASE",
     				"val" : 50,
     			    "limiters" : 
 					[
 						{
 							"type" : "CREATURE_TYPE_LIMITER",
-							"parameters" : [
-								"crxyx", 
-								false
-							]
+							"creature" : "crxyx", 
+							"includeUpgrades" :	false	
 						}
 					]
     		   	},
@@ -71,7 +67,8 @@
 					[
 						{
 						"type" : "CREATURE_TYPE_LIMITER",
-						"parameters" : ["crxyx", false]
+							"creature" : "crxyx", 
+							"includeUpgrades" :	false	
 						}
 					]
 		        }     	

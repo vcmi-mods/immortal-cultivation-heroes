@@ -49,20 +49,20 @@
 		"specialty" : {
 			"bonuses" : {
 			    "spendt" : {
-		            "subtype" : "spell.spendt",
+		            "subtype" : "spendt",
     				"type" : "OPENING_BATTLE_SPELL",
     				"val" : 5,
     				"valueType" : "BASE_NUMBER"
 			    	},
 		        "spendj" : {
-		            "subtype" : "spell.spendj",
+		            "subtype" : "spendj",
     				"type" : "OPENING_BATTLE_SPELL",
     				"val" : 5,
     				"valueType" : "BASE_NUMBER"
 			    	},
     			"earthMagic" : {
     				"type" : "SPELL_DAMAGE",
-    				"subtype" : "spellSchool.earth",
+    				"subtype" : "earth",
     				"val" : 10,
     				"valueType" : "BASE_NUMBER",
     				"updater" : "TIMES_HERO_LEVEL"

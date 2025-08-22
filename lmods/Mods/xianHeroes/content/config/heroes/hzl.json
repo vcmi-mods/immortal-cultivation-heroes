@@ -72,7 +72,7 @@
 					},
 					"waterMagic" : {
 					"type" : "SPELL_DAMAGE",
-					"subtype" : "spellSchool.water",
+					"subtype" : "water",
 					"val" : 10,
 					"valueType" : "BASE_NUMBER",
 					"updater" : "TIMES_HERO_LEVEL"
@@ -85,7 +85,7 @@
 				},
 					"morale" : {
 					"type" : "MORALE",
-					"val" : 2,
+					"val" : 2
 			    }
 			}
 		}
